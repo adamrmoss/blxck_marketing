@@ -1,0 +1,27 @@
+@import "setup";
+@import "animations";
+@import "header";
+@import "projects";
+@import "mediaQueries";
+
+
+// .skipButton {
+//     position: absolute;
+//     left: -1000px;
+//     top: 10px;
+//     z-index: 999;
+//     padding: 0 5px;
+//     background: rgba(117, 116, 116, 0.7);
+//     color: grey;
+//     border: double grey 2px;
+// }
+
+// .skipButton:focus {
+//     left: unset;
+//     right: 10px;
+// }
+
+
+// container-you-want-to-scroll-in {
+//   overflow-x: scroll;
+// }

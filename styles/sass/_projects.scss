@@ -1,0 +1,51 @@
+.webProjects {
+    height: 100%;
+    padding: 100px 0;
+    position: relative;
+    h2 {
+        font-family: Lato, sans-serif;
+        font-size: clamp(10rem, 50vw, 14rem);
+        font-weight: 900;
+        width: 200%;
+        color: transparent;
+        -webkit-text-stroke: 0.7px black;
+        position: relative;
+        right: -300px;
+        top: -50px;
+        overflow: hidden;
+    }
+    .proj {
+        width: 45%;
+        font-family: Lato, sans-serif;
+        img {
+            box-shadow: 10px 10px 20px darkslategrey;
+            border-radius: 5px;
+        }
+        .projText {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            text-align: center;
+            h3 {
+                font-size: 2.4rem;
+                margin: 20px auto;
+            }
+            h4 {
+                border-bottom: double black 2px;
+            }
+            ul li {
+                font-style: italic;
+                font-weight: 300;
+            }
+        }
+    }
+    .quickExg {
+        position: absolute;
+        top: 1000px;
+    }
+    .justLucy {
+        position: absolute;
+        right: 0;
+    }
+}

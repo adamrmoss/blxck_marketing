@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brenna MacQuarrie Portflio</title>
+    <!-- fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- favicon icon -->
+    <link type="image/ico" href="" rel="icon">
+    <!-- fontawesome icons -->
+    <script src="https://kit.fontawesome.com/4fba6b96fc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- // add loading screen??? slide in on load? -->
+
+    <header class="imgOne imgTwo imgThree rotate">
+        <nav class="wrapper">
+            <!-- TODO fix tab to nav menu!!!! -->
+            <!-- <a class="skipButton" href="#maincontent">skip to main content.</a> -->
+            <div class="linkFavs">
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-spotify"></i>
+            </div>
+            <!-- DROPDOWN HAMBURGER MENU -->
+            <div aria-label="click here for the menu." class="hamburg">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="dropdownMenu">
+                <ul>
+                    <li><a href="#webProjects">Web Projects</a></li>
+                    <li><a href="#">Visual Art</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="siteTitle wrapper">
+            <h1>Brenna <span class="whiteStroke">MacQuarrie</span></h1>
+            <button class="seeMore">See More</button>
+        </div>
+        <!-- <img class="headerImg hOne" src="./assets/siteHeaderOne.jpeg" alt="">
+        <img class="headerImg hTwo" src="./assets/siteHeaderTwo.jpg" alt="">
+        <img class="headerImg hThree" src="./assets/siteHeaderThree.jpg" alt=""> -->
+        <!-- 
+            three images background with animation to affect width
+            buttons to move animation?
+            logo top left
+            arrow button scroll down (arrow moves?)
+            header text name, only one for now.. -->
+
+    </header>
+
+
+
+
+    <main>
+        <!-- first page -- projects
+            with "PROJECTS" title that moves on scroll??????? 
+            with images that are linked and represent projects -->
+        <section class="webProjects wrapper" id="webProjects">
+            <h2 class="floatText">WEB PROJECTS</h2>
+
+            <div class="proj peach">
+                <img src="./assets/pricklyPeach.png" alt="screen grab of the prickly peach web design">
+                <div class="projText">
+                    <h3>Interactive Prickly Peach Quiz</h3>
+                    <h4>Languages Used:</h4>
+                    <ul>
+                        <li>CSS3</li>
+                        <li>HTML5</li>
+                        <li>JQUERY</li>
+                        <li>JAVASCRIPT</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="proj quickExg">
+                <img src="./assets/quickExg.png" alt="screen grab of the Quick Exchange web design">
+                <div class="projText">
+                    <h3>Quick Exg Crypto Exchange App</h3>
+                    <h4>Skills Used:</h4>
+                    <ul>
+                        <li>CSS3</li>
+                        <li>HTML5</li>
+                        <li>JQUERY</li>
+                        <li>JAVASCRIPT</li>
+                        <li>RESTful APIs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="proj justLucy">
+                <img src="./assets/justLucy.png" alt="screen grab of Just Lucy web design">
+                <div class="projText">
+                    <h3>Just Lucy Digital Storefront</h3>
+                    <h4>Skills Used:</h4>
+                    <ul>
+                        <li>CSS3</li>
+                        <li>HTML5</li>
+                        <li>REACT</li>
+                        <li>FIREBASE</li>
+                        <li>JAVASCRIPT</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- SCRIPTS -->
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
