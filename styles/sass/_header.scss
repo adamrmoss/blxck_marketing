@@ -3,7 +3,7 @@ $owhite : rgba(255, 255, 255, 0.7);
 
 header {
     height: 100vh;
-    background-image: url('/assets/siteHeaderTwo.jpg'), linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    background-image: url('/assets/siteHeaderThree.jpg'), linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
     background-blend-mode: overlay;
     background-position: center;
     background-repeat: no-repeat;
@@ -150,10 +150,20 @@ header {
             opacity: 1;
         }
     }
-    // .headerImg {
-    //     position: absolute;
-    //     top: 0;
-    //     height: 100vh;
-    // }
-
+    .arrow {
+        width: 10px;
+        height: 10px;
+        background: orange;
+        position: relative;
+        bottom: -10px;
+        right: 10px;
+        z-index: 99;
+        .long{
+            height: 10px;
+            background: white;
+            border-radius: 50px;
+            transition: all 0.4s;
+            position: absolute;
+        }
+    }
 }
