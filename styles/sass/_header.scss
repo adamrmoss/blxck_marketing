@@ -74,7 +74,7 @@ header {
         .dropdownMenu {
             position: absolute;
             top: 70px;
-            right: 35px;
+            right: 3%;
             opacity: 0;
             transition: all 0.4s;
             text-align: right;
@@ -146,7 +146,7 @@ header {
             opacity: 0;
         }
         .dropdownMenu.active {
-            top: 100px;
+            top: 75px;
             opacity: 1;
         }
     }
