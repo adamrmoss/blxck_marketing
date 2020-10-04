@@ -10,6 +10,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 20px;
+
     .siteTitle {
         height: 100%;
         display: flex;
@@ -43,6 +44,7 @@ header {
         color: rgba(255, 255, 255, 0.7);
         text-transform: uppercase;
         transition: 0.9s all;
+        margin: 0;
         &:hover,
         &:focus {
             transform: scale(1.05);
@@ -57,11 +59,8 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // TODO this removes wrapper?
-        position: fixed;
         .linkFavs {
             width: 30%;
-            padding-left: 2.5%;
             display: flex;
             justify-content: space-between;
             .fab {

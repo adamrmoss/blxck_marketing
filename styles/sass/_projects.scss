@@ -13,6 +13,11 @@ section.webProjects {
         right: -300px;
         top: -50px;
         overflow: hidden;
+        .wow {
+            animation: slideInRight;
+            animation-duration: 2s;;
+            // data-wow-duration: 5s;
+        }
     }
     .animateElement.slideRight.inView {
         -webkit-transition: all 500ms linear;

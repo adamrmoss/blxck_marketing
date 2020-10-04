@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./styles/style.css">
     <!-- favicon icon -->
     <link type="image/ico" href="" rel="icon">
+    <!-- wow js animation -->
+    <link rel="stylesheet" href="css/animate.css">
     <!-- fontawesome icons -->
     <script src="https://kit.fontawesome.com/4fba6b96fc.js" crossorigin="anonymous"></script>
 </head>
@@ -20,7 +22,7 @@
 <body>
     <!-- // add loading screen??? slide in on load? -->
 
-    <header class="imgOne imgTwo imgThree rotate">
+    <header class="">
         <nav class="wrapper">
             <!-- TODO fix tab to nav menu!!!! -->
             <!-- <a class="skipButton" href="#maincontent">skip to main content.</a> -->
@@ -36,6 +38,7 @@
                 <div class="two"></div>
                 <div class="three"></div>
             </div>
+
             <div class="dropdownMenu">
                 <!-- TODO fix at widest display -->
                 <ul>
@@ -75,7 +78,7 @@
             with "PROJECTS" title that moves on scroll??????? 
             with images that are linked and represent projects -->
         <section class="webProjects wrapper" id="webProjects">
-            <h2 class="animationElement slideRight">WEB PROJECTS</h2>
+            <h2 class="wow animate__animated animate__slideInRight">WEB PROJECTS</h2>
 
             <div class="proj peach">
                 <img src="./assets/pricklyPeach.png" alt="screen grab of the prickly peach web design">
@@ -197,7 +200,14 @@
     </main>
 
     <!-- SCRIPTS -->
+    <script src="js/wow.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
     <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    
     <script src="script.js"></script>
 </body>
 

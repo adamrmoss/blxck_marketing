@@ -12,6 +12,7 @@ bMac.hamburger = function () {
 
 bMac.init = function() {
     bMac.hamburger();
+    // new WOW().init();
 }
 
 $(document).ready(function () {

@@ -254,7 +254,7 @@ img {
 
 .wrapper {
   width: 95%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -358,6 +358,7 @@ header h1 {
   text-transform: uppercase;
   -webkit-transition: 0.9s all;
   transition: 0.9s all;
+  margin: 0;
 }
 
 header h1:hover, header h1:focus {
@@ -381,12 +382,10 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: fixed;
 }
 
 header nav .linkFavs {
   width: 30%;
-  padding-left: 2.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -521,6 +520,13 @@ section.webProjects h2 {
   right: -300px;
   top: -50px;
   overflow: hidden;
+}
+
+section.webProjects h2 .wow {
+  -webkit-animation: slideInRight;
+          animation: slideInRight;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 section.webProjects .animateElement.slideRight.inView {
