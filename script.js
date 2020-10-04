@@ -1,7 +1,7 @@
 const bMac = {};
 
-// bMac._animationElement = $('.animationElement');
-// bMac._window = $(window);
+// bMac.animationElement = $('.animationElement');
+// let $window = $(window);
 
 // bMac._window.on('scroll resize', bMac.ifVisible);
 // bMac._window.trigger('scroll');

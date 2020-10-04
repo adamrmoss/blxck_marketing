@@ -56,8 +56,11 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        // TODO this removes wrapper?
+        position: fixed;
         .linkFavs {
             width: 30%;
+            padding-left: 2.5%;
             display: flex;
             justify-content: space-between;
             .fab {
@@ -150,20 +153,5 @@ header {
             opacity: 1;
         }
     }
-    .arrow {
-        width: 10px;
-        height: 10px;
-        background: orange;
-        position: relative;
-        bottom: -10px;
-        right: 10px;
-        z-index: 99;
-        .long{
-            height: 10px;
-            background: white;
-            border-radius: 50px;
-            transition: all 0.4s;
-            position: absolute;
-        }
-    }
+
 }

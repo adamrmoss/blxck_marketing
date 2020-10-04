@@ -1,0 +1,22 @@
+.about {
+    height: 100%;
+    padding: 100px 0;
+    font-family: Lato, sans-serif;
+    letter-spacing: 2px;
+    background: #111517;
+    color: white;
+    font-weight: 300;
+    line-height: 130%;;
+    p {
+        font-size: calc(1.3rem + 0.5vw);
+        letter-spacing: 0.6px;
+    }
+    .pTag {
+        padding-bottom: 20px;
+        border-bottom: 1px white solid;
+    }
+    .skillList ul {
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+}
