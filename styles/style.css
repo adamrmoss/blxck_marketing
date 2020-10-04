@@ -301,6 +301,7 @@ a {
 }
 
 header {
+  overflow-x: hidden;
   height: 100vh;
   background-image: url("/assets/siteHeaderThree.jpg"), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7)));
   background-image: url("/assets/siteHeaderThree.jpg"), linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
@@ -633,6 +634,43 @@ section.webProjects .quickExg {
   display: grid;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
+}
+
+.visualArt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  overflow-x: scroll !important;
+}
+
+.visualArt .displayVisual {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.visualArt .displayVisual img {
+  width: 60%;
+}
+
+.visualArt .displayVisual .visualText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 /* Portrait tablet and small desktops */

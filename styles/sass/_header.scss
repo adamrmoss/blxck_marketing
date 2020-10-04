@@ -2,6 +2,7 @@ $ogray : rgba(128, 128, 128, 0.6);
 $owhite : rgba(255, 255, 255, 0.7);
 
 header {
+    overflow-x: hidden;
     height: 100vh;
     background-image: url('/assets/siteHeaderThree.jpg'), linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
     background-blend-mode: overlay;

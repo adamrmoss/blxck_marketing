@@ -1,0 +1,18 @@
+.visualArt {
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: scroll !important;
+    
+    .displayVisual {
+        display: flex;
+        img {
+            width: 60%;
+        }
+        .visualText {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+    }
+}
