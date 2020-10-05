@@ -1,5 +1,5 @@
-// AOS.init();
 gsap.registerPlugin(ScrollTrigger);
+
 
 gsap.from('.shiftLeft', {
     scrollTrigger: {
@@ -16,7 +16,15 @@ gsap.from('.proj', {
         toggleActions: 'restart pause resume reset',
         scrub: true,
     },
-    duration: 1, opacity: 0, y: 190});
+    duration: 1, opacity: 0, x: -90, stagger: 5});
+gsap.from('.projRight', {
+    scrollTrigger: {
+        trigger: '.projRight',
+        toggleActions: 'restart pause resume reset',
+        scrub: true,
+    },
+    duration: 1, opacity: 0, x: 90, stagger: 5
+});
 
 gsap.from('.whiteLine', {
     scrollTrigger: {
@@ -26,9 +34,14 @@ gsap.from('.whiteLine', {
     },
     duration: 8, width: "0%", stagger: 1.5});
 
+
+
+// toggle background image on header
+// TweenLite.set($(".background"), { css: { backgroundImage: 'url(/assets/siteHeaderOne.jpeg') } });
+
+
+
 const bMac = {};
-
-
 
 // function to make my burger menu appear
 bMac.hamburger = function () {
