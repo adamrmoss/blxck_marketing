@@ -9,31 +9,52 @@ gsap.from('.shiftLeft', {
     },
     duration: 7, x: 900});
 
-// animates between states
+// PROJECT JUMP
 gsap.from('.proj', {
     scrollTrigger: {
         trigger: '.proj',
         toggleActions: 'restart pause resume reset',
         scrub: true,
     },
-    duration: 1, opacity: 0, x: -90, stagger: 5});
+    duration: 1, x: -90});
+
+gsap.from('.projThree', {
+    scrollTrigger: {
+        trigger: '.projThree',
+        toggleActions: 'restart pause resume reset',
+        scrub: true,
+    },
+    duration: 1, x: -90
+});
+
 gsap.from('.projRight', {
     scrollTrigger: {
         trigger: '.projRight',
         toggleActions: 'restart pause resume reset',
         scrub: true,
     },
-    duration: 1, opacity: 0, x: 90, stagger: 5
-});
+    duration: 1, x: 90});
 
+
+// ABOUT WHITE LINES
 gsap.from('.whiteLine', {
     scrollTrigger: {
         trigger: '.whiteLine',
         toggleActions: 'restart pause resume reset',
         scrub: true,
     },
-    duration: 8, width: "0%", stagger: 1.5});
+    duration: 12, width: "0%", stagger: 1.5});
 
+
+// VISUAL ART SCROLL
+gsap.from('.displayVisual', {
+    scrollTrigger: {
+        trigger: '.displayVisual',
+        toggleActions: 'restart pause resume reset',
+        scrub: true,
+    },
+    duration: 1, scale: 1.3,
+});
 
 
 // toggle background image on header
