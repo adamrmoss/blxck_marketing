@@ -6,17 +6,21 @@
     background: #111517;
     color: white;
     font-weight: 300;
-    line-height: 130%;;
+    line-height: 130%;
+    .whiteLine {
+        width: 50%;
+        height: 1px;
+        margin: 0 0 10px 0;
+        position: relative;
+        display: inline-block;
+        background-color: rgba(255,255,255,1);
+    }
     p {
-        font-size: calc(1.3rem + 0.5vw);
+        font-size: calc(1rem + 0.5vw);
         letter-spacing: 0.6px;
+        font-weight: 100;
     }
     .pTag {
         padding-bottom: 20px;
-        border-bottom: 1px white solid;
-    }
-    .skillList ul {
-        display: grid;
-        grid-template-rows: 1fr;
     }
 }

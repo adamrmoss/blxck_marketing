@@ -282,29 +282,11 @@ a {
   src: url("/fonts/Arial Narrow.ttf") format("truetype");
 }
 
-@-webkit-keyframes slide-left {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes slide-left {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
 header {
   overflow-x: hidden;
   height: 100vh;
-  background-image: url("/assets/siteHeaderThree.jpg"), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7)));
-  background-image: url("/assets/siteHeaderThree.jpg"), linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background-image: url("/assets/siteHeaderOne.jpeg"), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7)));
+  background-image: url("/assets/siteHeaderOne.jpeg"), linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   background-blend-mode: overlay;
   background-position: center;
   background-repeat: no-repeat;
@@ -329,6 +311,28 @@ header .siteTitle {
           align-items: flex-start;
 }
 
+header .siteTitle h1 {
+  font-family: Lato, sans-serif;
+  letter-spacing: 8px;
+  width: 50%;
+  font-weight: 700;
+  font-size: 10rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  -webkit-transition: 0.9s all;
+  transition: 0.9s all;
+}
+
+header .siteTitle h1:hover, header .siteTitle h1:focus {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+header .siteTitle h1 .whiteStroke {
+  color: transparent;
+  -webkit-text-stroke: 0.7px white;
+}
+
 header .siteTitle .seeMore {
   font-family: Lato, sans-serif;
   letter-spacing: 3px;
@@ -347,28 +351,6 @@ header .siteTitle .seeMore:hover, header .siteTitle .seeMore:focus {
   background: rgba(255, 255, 255, 0.7);
   color: black;
   border: 1px black solid;
-}
-
-header h1 {
-  font-family: Lato, sans-serif;
-  letter-spacing: 8px;
-  font-weight: 700;
-  font-size: 10rem;
-  color: rgba(255, 255, 255, 0.7);
-  text-transform: uppercase;
-  -webkit-transition: 0.9s all;
-  transition: 0.9s all;
-  margin: 0;
-}
-
-header h1:hover, header h1:focus {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-header h1 .whiteStroke {
-  color: transparent;
-  -webkit-text-stroke: 0.7px white;
 }
 
 header nav {
@@ -412,8 +394,8 @@ header nav .dropdownMenu {
   top: 70px;
   right: 3%;
   opacity: 0;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
   text-align: right;
 }
 
@@ -504,7 +486,7 @@ header nav .dropdownMenu.active {
 }
 
 section.webProjects {
-  height: 220vh;
+  height: 250vh;
   padding: 100px 0;
   position: relative;
 }
@@ -517,23 +499,9 @@ section.webProjects h2 {
   color: transparent;
   -webkit-text-stroke: 0.7px black;
   position: relative;
-  right: -300px;
+  right: -100px;
   top: -50px;
   overflow: hidden;
-}
-
-section.webProjects h2 .wow {
-  -webkit-animation: slideInRight;
-          animation: slideInRight;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-
-section.webProjects .animateElement.slideRight.inView {
-  -webkit-transition: all 500ms linear;
-  transition: all 500ms linear;
-  -webkit-transform: translate3d(-100px, 0px, 0px);
-  transform: translate3d(-100px, 0px, 0px);
 }
 
 section.webProjects .proj {
@@ -625,24 +593,45 @@ section.webProjects .quickExg {
   line-height: 130%;
 }
 
+.about .whiteLine {
+  width: 50%;
+  height: 1px;
+  margin: 0 0 10px 0;
+  position: relative;
+  display: inline-block;
+  background-color: white;
+}
+
 .about p {
-  font-size: calc(1.3rem + 0.5vw);
+  font-size: calc(1rem + 0.5vw);
   letter-spacing: 0.6px;
+  font-weight: 100;
 }
 
 .about .pTag {
   padding-bottom: 20px;
-  border-bottom: 1px white solid;
-}
-
-.about .skillList ul {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
 }
 
 .visualArt {
+  height: 100vh;
+}
+
+.visualArt h2 {
+  font-family: Lato, sans-serif;
+  font-size: clamp(6rem, 20vw, 4rem);
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 0.7px black;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  position: relative;
+  top: -100px;
+  left: -600px;
+  overflow: hidden;
+}
+
+.visualArt .visualArtSection {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -650,20 +639,25 @@ section.webProjects .quickExg {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  overflow-x: scroll !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: scroll;
 }
 
-.visualArt .displayVisual {
+.visualArt .visualArtSection .displayVisual {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 200px;
 }
 
-.visualArt .displayVisual img {
-  width: 60%;
+.visualArt .visualArtSection .displayVisual img {
+  width: 600px;
 }
 
-.visualArt .displayVisual .visualText {
+.visualArt .visualArtSection .displayVisual .visualText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -677,6 +671,7 @@ section.webProjects .quickExg {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  border: 1px solid black;
 }
 
 /* Portrait tablet and small desktops */

@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="./styles/style.css">
     <!-- favicon icon -->
     <link type="image/ico" href="" rel="icon">
-    <!-- wow js animation -->
-    <link rel="stylesheet" href="css/animate.css">
+    <!-- aos animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- fontawesome icons -->
     <script src="https://kit.fontawesome.com/4fba6b96fc.js" crossorigin="anonymous"></script>
 </head>
@@ -75,10 +75,16 @@
 
     <main>
         <!-- first page -- projects
+
+             <!-- data-aos="shift-left" 
+            data-aos-easing="linear"
+            data-aos-duration="3000"
+
             with "PROJECTS" title that moves on scroll??????? 
             with images that are linked and represent projects -->
         <section class="webProjects wrapper" id="webProjects">
-            <h2 class="wow animate__animated animate__slideInRight">WEB PROJECTS</h2>
+            
+            <h2 class="shiftLeft">WEB PROJECTS</h2>
 
             <div class="proj peach">
                 <img src="./assets/pricklyPeach.png" alt="screen grab of the prickly peach web design">
@@ -135,8 +141,13 @@
         <section class="about">
             <div class="wrapper">
                 <h2>Who Is She</h2>
+
+                <span class="whiteLine"></span>
+
                 <p class="pTag">I am a creative ambivert with the tendency to allow my hyper-focus to morph into obsession. I am a writer, a dreamer, and a visual and auditory artist. I grew up writing songs and playing instruments, and as of 2020, I am channeling my creative flow into the world of tech.</p>
-    
+                
+                <span class="whiteLine"></span>
+
                 <div class="skillList">
                     <ol class="pTag">
                         <li>JavaScript</li>
@@ -151,48 +162,57 @@
                         <li>Firebase</li>
                     </0l>
                 </div>
-    
+
+                <span class="whiteLine"></span>
+
                 <p>I also produce & direct songs, albums, and music videos for myself and others. I produce sound packs for global distribution. I lose hours designing web apps that are increasingly user-friendly and interesting to traverse.</p>
                 <p>I live for collaboration and love constructive feedback and groupthink. I love working to understand the minds of those around me. Other's unvierses are fascinating to me; I started reading at the age of 3 and will inhale novels in the course of a few days.</p>
                 <p class="pTag">My tech journey is in it's earliest phases, where the coccoon has just broken open. My goal is to know as much as possible; my dream is to work in biotech, so that I might help improve the health and wellbeing of our species.</p>
+                
+                <span class="whiteLine"></span>
+
+
                 <p>So tell me, if you had the choice, would you choose to live forever?</p> 
             </div>
         </section>
 
         <section class="visualArt">
-            <!-- make this side scroll??? -->
-            <div class="wrapper">
+            <h2 class="wow animate__animated animate__slideInRight">PHOTOSHOP ART</h2>
+
+            <div class="wrapper visualArtSection">
+
                 <div class="displayVisual">
-                    <div class="visualText">
+                    <img src="/assets/for use crown.gif" alt="visual art by brenna - a self portrait in a futuristic crown.">
+                    <!-- <div class="visualText">
                         <h3>redseries</h3>
                         <p>created in photoshop</p>
                         <p>image captured and edited by Brenna MacQuarrie</p>
-                    </div>
-                    <img src="/assets/for use crown.gif" alt="visual art by brenna - a self portrait in a futuristic crown.">
+                    </div> -->
                 </div>
+
                 <div class="displayVisual">
-                    <div class="visualText">
+                    <img src="/assets/for use flowers.gif" alt="visual art by brenna - a soft flower covered portrait.">
+                    <!-- <div class="visualText">
                         <h3>bedseries</h3>
                         <p>created in photoshop</p>
                         <p>image captured and edited by Brenna MacQuarrie</p>
-                    </div>
-                    <img src="/assets/for use flowers.gif" alt="visual art by brenna - a soft flower covered portrait.">
+                    </div> -->
                 </div>
                 <div class="displayVisual">
-                    <div class="visualText">
-                        <h3>redseries</h3>
-                        <p>created in photoshop</p>
-                        <p>image captured and edited by Brenna MacQuarrie</p>
-                    </div>
                     <img src="/assets/for use neon.gif" alt="visual art by brenna - futiristic portrait with a neon joker mask.">
-                </div>
-                <div class="displayVisual">
-                    <div class="visualText">
+                    <!-- <div class="visualText">
                         <h3>redseries</h3>
                         <p>created in photoshop</p>
                         <p>image captured and edited by Brenna MacQuarrie</p>
-                    </div>
+                    </div> -->
+                </div>
+                <div class="displayVisual">
                     <img src="/assets/nirvana edit for use.jpeg" alt="visual art by brenna - a self portrait in california.">
+                    <!-- <div class="visualText">
+                        <h3>redseries</h3>
+                        <p>created in photoshop</p>
+                        <p>image captured and edited by Brenna MacQuarrie</p>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -200,11 +220,9 @@
     </main>
 
     <!-- SCRIPTS -->
-    <script src="js/wow.min.js"></script>
-
-    <script>
-        new WOW().init();
-    </script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 
     <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
     
