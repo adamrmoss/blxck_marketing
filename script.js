@@ -1,13 +1,13 @@
 gsap.registerPlugin(ScrollTrigger);
 
-
 gsap.from('.shiftLeft', {
     scrollTrigger: {
         trigger: '.shiftLeft',
         toggleActions: 'restart pause resume reset',
         scrub: true,
     },
-    duration: 7, x: 900});
+    duration: 7, x: 900
+});
 
 // PROJECT JUMP
 gsap.from('.proj', {
@@ -16,8 +16,18 @@ gsap.from('.proj', {
         toggleActions: 'restart pause resume reset',
         scrub: true,
     },
-    duration: 1, x: -90});
-
+    duration: 1, x: -90
+});
+    
+gsap.from('.projRight', {
+    scrollTrigger: {
+        trigger: '.projRight',
+        toggleActions: 'restart pause resume reset',
+        scrub: true,
+    },
+    duration: 1, x: 90
+});
+        
 gsap.from('.projThree', {
     scrollTrigger: {
         trigger: '.projThree',
@@ -27,15 +37,6 @@ gsap.from('.projThree', {
     duration: 1, x: -90
 });
 
-gsap.from('.projRight', {
-    scrollTrigger: {
-        trigger: '.projRight',
-        toggleActions: 'restart pause resume reset',
-        scrub: true,
-    },
-    duration: 1, x: 90});
-
-
 // ABOUT WHITE LINES
 gsap.from('.whiteLine', {
     scrollTrigger: {
@@ -43,23 +44,22 @@ gsap.from('.whiteLine', {
         toggleActions: 'restart pause resume reset',
         scrub: true,
     },
-    duration: 12, width: "0%", stagger: 1.5});
+    duration: 12, width: "0%", stagger: 1.5
+});
 
 
 // VISUAL ART SCROLL
 gsap.from('.displayVisual', {
     scrollTrigger: {
         trigger: '.displayVisual',
+                    // enter, endpoint, reenter, fromtop
         toggleActions: 'restart pause resume reset',
+        scroller: '.visualArtSection',
+        horizontal: true,
         scrub: true,
     },
-    duration: 1, scale: 1.3,
+    duration: 1, scale: 2,
 });
-
-
-// toggle background image on header
-// TweenLite.set($(".background"), { css: { backgroundImage: 'url(/assets/siteHeaderOne.jpeg') } });
-
 
 
 const bMac = {};

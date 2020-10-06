@@ -285,8 +285,8 @@ a {
 header {
   overflow-x: hidden;
   height: 100vh;
-  background-image: url("/assets/siteHeaderOne.jpeg"), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7)));
-  background-image: url("/assets/siteHeaderOne.jpeg"), linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background-image: url("/assets/siteHeaderThree.jpg"), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7)));
+  background-image: url("/assets/siteHeaderThree.jpg"), linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   background-blend-mode: overlay;
   background-position: center;
   background-repeat: no-repeat;
@@ -295,7 +295,7 @@ header {
 }
 
 header .siteTitle {
-  height: 100%;
+  height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -553,7 +553,9 @@ section.webProjects .proj .projText .secondaryProjText {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: solid black 0.7px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   padding: 20px 0;
 }
 
@@ -568,7 +570,13 @@ section.webProjects .proj .projText .secondaryProjText ul li {
   font-style: italic;
   font-size: 1.9rem;
   font-weight: 100;
-  padding: 8px;
+  padding-top: 5px;
+}
+
+section.webProjects .proj .projText .blackLine {
+  height: 1px;
+  background: black;
+  width: 100%;
 }
 
 section.webProjects .justLucy {
@@ -610,6 +618,11 @@ section.webProjects .quickExg {
 
 .about .pTag {
   padding-bottom: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
 }
 
 .visualArt {

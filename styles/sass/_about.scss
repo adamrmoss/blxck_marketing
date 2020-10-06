@@ -22,5 +22,8 @@
     }
     .pTag {
         padding-bottom: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 80px;
     }
 }
