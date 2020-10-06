@@ -285,13 +285,20 @@ a {
 header {
   overflow-x: hidden;
   height: 100vh;
-  background-image: url("/assets/siteHeaderThree.jpg"), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7)));
-  background-image: url("/assets/siteHeaderThree.jpg"), linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-  background-blend-mode: overlay;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  -o-object-fit: cover;
+     object-fit: cover;
   padding-top: 20px;
+}
+
+header .headerImg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
 }
 
 header .siteTitle {
@@ -604,7 +611,7 @@ section.webProjects .quickExg {
 .about .whiteLine {
   width: 70%;
   height: 1px;
-  margin: 0 0 10px 0;
+  margin-bottom: 10px;
   position: relative;
   display: inline-block;
   background-color: white;
@@ -616,13 +623,42 @@ section.webProjects .quickExg {
   font-weight: 100;
 }
 
-.about .pTag {
+.about .skillList {
+  width: 100%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .skillList .pTag {
   padding-bottom: 20px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  gap: 80px;
+  gap: 50px;
+}
+
+.about .skillList .pTag .skillDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .skillList .pTag .skillDiv i {
+  font-size: 4rem;
+  padding-bottom: 15px;
 }
 
 .visualArt {
@@ -641,6 +677,7 @@ section.webProjects .quickExg {
   top: -100px;
   left: -600px;
   overflow: hidden;
+  z-index: 99;
 }
 
 .visualArt .visualArtSection {

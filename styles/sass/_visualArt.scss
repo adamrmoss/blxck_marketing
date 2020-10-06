@@ -11,10 +11,10 @@
         top: -100px;
         left: -600px;
         overflow: hidden;
+        z-index: 99;
     }
     .visualArtSection {
         height: 100%;
-        // padding: 20%;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;

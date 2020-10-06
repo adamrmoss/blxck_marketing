@@ -22,7 +22,10 @@
 <body>
     <!-- // add loading screen??? slide in on load? -->
 
-    <header class="background">
+    <header>
+        <img class="headerImg hOne" src="./assets/siteHeaderOne.jpeg" alt="">
+        <img class="headerImg hTwo" src="./assets/siteHeaderTwo.jpg" alt="">
+        <img class="headerImg hThree" src="./assets/siteHeaderThree.jpg" alt="">
         <nav class="wrapper">
             <!-- TODO fix tab to nav menu!!!! -->
             <!-- <a class="skipButton" href="#maincontent">skip to main content.</a> -->
@@ -54,9 +57,7 @@
             <h1>Brenna <span class="whiteStroke">MacQuarrie</span></h1>
             <button class="seeMore">See More</button>
         </div>
-        <!-- <img class="headerImg hOne" src="./assets/siteHeaderOne.jpeg" alt="">
-        <img class="headerImg hTwo" src="./assets/siteHeaderTwo.jpg" alt="">
-        <img class="headerImg hThree" src="./assets/siteHeaderThree.jpg" alt=""> -->
+        
         <!-- 
             three images background with animation to affect width
             buttons to move animation?
@@ -153,41 +154,49 @@
 
                 <div class="skillList">
                     <ul class="pTag">
-                        <div>
+                        <div class="skillDiv">
+                            <i class="fab fa-js"></i>
                             <li>JavaScript</li>
-
                         </div>
-                        <div>
+
+                        <div class="skillDiv">
+                            <i class="fab fa-react"></i>
                             <li>React</li>
-
                         </div>
-                        <div>
+
+                        <div class="skillDiv">
+                            <i class="fab fa-html5"></i>
                             <li>HTML5</li>
-
                         </div>
-                        <div>
+
+                        <div class="skillDiv">
+                            <i class="fab fa-css3-alt"></i>
                             <li>CSS3</li>
-
                         </div>
-                        <div>
+
+                        <div class="skillDiv">
+                            <i class="fas fa-code"></i>
                             <li>JQuery</li>
-
                         </div>
-                        <div>
+
+                        <div class="skillDiv">
+                            <i class="fas fa-universal-access"></i>
                             <li>Accessibility</li>
-
                         </div>
-                        <div>
+
+                        <div class="skillDiv">
+                            <i class="fas fa-laptop-code"></i>
                             <li>Responsive Design</li>
-
                         </div>
-                        <div>
+
+                        <div class="skillDiv">
+                            <i class="fas fa-project-diagram"></i>
                             <li>REST APIs</li>
-
                         </div>
-                        <div>
-                            <li>Firebase</li>
 
+                        <div class="skillDiv">
+                            <i class="fas fa-code-branch"></i>         
+                            <li>Firebase</li>
                         </div>
                     </ul>
                 </div>
@@ -205,7 +214,7 @@
         </section>
 
         <section class="visualArt">
-            <h2 class="wow animate__animated animate__slideInRight">PHOTOSHOP ART</h2>
+            <h2>PHOTOSHOP ART</h2>
 
             <div class="wrapper visualArtSection">
 
@@ -248,7 +257,7 @@
     </main>
 
     <!-- SCRIPTS -->
-    
+
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>

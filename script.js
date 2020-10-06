@@ -1,5 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
+// 
 gsap.from('.shiftLeft', {
     scrollTrigger: {
         trigger: '.shiftLeft',
@@ -44,8 +45,7 @@ gsap.from('.whiteLine', {
         toggleActions: 'restart pause resume reset',
         scrub: true,
     },
-    duration: 12, width: "0%", stagger: 1.5
-});
+    duration: 12, width: "0%", stagger: 1.5});
 
 
 // VISUAL ART SCROLL
