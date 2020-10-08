@@ -11,27 +11,27 @@ gsap.from('.shiftLeft', {
 });
 
 // PROJECT JUMP
-gsap.from('.proj', {
+gsap.from('.peach', {
     scrollTrigger: {
-        trigger: '.proj',
+        trigger: '.peach',
         toggleActions: 'restart pause resume reset',
         scrub: true,
     },
     duration: 1, x: -90
 });
     
-gsap.from('.projRight', {
+gsap.from('.quickExg', {
     scrollTrigger: {
-        trigger: '.projRight',
+        trigger: '.quickExg',
         toggleActions: 'restart pause resume reset',
         scrub: true,
     },
     duration: 1, x: 90
 });
         
-gsap.from('.projThree', {
+gsap.from('.justLucy', {
     scrollTrigger: {
-        trigger: '.projThree',
+        trigger: '.justLucy',
         toggleActions: 'restart pause resume reset',
         scrub: true,
     },

@@ -5,21 +5,17 @@ header {
     overflow-x: hidden;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
-    // TODO make image fit???!
-    object-fit: cover;
     padding-top: 20px;
+    position: relative;
     .headerImg {
+        object-fit: cover;
         width: 100%;
-        height: auto;
+        height: 100%;
         position: absolute;
         top: 0;
         left: 0;
         z-index: -10;
     }
-    // background-blend-mode: overlay;
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
     .siteTitle {
         height: 90%;
         display: flex;
@@ -80,7 +76,7 @@ header {
                 &:hover,
                 &:focus {
                     transform: scale(1.2);
-                    color: white;
+                    color: $owhite;
                 }
             }
         }
@@ -163,5 +159,36 @@ header {
             opacity: 1;
         }
     }
-
+    .arrow {
+        margin-left: 20px;
+        position: relative;
+        height: 30px;
+        width: 50px;
+        border: 1px orange solid;
+        display: flex;
+        .long {
+            height: 1px;
+            width: 40px;
+            background-color: $owhite;
+            position: absolute;
+            top: 45%;
+            right: 0;
+        }
+        .shortOne {
+            height: 1px;
+            width: 10px;
+            background-color: $owhite;
+            position: absolute;
+            right: 0;
+            transform: rotate(45deg);
+        }
+        .shortTwo {
+            height: 1px;
+            width: 10px;
+            position: absolute;
+            right: 0;
+            transform: rotate(-45deg);
+            background-color: $owhite;
+        }
+    }
 }
