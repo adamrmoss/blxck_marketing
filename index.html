@@ -13,27 +13,29 @@
     <link rel="stylesheet" href="./styles/style.css">
     <!-- favicon icon -->
     <link type="image/ico" href="" rel="icon">
-    <!-- aos animation -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- fontawesome icons -->
     <script src="https://kit.fontawesome.com/4fba6b96fc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- // add loading screen??? slide in on load? -->
-
+    <!-- // TODO add loading screen??? slide in on load? -->
+    <div class="cursor"></div>
     <header>
+        <!-- TODO toggle these on click event. jquery?! -->
         <img class="headerImg hOne" src="./assets/siteHeaderOne.jpeg" alt="">
         <img class="headerImg hTwo" src="./assets/siteHeaderTwo.jpg" alt="">
         <img class="headerImg hThree" src="./assets/siteHeaderThree.jpg" alt="">
         <nav class="wrapper">
+
             <!-- TODO fix tab to nav menu!!!! -->
             <!-- <a class="skipButton" href="#maincontent">skip to main content.</a> -->
+
             <div class="linkFavs">
-                <i class="fab fa-twitter-square"></i>
-                <i class="fab fa-github"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-spotify"></i>
+                <a href="https://twitter.com/i_am_hill"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://github.com/brennaMacQuarrie"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/i_am_hill/"><i class="fab fa-instagram"></i></a>
+                <a href="https://open.spotify.com/artist/3JWEaXJSuLlQ4zR2Hwu2p9?si=n1mep9dMQIScI2C9bNR98Q"><i class="fab fa-spotify"></i></a>
+
             </div>
             <!-- DROPDOWN HAMBURGER MENU -->
             <div aria-label="click here for the menu." class="hamburg">
@@ -46,9 +48,9 @@
                 <!-- TODO fix at widest display -->
                 <ul>
                     <li><a href="#webProjects">Web Projects</a></li>
-                    <li><a href="#">Visual Art</a></li>
-                    <li><a href="#">Music</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#visualArt">Visual Art</a></li>
+                    <li><a href="#Music">Music</a></li>
                 </ul>
             </div>
         </nav>
@@ -58,17 +60,13 @@
             <button class="seeMore">See More</button>
         </div>
         
-        <!-- 
-            three images background with animation to affect width
-            buttons to move animation?
-            logo top left
-            arrow button scroll down (arrow moves?)
-            header text name, only one for now.. -->
-        <!-- TODO WHY ISNT THIS WORKING -->
-         <div class="arrow">
-            <div class="long"></div>
-            <div class="shortOne"></div>
-            <div class="shortTwo"></div>
+
+        <div class="arrowWrapper wrapper">
+            <div class="arrow">
+               <div class="long"></div>
+               <div class="shortOne"></div>
+               <div class="shortTwo"></div>
+           </div>
         </div>
     </header>
 
@@ -76,14 +74,6 @@
 
 
     <main>
-        <!-- first page -- projects
-
-             <!-- data-aos="shift-left" 
-            data-aos-easing="linear"
-            data-aos-duration="3000"
-
-            with "PROJECTS" title that moves on scroll??????? 
-            with images that are linked and represent projects -->
         <section class="webProjects wrapper" id="webProjects">
             
             <h2 class="shiftLeft">WEB PROJECTS</h2>
@@ -143,13 +133,13 @@
             </div>
         </section>
 
-        <section class="about">
+        <section class="about" id="About">
             <div class="wrapper">
                 <h2>Who Is She</h2>
 
                 <span class="whiteLine"></span>
 
-                <p>I am a creative ambivert with the tendency to allow my hyper-focus to morph into obsession. I am a writer, a dreamer, and a visual and auditory artist. I grew up writing songs and playing instruments, and as of 2020, I am channeling my creative flow into the world of tech.</p>
+                <p class="aboutP1">I am a creative ambivert with the tendency to allow my hyper-focus to morph into obsession. I am a writer, a dreamer, and a visual and auditory artist. I grew up writing songs and playing instruments, and as of 2020, I am channeling my creative flow into the world of tech.</p>
                 
                 <span class="whiteLine"></span>
 
@@ -202,19 +192,29 @@
                     </ul>
                 </div>
 
-                <span class="whiteLine"></span>
+                <span class="whiteLine2"></span>
 
-                <p>I also produce & direct songs, albums, and music videos for myself and others. I produce sound packs for global distribution. I lose hours designing web apps that are increasingly user-friendly and interesting to traverse. I live for collaboration and love constructive feedback and groupthink. I love working to understand the minds of those around me. Other's unvierses are fascinating to me; I started reading at the age of 3 and will inhale novels in the course of a few days.</p>
-                <p>My tech journey is in it's earliest phases, where the coccoon has just broken open. My goal is to know as much as possible; my dream is to work in biotech, so that I might help improve the health and wellbeing of our species.</p>
+                <p class="aboutP2">I lose hours designing web apps that are increasingly user-friendly and interesting to traverse. I live for collaboration and love constructive feedback and groupthink. I love working to understand the minds of those around me. Other's unvierses are fascinating to me; I started reading at the age of 3 and will inhale novels in the course of a few days.</p>
+
+                <span class="whiteLine2"></span>
+
+                <p class="aboutP3">I also produce & direct songs, albums, and music videos for myself and others. I produce sound packs for global
+                distribution, and am currently collaborating with three labels: TextMe Records (California // SF based, currently
+                working my artist project releases), Black Octopus (Canadian-European, currently releasing my sound packs and sound pack
+                albums), and Ultra Music (Sony Subsidiary, my publisher).</p>
+
+                <span class="whiteLine2"></span>
+
+                <p class="aboutP4">My tech journey is in it's earliest phases, where the coccoon has just broken open. My goal is to know as much as possible; my dream is to work in biotech, so that I might help improve the health and wellbeing of our species.</p>
                 
-                <span class="whiteLine"></span>
+                <span class="whiteLine2"></span>
 
 
-                <p>So tell me, if you had the choice, would you choose to live forever?</p> 
+                <p class="aboutP5">So tell me, if you had the choice, would you choose to live forever?</p> 
             </div>
         </section>
 
-        <section class="visualArt">
+        <section class="visualArt" id="visualArt">
             <h2>PHOTOSHOP ART</h2>
 
             <div class="wrapper visualArtSection">
@@ -256,12 +256,17 @@
         </section>
 
     </main>
-
+    
+    <footer class="footer">
+        built by <a href="">Brenna MacQuarrie</a>
+    </footer>
+    
     <!-- SCRIPTS -->
 
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    
 
     <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
     

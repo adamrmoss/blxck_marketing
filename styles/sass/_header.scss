@@ -90,7 +90,8 @@ header {
             ul li {
                 background-color: $ogray;
                 border: $owhite 0.5px solid;
-                padding: 10px;
+                padding: 8px;
+                margin-bottom: 5px;
                 transition: 0.5s all;
                 &:hover,
                 &:focus {
@@ -159,36 +160,46 @@ header {
             opacity: 1;
         }
     }
-    .arrow {
-        margin-left: 20px;
-        position: relative;
-        height: 30px;
-        width: 50px;
-        border: 1px orange solid;
+    .arrowWrapper {
+        width: 100%;
         display: flex;
-        .long {
-            height: 1px;
-            width: 40px;
-            background-color: $owhite;
-            position: absolute;
-            top: 45%;
-            right: 0;
-        }
-        .shortOne {
-            height: 1px;
-            width: 10px;
-            background-color: $owhite;
-            position: absolute;
-            right: 0;
-            transform: rotate(45deg);
-        }
-        .shortTwo {
-            height: 1px;
-            width: 10px;
-            position: absolute;
-            right: 0;
-            transform: rotate(-45deg);
-            background-color: $owhite;
+        justify-content: flex-end;
+        .arrow {
+            position: relative;
+            height: 30px;
+            width: 80px;
+            display: flex;
+            .long {
+                background-color: $owhite;
+                height: 1px;
+                width: 40px;
+                position: absolute;
+                top: 45%;
+                right: 0;
+                transition: 0.6s all;
+            }
+            .shortOne {
+                height: 1px;
+                width: 10px;
+                background-color: $owhite;
+                position: absolute;
+                right: 0;
+                top: 32%;
+                transform: rotate(40deg);
+            }
+            .shortTwo {
+                height: 1px;
+                width: 10px;
+                position: absolute;
+                right: 0;
+                bottom: 39%;
+                transform: rotate(-40deg);
+                background-color: $owhite;
+            }
+            &:hover .long,
+            &:focus .long {
+                width: 60px;
+            }
         }
     }
 }
