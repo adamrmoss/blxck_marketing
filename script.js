@@ -4,16 +4,13 @@ gsap.registerPlugin(ScrollTrigger);
 // TODO FOOTER
 // RESPONSIVENESS
 
-gsap.from('.headerImg', {
-    // trigger: '.arrow',
-    duration: 2,
-    stagger: 8,
-    width: 0,
-})
-document.querySelector('.arrow').onclick = () => {
-    console.log('oh hey')
-    // toggle images
-}
+// gsap.from('.headerImg', {
+//     // trigger: '.arrow',
+//     duration: 2,
+//     stagger: 8,
+//     width: 0,
+// })
+
 // 
 gsap.from('.shiftLeft', {
     scrollTrigger: {
@@ -154,14 +151,41 @@ document.addEventListener('click', () => {
     }, 500)
 })
 
+// set a number value variable
+bMac.loadHeader = 2;
 
-//function to scroll header images on button click
-// bMac.scrollHeader = function() {
-//     bMac.imageClick.on('click', function() {
-//         console.log('arrow clicked!');
-//         bMac.headerImageMotion.css('width', '0');
-//     })
-// }
+document.querySelector('.arrow').onclick = () => {
+  
+    // on click, give all header images a z-index -9 (bring to front) and width 100
+    $('#headerImg'+bMac.loadHeader).css('width', '100%').css('z-index', '-9');
+
+    // after the above runs per image
+    setTimeout(() => {
+        // create a variable to hold the valuefor the previous image
+        // this is what wont work for when the image is image1 because 1 - 1 is 0
+        const previousImg = bMac.loadHeader - 1;
+        // add width:0 to the image that just left
+        $('#headerImg'+previousImg).css('width', '0'); 
+        // if it's img3 right now, make it 1
+        // this is to account for restart
+        if (bMac.loadHeader == 3) {
+            bMac.loadHeader = 1;
+        } else if (bMac.loadHeader == 1) {
+            previousImg = 3;
+        } else {
+            // otherwise continue to increment that global variable up by one 
+            bMac.loadHeader++;
+        }
+        // this whole mess will take 800ms because thats how long i set my transiton time to.
+    }, 800);
+
+    // NEW SET TIMEOUT
+    setTimeout(() => {
+        // waits until both images have moved and drops the z-index of the current image to -10?? this doesnt quite make sense to me
+        $('#headerImg'+bMac.loadHeader).css('z-index', '-10'); 
+    }, 1600);
+    
+}
 
 // function to make my burger menu appear
 bMac.hamburger = function () {
