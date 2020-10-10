@@ -3,6 +3,8 @@ gsap.registerPlugin(ScrollTrigger);
 // TODO >> HORIZONTAL SCROLL ON visualIMAGE SECTION WITH SIZING 
 // TODO FOOTER
 // RESPONSIVENESS
+// clean gsap anims
+// fix height of projects section
 
 // gsap.from('.headerImg', {
 //     // trigger: '.arrow',
@@ -16,7 +18,7 @@ gsap.from('.shiftLeft', {
     scrollTrigger: {
         trigger: '.shiftLeft',
         toggleActions: 'restart pause resume reset',
-        scrub: true,
+        scrub: 3,
     },
     duration: 7, x: 900
 });
@@ -94,14 +96,13 @@ gsap.from('.aboutP5', {
 })
 
 // ABOUT WHITE LINES
-// TODO can these be on their own scroll??? why aren't they on their own scroll???
 gsap.from('.whiteLine', {
     scrollTrigger: {
         trigger: '.whiteLine',
         toggleActions: 'restart pause resume reset',
         scrub: true,
     },
-    duration: 12, width: "0%", stagger: 5.6
+    duration: 12, width: "0", stagger: 5.6
 });
 
 gsap.from('.whiteLine2', {
@@ -123,16 +124,18 @@ gsap.from('.skillDiv i', {
 });
 
 // VISUAL ART SCROLL
+
+
 gsap.from('.displayVisual', {
     scrollTrigger: {
         trigger: '.displayVisual',
                     // enter, endpoint, reenter, fromtop
-        toggleActions: 'restart pause resume reset',
+        // toggleActions: 'restart pause resume reset',
         scroller: '.visualArtSection',
-        horizontal: true,
+        // horizontal: true,
         scrub: true,
     },
-    duration: 1, scale: 2,
+    duration: 1, scale: 1.5,
 });
 
 

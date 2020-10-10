@@ -165,7 +165,7 @@ header {
         }
     }
     .arrowWrapper {
-        width: 100%;
+        width: 95%;
         display: flex;
         justify-content: flex-end;
         .arrow {
@@ -174,7 +174,7 @@ header {
             width: 80px;
             display: flex;
             .long {
-                background-color: $owhite;
+                background-color: white;
                 height: 1px;
                 width: 40px;
                 position: absolute;
@@ -185,10 +185,10 @@ header {
             .shortOne {
                 height: 1px;
                 width: 10px;
-                background-color: $owhite;
+                background-color: white;
                 position: absolute;
                 right: 0;
-                top: 32%;
+                top: 31%;
                 transform: rotate(40deg);
             }
             .shortTwo {
@@ -198,7 +198,7 @@ header {
                 right: 0;
                 bottom: 39%;
                 transform: rotate(-40deg);
-                background-color: $owhite;
+                background-color: white;
             }
             &:hover .long,
             &:focus .long {
