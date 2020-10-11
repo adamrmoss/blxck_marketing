@@ -47,10 +47,26 @@ section.webProjects {
                 justify-content: space-between;
                 align-items: flex-end;
                 padding: 20px 0;
-                h4 {
-                    font-size: calc(1rem + 1vw);
-                    font-weight: 300;
-                    align-self: flex-end;
+                .projLinks {
+                    display: flex;
+                    flex-direction: column;
+                    h4 {
+                        font-size: calc(1rem + 1vw);
+                        font-weight: 300;
+                    }
+                    .projButton {
+                        padding: 5px;
+                        border-radius: 2px;
+                        margin: 10px auto;
+                        color: black;
+                        border: 1px black solid;
+                        
+                        &:hover,
+                        &:focus {
+                            color: white;
+                            background-color: black;
+                        }
+                    }
                 }
                 ul li {
                     font-style: italic;
@@ -76,3 +92,4 @@ section.webProjects {
         top: 650px;
     }
 }
+

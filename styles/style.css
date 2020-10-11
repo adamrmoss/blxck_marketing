@@ -684,11 +684,32 @@ section.webProjects .proj .projText .secondaryProjText {
   padding: 20px 0;
 }
 
-section.webProjects .proj .projText .secondaryProjText h4 {
+section.webProjects .proj .projText .secondaryProjText .projLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.webProjects .proj .projText .secondaryProjText .projLinks h4 {
   font-size: calc(1rem + 1vw);
   font-weight: 300;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+}
+
+section.webProjects .proj .projText .secondaryProjText .projLinks .projButton {
+  padding: 5px;
+  border-radius: 2px;
+  margin: 10px auto;
+  color: black;
+  border: 1px black solid;
+}
+
+section.webProjects .proj .projText .secondaryProjText .projLinks .projButton:hover, section.webProjects .proj .projText .secondaryProjText .projLinks .projButton:focus {
+  color: white;
+  background-color: black;
 }
 
 section.webProjects .proj .projText .secondaryProjText ul li {
