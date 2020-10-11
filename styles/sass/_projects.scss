@@ -43,13 +43,13 @@ section.webProjects {
             }
             .secondaryProjText {
                 display: flex;
-                width: 90%;
+                width: 100%;
                 justify-content: space-between;
-                align-items: flex-end;
-                padding: 20px 0;
+                padding: 15px 5px;
                 .projLinks {
                     display: flex;
                     flex-direction: column;
+                    justify-content: space-between;
                     h4 {
                         font-size: calc(1rem + 1vw);
                         font-weight: 300;
@@ -57,10 +57,9 @@ section.webProjects {
                     .projButton {
                         padding: 5px;
                         border-radius: 2px;
-                        margin: 10px auto;
                         color: black;
                         border: 1px black solid;
-                        
+                        transition: 0.5s all;
                         &:hover,
                         &:focus {
                             color: white;
@@ -73,6 +72,7 @@ section.webProjects {
                     font-size: 1.9rem;
                     font-weight: 100;
                     padding-top: 5px;
+                    text-align: right;
                 }
             }
             .blackLine {

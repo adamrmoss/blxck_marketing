@@ -674,14 +674,11 @@ section.webProjects .proj .projText .secondaryProjText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
+  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding: 20px 0;
+  padding: 15px 5px;
 }
 
 section.webProjects .proj .projText .secondaryProjText .projLinks {
@@ -692,6 +689,9 @@ section.webProjects .proj .projText .secondaryProjText .projLinks {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 section.webProjects .proj .projText .secondaryProjText .projLinks h4 {
@@ -702,9 +702,10 @@ section.webProjects .proj .projText .secondaryProjText .projLinks h4 {
 section.webProjects .proj .projText .secondaryProjText .projLinks .projButton {
   padding: 5px;
   border-radius: 2px;
-  margin: 10px auto;
   color: black;
   border: 1px black solid;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
 }
 
 section.webProjects .proj .projText .secondaryProjText .projLinks .projButton:hover, section.webProjects .proj .projText .secondaryProjText .projLinks .projButton:focus {
@@ -717,6 +718,7 @@ section.webProjects .proj .projText .secondaryProjText ul li {
   font-size: 1.9rem;
   font-weight: 100;
   padding-top: 5px;
+  text-align: right;
 }
 
 section.webProjects .proj .projText .blackLine {
@@ -804,7 +806,7 @@ section.webProjects .quickExg {
 }
 
 .visualArt {
-  height: 100vh;
+  height: 100%;
   position: relative;
 }
 
@@ -871,7 +873,6 @@ section.webProjects .quickExg {
   height: 100%;
   background-color: black;
   padding: 50px 0;
-  margin: 50px auto;
 }
 
 .soundCloud h2 {
