@@ -1,9 +1,8 @@
 gsap.registerPlugin(ScrollTrigger);
 // TODO >> HEADER TOGGLE ON CLICK 
 // TODO >> HORIZONTAL SCROLL ON visualIMAGE SECTION WITH SIZING 
-// TODO FOOTER
 // RESPONSIVENESS
-// clean gsap anims
+// TODO clean gsap anims 
 // fix height of projects section
 
 // gsap.from('.headerImg', {
@@ -51,6 +50,14 @@ gsap.from('.justLucy', {
     duration: 1, x: "-90"
 });
 
+gsap.from('.blackLine', {
+    scrollTrigger: {
+        trigger: '.blackLine',
+        toggleActions: 'restart pause resume reset',
+        scrub: true,
+    },
+    duration: 12, width: "0", stagger: 5.6
+});
 
 // ABOUT ME TEXT ROLL 
 // TODO fix meeee

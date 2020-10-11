@@ -4,6 +4,36 @@
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+    header .siteTitle h1 {
+        font-size: calc(5rem + 3vw);
+    }
+    nav div.linkFavs {
+        width: 50%;
+    }
+    .skillDiv i {
+        font-size: calc(1.8rem + 1vw);
+    }
+    section.webProjects {
+        h2 {
+            font-size: calc(7rem + 6vw);
+        }
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 530px) {
+    header .siteTitle {
+        h1 {
+            transform: rotate(-90deg);
+            position: relative;
+            top: 130px;
+            left: -20px;
+            font-size: calc(5rem + 3vw);
+        }
+        .seeMore {
+            display: none;
+        }
+    }
 }
 
 /* Landscape phones and down */
