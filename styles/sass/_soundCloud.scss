@@ -1,10 +1,11 @@
 .soundCloud {
-    height: 60vh;
+    height: 100%;
     background-color: black;
-    margin-top: 50px;
+    padding: 50px 0;
+    margin: 50px auto;
     h2 {
         font-family: Lato, sans-serif;
-        font-size: clamp(6rem, 20vw, 4rem);
+        font-size: calc(4rem + 3vw);
         font-weight: 900;
         color: transparent;
         -webkit-text-stroke: 0.7px white;
