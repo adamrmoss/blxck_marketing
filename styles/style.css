@@ -986,6 +986,13 @@ section.webProjects .quickExg {
   header .siteTitle .seeMore {
     display: none;
   }
+  header nav div.linkFavs {
+    width: 70%;
+  }
+  header nav .hamburg {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 /* Landscape phones and down */

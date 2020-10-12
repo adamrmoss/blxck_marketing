@@ -22,16 +22,27 @@
 
 /* Landscape phones and down */
 @media (max-width: 530px) {
-    header .siteTitle {
-        h1 {
-            transform: rotate(-90deg);
-            position: relative;
-            top: 130px;
-            left: -20px;
-            font-size: calc(5rem + 3vw);
+    header {
+        .siteTitle {
+            h1 {
+                transform: rotate(-90deg);
+                position: relative;
+                top: 130px;
+                left: -20px;
+                font-size: calc(5rem + 3vw);
+            }
+            .seeMore {
+                display: none;
+            }
         }
-        .seeMore {
-            display: none;
+        nav {
+            div.linkFavs {
+                width: 70%;
+            }
+            .hamburg {
+                width: 30px;
+                height: 30px;
+            }
         }
     }
 }
