@@ -22,6 +22,8 @@
 
 /* Landscape phones and down */
 @media (max-width: 530px) {
+
+    
     header {
         .siteTitle {
             h1 {
@@ -43,6 +45,13 @@
                 width: 30px;
                 height: 30px;
             }
+        }
+    }
+    .visualArt {
+        h2 {
+            top: 300px;
+            left: -180px;
+            font-size: calc(4rem + 3vw);
         }
     }
 }

@@ -752,7 +752,7 @@ section.webProjects .quickExg {
 
 .about .whiteLine,
 .about .whiteLine2 {
-  width: 100%;
+  width: 90%;
   height: 1px;
   position: relative;
   display: inline-block;
@@ -767,7 +767,7 @@ section.webProjects .quickExg {
   letter-spacing: 0.6px;
   font-weight: 100;
   height: 100%;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 
 .about .skillList {
@@ -818,14 +818,14 @@ section.webProjects .quickExg {
 
 .visualArt h2 {
   font-family: Lato, sans-serif;
-  font-size: 7rem;
+  font-size: 6.5rem;
   font-weight: 900;
   color: transparent;
   -webkit-text-stroke: 0.7px black;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   position: absolute;
-  top: 380px;
+  top: 350px;
   left: -250px;
   overflow: hidden;
   z-index: 99;
@@ -992,6 +992,11 @@ section.webProjects .quickExg {
   header nav .hamburg {
     width: 30px;
     height: 30px;
+  }
+  .visualArt h2 {
+    top: 300px;
+    left: -180px;
+    font-size: calc(4rem + 3vw);
   }
 }
 
