@@ -56,7 +56,7 @@ gsap.from('.blackLine', {
         toggleActions: 'restart pause resume reset',
         scrub: true,
     },
-    duration: 12, width: "0", stagger: 5.6
+    duration: 12, width: "0", stagger: 2
 });
 
 // ABOUT ME TEXT ROLL 

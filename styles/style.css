@@ -443,14 +443,17 @@ header nav .linkFavs {
           justify-content: space-between;
 }
 
-header nav .linkFavs .fab {
+header nav .linkFavs .fab,
+header nav .linkFavs .fas {
   color: rgba(255, 255, 255, 0.7);
   font-size: 2.3rem;
   -webkit-transition: 0.7s all;
   transition: 0.7s all;
 }
 
-header nav .linkFavs .fab:hover, header nav .linkFavs .fab:focus {
+header nav .linkFavs .fab:hover, header nav .linkFavs .fab:focus,
+header nav .linkFavs .fas:hover,
+header nav .linkFavs .fas:focus {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   color: rgba(255, 255, 255, 0.7);
@@ -745,16 +748,14 @@ section.webProjects .quickExg {
   letter-spacing: 2px;
   background: #111517;
   color: white;
-  font-weight: 300;
   line-height: 130%;
-  font-size: calc(1rem + 0.5vw);
+  font-size: calc(1.2rem + 0.4vw);
 }
 
 .about .whiteLine,
 .about .whiteLine2 {
   width: 90%;
   height: 1px;
-  position: relative;
   display: inline-block;
   background-color: white;
 }
@@ -767,7 +768,7 @@ section.webProjects .quickExg {
   letter-spacing: 0.6px;
   font-weight: 100;
   height: 100%;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 
 .about .skillList {
@@ -937,7 +938,7 @@ section.webProjects .quickExg {
 }
 
 .footer {
-  background-color: #9b9999;
+  background-color: white;
   color: black;
   font-family: Lato, sans-serif;
   text-align: center;
@@ -968,8 +969,30 @@ section.webProjects .quickExg {
   .skillDiv i {
     font-size: calc(1.8rem + 1vw);
   }
+  section.webProjects {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   section.webProjects h2 {
     font-size: calc(7rem + 6vw);
+  }
+  section.webProjects .proj {
+    width: 70%;
+  }
+  section.webProjects .justLucy {
+    position: static;
+  }
+  section.webProjects .quickExg {
+    position: static;
   }
 }
 
@@ -992,6 +1015,9 @@ section.webProjects .quickExg {
   header nav .hamburg {
     width: 30px;
     height: 30px;
+  }
+  .about {
+    font-size: calc(1rem + 0.8vw);
   }
   .visualArt h2 {
     top: 300px;

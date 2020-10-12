@@ -13,9 +13,23 @@
     .skillDiv i {
         font-size: calc(1.8rem + 1vw);
     }
+
     section.webProjects {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         h2 {
             font-size: calc(7rem + 6vw);
+        }
+        .proj {
+            width: 70%;
+        }
+        .justLucy {
+            position: static;
+        }
+        .quickExg {
+            position: static;
         }
     }
 }
@@ -46,6 +60,10 @@
                 height: 30px;
             }
         }
+    }
+    .about {
+        font-size: calc(1rem + 0.8vw);
+
     }
     .visualArt {
         h2 {
