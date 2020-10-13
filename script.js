@@ -1,10 +1,8 @@
 gsap.registerPlugin(ScrollTrigger);
 // TODO >> HEADER TOGGLE ON CLICK 
-// TODO >> HORIZONTAL SCROLL ON visualIMAGE SECTION WITH SIZING (optional)
-// TODO resize images with cross browser compat
+// TODO resize images with cross browser compat***
 // RESPONSIVENESS >> with cross browser compat
 // TODO clean gsap anims 
-// fix height of projects section
 
 
 // 

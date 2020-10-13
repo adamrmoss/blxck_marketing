@@ -434,7 +434,7 @@ header nav {
 }
 
 header nav .linkFavs {
-  width: 30%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -622,7 +622,7 @@ header .arrowWrapper .arrow:focus .long {
 
 section.webProjects {
   height: 250vh;
-  padding: 100px 0;
+  padding-top: 100px;
   position: relative;
 }
 
@@ -974,7 +974,6 @@ section.webProjects .quickExg {
   color: white;
 }
 
-/* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   header .siteTitle h1 {
@@ -988,6 +987,7 @@ section.webProjects .quickExg {
   }
   section.webProjects {
     height: 100%;
+    padding-bottom: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1015,19 +1015,19 @@ section.webProjects .quickExg {
 
 /* Landscape phones and down */
 @media (max-width: 530px) {
+  .cursor {
+    display: none;
+  }
   header .siteTitle h1 {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
     position: relative;
-    top: 130px;
+    top: 150px;
     left: -20px;
     font-size: calc(5rem + 3vw);
   }
   header .siteTitle .seeMore {
     display: none;
-  }
-  header nav div.linkFavs {
-    width: 70%;
   }
   header nav .hamburg {
     width: 30px;
@@ -1035,21 +1035,22 @@ section.webProjects .quickExg {
   }
   .about {
     font-size: calc(1rem + 0.8vw);
+    font-weight: 600;
   }
   .visualArt h2 {
     top: 300px;
     left: -180px;
     font-size: calc(4rem + 3vw);
   }
-  .visualArt .visualArtSection .displayVisual img {
+  .visualArt .visualArtSection .displayVisual {
     width: auto;
     height: 50vh;
   }
 }
 
-/* Landscape phones and down */
+/* Mobile // Chrome Mobile */
 @media (max-width: 480px) {
-  .visualArtSection .displayVisual img {
+  .visualArtSection .displayVisual {
     width: auto;
     height: 50vh;
   }
