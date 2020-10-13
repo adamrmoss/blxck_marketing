@@ -863,7 +863,8 @@ section.webProjects .quickExg {
 }
 
 .visualArt .visualArtSection .displayVisual img {
-  width: 600px;
+  height: 50vh;
+  width: auto;
 }
 
 .visualArt .visualArtSection .displayVisual .visualText {

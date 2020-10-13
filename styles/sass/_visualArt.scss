@@ -25,7 +25,8 @@
             display: flex;
             margin: 100px;
             img {
-                width: 600px; // is this the problem?
+                height: 50vh;
+                width: auto; // is this the problem?
             }
             .visualText {
                 display: flex;
