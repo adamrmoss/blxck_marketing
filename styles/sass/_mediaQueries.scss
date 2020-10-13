@@ -84,13 +84,12 @@
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-    // .visualArt {
-    //     .visualArtSection {
-    //         .displayVisual {
-    //             img {
-    //                 width: 70%;
-    //             }
-    //         }
-    //     }
-    // }
+    .visualArtSection {
+        .displayVisual {
+            img {
+                width: auto;
+                height: 50vh;
+            }
+        }
+    }
 }

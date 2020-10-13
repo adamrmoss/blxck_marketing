@@ -1048,3 +1048,9 @@ section.webProjects .quickExg {
 }
 
 /* Landscape phones and down */
+@media (max-width: 480px) {
+  .visualArtSection .displayVisual img {
+    width: auto;
+    height: 50vh;
+  }
+}
