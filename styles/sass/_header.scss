@@ -13,9 +13,10 @@ header {
         position: absolute;
         top: 0;
         right: 0;
+        transition: 0.8s all;
+
         width: 0;
         z-index: -10;
-        transition: 0.8s all;
     }
     .hOne {
         width: 100%;

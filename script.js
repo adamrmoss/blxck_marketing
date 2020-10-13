@@ -43,19 +43,6 @@ gsap.from('.justLucy', {
     duration: 1, x: "-90"
 });
 
-
-// PROJECTS
-// gsap.from('.blackLine', {
-//     scrollTrigger: {
-//         trigger: '.blackLine',
-//         toggleActions: 'restart pause resume reset',
-//         scrub: true,
-//     },
-//     duration: 12, width: "0", stagger: 2
-// });
-
-
-
 // ABOUT ME TEXT ROLL 
 gsap.from('.aboutP1', {
     scrollTrigger: {
@@ -127,10 +114,6 @@ gsap.from('.skillDiv i', {
 });
 
 
-// VISUAL ART SCROLL
-
-
-
 const bMac = {};
 
 bMac.cursor = document.querySelector('.cursor');
@@ -158,20 +141,20 @@ document.querySelector('.arrow').onclick = () => {
     setTimeout(() => {
         // create a variable to hold the valuefor the previous image
         // this is what wont work for when the image is image1 because 1 - 1 is 0
-        const previousImg = bMac.loadHeader - 1;
-        // add width:0 to the image that just left
-        $('#headerImg'+previousImg).css('width', '0'); 
-        // if it's img3 right now, make it 1
-        // this is to account for restart
-        if (bMac.loadHeader == 3) {
+        let previousImg = bMac.loadHeader - 1;
+
+        if (bMac.loadHeader === 3) {
             bMac.loadHeader = 1;
-        } else if (bMac.loadHeader == 1) {
+        } else if (bMac.loadHeader === 1) {
             previousImg = 3;
+            bMac.loadHeader++;
         } else {
-            // otherwise continue to increment that global variable up by one 
             bMac.loadHeader++;
         }
-        // this whole mess will take 800ms because thats how long i set my transiton time to.
+        console.log(previousImg);
+
+        $('#headerImg' + previousImg).css('width', '0').css('z-index', '-10'); 
+        
     }, 800);
 
     // NEW SET TIMEOUT

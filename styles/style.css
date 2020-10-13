@@ -354,10 +354,10 @@ header .headerImg {
   position: absolute;
   top: 0;
   right: 0;
-  width: 0;
-  z-index: -10;
   -webkit-transition: 0.8s all;
   transition: 0.8s all;
+  width: 0;
+  z-index: -10;
 }
 
 header .hOne {
