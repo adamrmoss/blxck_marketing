@@ -1,15 +1,5 @@
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-    header .siteTitle h1 {
-        font-size: calc(5rem + 3vw);
-    }
-    nav div.linkFavs {
-        width: 50%;
-    }
-    .skillDiv i {
-        font-size: calc(1.8rem + 1vw);
-    }
-
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
     section.webProjects {
         height: 100%;
         padding-bottom: 50px;
@@ -29,6 +19,20 @@
             position: static;
         }
     }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    header .siteTitle h1 {
+        font-size: calc(5rem + 3vw);
+    }
+    nav div.linkFavs {
+        width: 50%;
+    }
+    .skillDiv i {
+        font-size: calc(1.8rem + 1vw);
+    }
+
 }
 
 /* Landscape phones and down */
@@ -80,13 +84,13 @@
 }
 
 /* Mobile // Chrome Mobile */
-@media (max-width: 480px) {
-    .visualArtSection {
-        .displayVisual {
-            width: auto;
-            height: 50vh;
-            // img {
-            // }
-        }
-    }
-}
+// @media (max-width: 480px) {
+//     .visualArtSection {
+//         .displayVisual {
+//             width: auto;
+//             height: 50vh;
+//             // img {
+//             // }
+//         }
+//     }
+// }

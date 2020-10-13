@@ -237,8 +237,11 @@ html {
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 body {
@@ -833,7 +836,7 @@ section.webProjects .quickExg {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   position: absolute;
-  top: 350px;
+  top: 250px;
   left: -250px;
   overflow: hidden;
   z-index: 99;
@@ -975,17 +978,8 @@ section.webProjects .quickExg {
   color: white;
 }
 
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-  header .siteTitle h1 {
-    font-size: calc(5rem + 3vw);
-  }
-  nav div.linkFavs {
-    width: 50%;
-  }
-  .skillDiv i {
-    font-size: calc(1.8rem + 1vw);
-  }
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
   section.webProjects {
     height: 100%;
     padding-bottom: 50px;
@@ -1011,6 +1005,19 @@ section.webProjects .quickExg {
   }
   section.webProjects .quickExg {
     position: static;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  header .siteTitle h1 {
+    font-size: calc(5rem + 3vw);
+  }
+  nav div.linkFavs {
+    width: 50%;
+  }
+  .skillDiv i {
+    font-size: calc(1.8rem + 1vw);
   }
 }
 
@@ -1050,9 +1057,3 @@ section.webProjects .quickExg {
 }
 
 /* Mobile // Chrome Mobile */
-@media (max-width: 480px) {
-  .visualArtSection .displayVisual {
-    width: auto;
-    height: 50vh;
-  }
-}
