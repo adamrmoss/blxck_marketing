@@ -1042,7 +1042,8 @@ section.webProjects .quickExg {
     font-size: calc(4rem + 3vw);
   }
   .visualArt .visualArtSection .displayVisual img {
-    width: 70vw;
+    width: auto;
+    height: 50vh;
   }
 }
 
