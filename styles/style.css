@@ -613,6 +613,13 @@ header .arrowWrapper .arrow:focus .long {
   width: 60px;
 }
 
+.modal {
+  display: none;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.7);
+  width: 30%;
+}
+
 section.webProjects {
   height: 250vh;
   padding: 100px 0;
@@ -832,30 +839,6 @@ section.webProjects .quickExg {
   z-index: 99;
 }
 
-.visualArt .rightScrollArrow {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  font-size: 3rem;
-  position: -webkit-sticky;
-  position: sticky;
-}
-
-.visualArt .rightScrollArrow i {
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.visualArt .rightScrollArrow i:hover, .visualArt .rightScrollArrow i:focus {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  color: white;
-}
-
 .visualArt .visualArtSection {
   height: 100%;
   display: -webkit-box;
@@ -1057,6 +1040,9 @@ section.webProjects .quickExg {
     top: 300px;
     left: -180px;
     font-size: calc(4rem + 3vw);
+  }
+  .visualArt .visualArtSection .displayVisual img {
+    width: 70vw;
   }
 }
 

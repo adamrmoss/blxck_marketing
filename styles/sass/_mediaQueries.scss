@@ -71,9 +71,25 @@
             left: -180px;
             font-size: calc(4rem + 3vw);
         }
+        .visualArtSection {
+            .displayVisual {
+                img {
+                    width: 70vw;
+                }
+            }
+        }
     }
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+    // .visualArt {
+    //     .visualArtSection {
+    //         .displayVisual {
+    //             img {
+    //                 width: 70%;
+    //             }
+    //         }
+    //     }
+    // }
 }

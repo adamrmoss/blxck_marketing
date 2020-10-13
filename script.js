@@ -1,16 +1,11 @@
 gsap.registerPlugin(ScrollTrigger);
 // TODO >> HEADER TOGGLE ON CLICK 
-// TODO >> HORIZONTAL SCROLL ON visualIMAGE SECTION WITH SIZING 
-// RESPONSIVENESS
+// TODO >> HORIZONTAL SCROLL ON visualIMAGE SECTION WITH SIZING (optional)
+// TODO resize images with cross browser compat
+// RESPONSIVENESS >> with cross browser compat
 // TODO clean gsap anims 
 // fix height of projects section
 
-// gsap.from('.headerImg', {
-//     // trigger: '.arrow',
-//     duration: 2,
-//     stagger: 8,
-//     width: 0,
-// })
 
 // 
 gsap.from('.shiftLeft', {
@@ -50,17 +45,20 @@ gsap.from('.justLucy', {
     duration: 1, x: "-90"
 });
 
-gsap.from('.blackLine', {
-    scrollTrigger: {
-        trigger: '.blackLine',
-        toggleActions: 'restart pause resume reset',
-        scrub: true,
-    },
-    duration: 12, width: "0", stagger: 2
-});
+
+// PROJECTS
+// gsap.from('.blackLine', {
+//     scrollTrigger: {
+//         trigger: '.blackLine',
+//         toggleActions: 'restart pause resume reset',
+//         scrub: true,
+//     },
+//     duration: 12, width: "0", stagger: 2
+// });
+
+
 
 // ABOUT ME TEXT ROLL 
-// TODO fix meeee
 gsap.from('.aboutP1', {
     scrollTrigger: {
         trigger: '.aboutP1',
@@ -130,20 +128,9 @@ gsap.from('.skillDiv i', {
     duration: 12, fontSize: '0.2rem', stagger: 5.6
 });
 
+
 // VISUAL ART SCROLL
 
-
-gsap.from('.displayVisual', {
-    scrollTrigger: {
-        trigger: '.displayVisual',
-                    // enter, endpoint, reenter, fromtop
-        // toggleActions: 'restart pause resume reset',
-        scroller: '.visualArtSection',
-        // horizontal: true,
-        scrub: true,
-    },
-    duration: 1, scale: 1.5,
-});
 
 
 const bMac = {};
@@ -207,7 +194,6 @@ bMac.hamburger = function () {
 
 bMac.init = function() {
     bMac.hamburger();
-    // bMac.scrollHeader();
 }
 
 $(document).ready(function () {
