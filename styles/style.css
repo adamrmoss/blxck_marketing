@@ -281,6 +281,11 @@ a {
   -webkit-text-stroke: 0.7px white;
 }
 
+.blackStroke {
+  color: transparent;
+  -webkit-text-stroke: 0.7px black;
+}
+
 @font-face {
   font-family: 'Gothic';
   src: url("/fonts/Gothic Outline Title W01 D.ttf") format("truetype");
