@@ -130,14 +130,7 @@ document.addEventListener('click', () => {
 })
 
 
-
-
-
-
-
-
-
-// set a number value variable
+// TOGGLE HEADER IMAGE FUNCTION 
 bMac.loadHeader = 2;
 
 document.querySelector('.arrow').onclick = () => {
