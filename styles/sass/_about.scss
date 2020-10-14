@@ -7,6 +7,21 @@
     color: white;
     line-height: 130%;
     font-size: calc(1.3rem + 0.4vw);
+    position: relative;
+    .aboutContact {
+        display: flex;
+        width: 100%;
+        padding-bottom: 20px;
+        i {
+            font-size: 2rem;
+            padding-left: 20px;
+            transition: 0.5s all;
+            &:hover,
+            &:focus {
+                transform: scale(1.3);
+            }
+        }
+    }
     .whiteLine,
     .whiteLine2 {
         width: 90%;
@@ -49,4 +64,26 @@
             }
         }
     }
+    .modal {
+        background: white;
+        position: absolute;
+        top: 10%; right: 10%;
+        transform: translate(50%,-50%);
+        color: black;
+        font-size: 1.5rem;
+        border-radius: 2px;
+        opacity: 0;
+        background: white;
+        width: 260px;
+        transition: 0.8s all;
+        .modalText {
+            text-align: center;
+            width: 100%;
+        }
+    }
+    .activeView {
+        opacity: 1;
+        right: 50%;
+    }
 }
+

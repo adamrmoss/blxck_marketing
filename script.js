@@ -115,6 +115,7 @@ gsap.from('.skillDiv i', {
 
 const bMac = {};
 
+bMac.contact = $('.contactClick');
 bMac.cursor = document.querySelector('.cursor');
 
 document.addEventListener('mousemove', e => {
@@ -163,6 +164,12 @@ document.querySelector('.arrow').onclick = () => {
     
 }
 
+
+bMac.contactModal = function() {
+    bMac.contact.click(function () {
+        $('.modal').toggleClass(`activeView`);
+    })
+}
 // function to make my burger menu appear
 bMac.hamburger = function () {
     $(`.hamburg`).click(function () {
@@ -173,6 +180,7 @@ bMac.hamburger = function () {
 
 bMac.init = function() {
     bMac.hamburger();
+    bMac.contactModal();
 }
 
 $(document).ready(function () {

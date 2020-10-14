@@ -20,33 +20,31 @@
 </head>
 
 <body>
-    <!-- // TODO add loading screen??? slide in on load? -->
     <div class="cursor"></div>
     <header>
 
-        <img id="headerImg1" class="headerImg hOne" src="./assets/siteHeaderOne.jpeg" alt="">
-        <img id="headerImg2" class="headerImg hTwo" src="./assets/siteHeaderTwo.jpg" alt="">
-        <img id="headerImg3" class="headerImg hThree" src="./assets/siteHeaderThree.jpg" alt="">
+        <img id="headerImg1" class="headerImg hOne" src="./assets/siteHeaderOne.jpeg" alt="a full page image of brenna in the desert.">
+        <img id="headerImg2" class="headerImg hTwo" src="./assets/siteHeaderTwo.jpg" alt="a full page photo of brenna singing into a microphone.">
+        <img id="headerImg3" class="headerImg hThree" src="./assets/siteHeaderThree.jpg" alt="a full page photo of brenna holding pink and white flowers.">
 
         <nav class="wrapper">
 
             <div class="linkFavs">
-                <a target="_blank" href="https://twitter.com/i_am_hill"><i class="fab fa-twitter-square"></i></a>
-                <a target="_blank" href="https://github.com/brennaMacQuarrie"><i class="fab fa-github"></i></a>
-                <a target="_blank" href="https://www.instagram.com/i_am_hill/"><i class="fab fa-instagram"></i></a>
-                <a target="_blank" href="https://open.spotify.com/artist/3JWEaXJSuLlQ4zR2Hwu2p9?si=n1mep9dMQIScI2C9bNR98Q"><i class="fab fa-spotify"></i></a>
-                <a target="_blank" href="mailto:brennamacquarrie@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a aria-label="click to go to twitter." target="_blank" href="https://twitter.com/i_am_hill"><i class="fab fa-twitter-square"></i></a>
+                <a aria-label="click to go to github." target="_blank" href="https://github.com/brennaMacQuarrie"><i class="fab fa-github"></i></a>
+                <a aria-label="click to go to instagram." target="_blank" href="https://www.instagram.com/i_am_hill/"><i class="fab fa-instagram"></i></a>
+                <a aria-label="click to go to spotify." target="_blank" href="https://open.spotify.com/artist/3JWEaXJSuLlQ4zR2Hwu2p9?si=n1mep9dMQIScI2C9bNR98Q"><i class="fab fa-spotify"></i></a>
+                <a aria-label="click to email brenna." target="_blank" href="mailto:brennamacquarrie@gmail.com"><i class="fas fa-envelope"></i></a>
 
             </div>
             <!-- DROPDOWN HAMBURGER MENU -->
-            <div aria-label="click here for the menu." class="hamburg">
+            <div aria-label="click here for the navigation menu." class="hamburg">
                 <div class="one"></div>
                 <div class="two"></div>
                 <div class="three"></div>
             </div>
 
             <div class="dropdownMenu">
-                <!-- TODO fix at widest display -->
                 <ul>
                     <li><a href="#webProjects">Web Projects</a></li>
                     <li><a href="#About">About</a></li>
@@ -56,22 +54,13 @@
             </div>
         </nav>
 
-        <!-- TODO MODAL -->
-        <div class="modal">
-            <div class="modalText">
-                <p>brennamacquarrie@gmail.com</p>
-                <p>@i_am_hill</p>
-                <p>213 610-9600</p>
-            </div>
-        </div>
-
         <div class="siteTitle wrapper">
             <h1>Brenna <span class="whiteStroke">MacQuarrie</span></h1>
             <a target="_blank" href="http://www.iamhill.com/" class="seeMore">View Artist Site</a>
         </div>
         
 
-        <div class="arrowWrapper wrapper">
+        <div aria-label="hidden" class="arrowWrapper wrapper">
             <div class="arrow">
                <div class="long"></div>
                <div class="shortOne"></div>
@@ -89,9 +78,8 @@
             <h2 class="shiftLeft">WEB PROJECTS</h2>
 
             <div class="proj peach">
-                <!-- <img src="./assets/pricklyPeach.png" alt="screen grab of the prickly peach web design"> -->
 
-                <iframe src="https://www.youtube.com/embed/Ljt-Ecjk_NQ" frameborder="0"
+                <iframe aria-label="a video of the Prickly Peach web project in action." src="https://www.youtube.com/embed/Ljt-Ecjk_NQ" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
 
@@ -118,15 +106,13 @@
             </div>
 
             <div class="proj quickExg">
-                <!-- <img src="./assets/quickExg.png" alt="screen grab of the Quick Exchange web design"> -->
 
-                <iframe src="https://www.youtube.com/embed/_WozM6jgPP0" frameborder="0"
+                <iframe aria-label="a video of the Quick Exchange web project in action." src="https://www.youtube.com/embed/_WozM6jgPP0" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
 
 
                 <div class="projText">
-                    <!-- TODO update this live site! -->
                     <h3><a target="_blank" href="http://www.topnotchkatoch.com/brennaMacQuarrieKaranKatochProjectFour/">Quick Exg Crypto Exchange App</a></h3>
 
                     <span class="blackLine"></span>
@@ -150,9 +136,8 @@
             </div>
 
             <div class="proj justLucy">
-                <!-- <img src="./assets/justLucy.png" alt="screen grab of Just Lucy web design"> -->
-
-                <iframe src="https://www.youtube.com/embed/Tz1atMw9ATE" frameborder="0"
+              
+                <iframe aria-label="a video of the Lucy web project in action." src="https://www.youtube.com/embed/Tz1atMw9ATE" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
 
@@ -181,7 +166,19 @@
 
         <section class="about" id="About">
             <div class="wrapper">
-                <h2>WHO IS SHE</h2>
+
+                <div class="aboutContact">
+                    <h2>WHO IS SHE</h2>
+                    <i aria-label="click to view brennas contact info" class="fas fa-mail-bulk contactClick"></i>
+                </div>
+
+                <div class="modal">
+                    <div class="modalText">
+                        <p>brennamacquarrie@gmail.com</p>
+                        <p>213 610 9600</p>
+                        <p>@i_am_hill</p>
+                    </div>
+                </div>
 
                 <hr class="whiteLine"></hr>
 
@@ -249,7 +246,6 @@
                         <div class="skillDiv">
                             <i class="fas devicon-sass-original"></i>                                    <li>SASS</li>
                         </div>
-                        <!-- github, photoshop, sass -->
                     </ul>
                 </div>
 
