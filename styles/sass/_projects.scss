@@ -1,5 +1,5 @@
 section.webProjects {
-    height: 250vh;
+    height: 230vh;
     padding-top: 100px;
     position: relative;
     h2 {
@@ -15,12 +15,20 @@ section.webProjects {
         overflow: hidden;
     }
     .proj {
-        width: 45%;
+        width: 40%;
         font-family: Lato, sans-serif;
-        img {
-            box-shadow: 10px 10px 20px darkslategrey;
-            border-radius: 5px;
-            margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // img {
+        //     box-shadow: 10px 10px 20px darkslategrey;
+        //     border-radius: 5px;
+        //     margin: 10px 0;
+        // }
+        iframe {
+            width: 100%;
+            height: 300px;
         }
         .projText {
             padding: 10px;

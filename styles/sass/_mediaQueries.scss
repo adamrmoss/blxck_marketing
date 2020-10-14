@@ -61,11 +61,6 @@
         }
     }
 
-    .about {
-        font-size: calc(1rem + 0.8vw);
-        font-weight: 600;
-    }
-
     .visualArt {
         h2 {
             top: 300px;
@@ -79,6 +74,12 @@
                 // img {
                 // }
             }
+        }
+    }
+
+    .soundCloud {
+        h2 {
+            font-size: calc(3.2rem + 2.7vw);
         }
     }
 }

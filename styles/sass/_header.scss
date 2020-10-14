@@ -41,10 +41,6 @@ header {
             &:focus {
                 transform: scale(1.07);
             }
-            .whiteStroke {
-                color: transparent;
-                -webkit-text-stroke: 0.7px white;
-            }
         }
         .seeMore {
             font-family: Lato, sans-serif;

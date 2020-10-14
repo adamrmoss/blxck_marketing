@@ -1,7 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 // TODO >> HEADER TOGGLE ON CLICK 
-// TODO resize images with cross browser compat***
-// RESPONSIVENESS >> with cross browser compat
+// TODO safari ?!?!?
 // TODO clean gsap anims 
 
 
@@ -151,7 +150,6 @@ document.querySelector('.arrow').onclick = () => {
         } else {
             bMac.loadHeader++;
         }
-        console.log(previousImg);
 
         $('#headerImg' + previousImg).css('width', '0').css('z-index', '-10'); 
         
