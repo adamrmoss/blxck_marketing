@@ -134,17 +134,20 @@ document.addEventListener('click', () => {
 bMac.loadHeader = 2;
 
 document.querySelector('.arrow').onclick = () => {
-  
+  // if we're about to move to image1
+  // this timeout allows img3 to drop below 1>> 
+  // first drop z of 3, then give 1 width:100 and higher z, then give 3 width:0
     if (bMac.loadHeader === 1) {
         $('#headerImg3').css('z-index', '-10');
         setTimeout(() => {
             $('#headerImg1')
                 .css('width', '100%')
                 .css('z-index', '-9');
-        }, 200);
+        }, 100);
         setTimeout(() => {
             $('#headerImg3').css('width', '0');
         }, 800);
+        // if we're not moving from 1 to 3, give width:100 & z:-9 to all
     } else {
         $('#headerImg'+bMac.loadHeader)
             .css('width', '100%')
@@ -154,14 +157,17 @@ document.querySelector('.arrow').onclick = () => {
     let previousImg = bMac.loadHeader - 1;
 
     if (bMac.loadHeader === 3) {
+        // otherwise would go back to 2
         bMac.loadHeader = 1;
     } else if (bMac.loadHeader === 1) {
+        // because 1 - 1 = 0, and we want to do stuff to 3 in this scenario
         previousImg = 3;
         bMac.loadHeader++;
     } else {
         bMac.loadHeader++;
     }
     
+    // this part i dont quite understand
     if (bMac.loadHeader !== 2) {
         setTimeout(() => {
             $('#headerImg' + previousImg)

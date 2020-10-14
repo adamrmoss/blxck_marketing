@@ -32,6 +32,9 @@
     .skillDiv i {
         font-size: calc(1.8rem + 1vw);
     }
+    .skillDiv li {
+        font-size: 1.2rem;
+    }
     .about {
         .modal {
             right: 25%;
@@ -92,6 +95,13 @@
         .modal {
             right: 50%;
             top: 20%;
+        }
+        .aboutP1,
+        .aboutP2,
+        .aboutP3,
+        .aboutP4,
+        .aboutP5 {
+            font-size: 1.3rem;
         }
     }
 }

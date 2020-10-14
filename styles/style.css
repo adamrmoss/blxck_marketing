@@ -1071,6 +1071,9 @@ section.webProjects .quickExg {
   .skillDiv i {
     font-size: calc(1.8rem + 1vw);
   }
+  .skillDiv li {
+    font-size: 1.2rem;
+  }
   .about .modal {
     right: 25%;
   }
@@ -1111,5 +1114,12 @@ section.webProjects .quickExg {
   .about .modal {
     right: 50%;
     top: 20%;
+  }
+  .about .aboutP1,
+  .about .aboutP2,
+  .about .aboutP3,
+  .about .aboutP4,
+  .about .aboutP5 {
+    font-size: 1.3rem;
   }
 }
