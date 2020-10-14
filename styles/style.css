@@ -856,16 +856,17 @@ section.webProjects .quickExg {
 .about .modal {
   background: white;
   position: absolute;
-  top: 10%;
-  right: 10%;
+  top: -10%;
+  right: 50%;
   -webkit-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
   color: black;
   font-size: 1.5rem;
+  letter-spacing: 1px;
   border-radius: 2px;
   opacity: 0;
   background: white;
-  width: 260px;
+  width: 250px;
   -webkit-transition: 0.8s all;
   transition: 0.8s all;
 }
@@ -877,7 +878,7 @@ section.webProjects .quickExg {
 
 .about .activeView {
   opacity: 1;
-  right: 50%;
+  top: 10%;
 }
 
 .visualArt {
@@ -1074,6 +1075,9 @@ section.webProjects .quickExg {
   .skillDiv i {
     font-size: calc(1.8rem + 1vw);
   }
+  .about .modal {
+    right: 25%;
+  }
 }
 
 /* Landscape phones and down */
@@ -1108,6 +1112,8 @@ section.webProjects .quickExg {
   .soundCloud h2 {
     font-size: calc(3.2rem + 2.7vw);
   }
+  .about .modal {
+    right: 50%;
+    top: 20%;
+  }
 }
-
-/* Mobile // Chrome Mobile */

@@ -67,14 +67,15 @@
     .modal {
         background: white;
         position: absolute;
-        top: 10%; right: 10%;
+        top: -10%; right: 50%;
         transform: translate(50%,-50%);
         color: black;
         font-size: 1.5rem;
+        letter-spacing: 1px;
         border-radius: 2px;
         opacity: 0;
         background: white;
-        width: 260px;
+        width: 250px;
         transition: 0.8s all;
         .modalText {
             text-align: center;
@@ -83,7 +84,7 @@
     }
     .activeView {
         opacity: 1;
-        right: 50%;
+        top: 10%;
     }
 }
 
