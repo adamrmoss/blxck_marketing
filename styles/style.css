@@ -632,8 +632,6 @@ section.webProjects h2 {
   font-size: clamp(10rem, 50vw, 14rem);
   font-weight: 900;
   width: 200%;
-  color: transparent;
-  -webkit-text-stroke: 0.7px black;
   position: relative;
   right: -100px;
   top: -50px;
@@ -641,7 +639,7 @@ section.webProjects h2 {
 }
 
 section.webProjects .proj {
-  width: 40%;
+  width: 45%;
   font-family: Lato, sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -680,8 +678,6 @@ section.webProjects .proj .projText {
 section.webProjects .proj .projText h3 a {
   font-size: calc(2.5rem + 1vw);
   text-transform: uppercase;
-  color: transparent;
-  -webkit-text-stroke: 0.7px black;
   letter-spacing: 3px;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
@@ -860,7 +856,7 @@ section.webProjects .quickExg {
   right: 50%;
   -webkit-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
-  color: black;
+  color: #111517;
   font-size: 1.5rem;
   letter-spacing: 1px;
   border-radius: 2px;
@@ -1026,7 +1022,7 @@ section.webProjects .quickExg {
 }
 
 .footer a {
-  color: black;
+  color: #111517;
   font-weight: 400;
 }
 

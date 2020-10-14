@@ -7,25 +7,18 @@ section.webProjects {
         font-size: clamp(10rem, 50vw, 14rem);
         font-weight: 900;
         width: 200%;
-        color: transparent;
-        -webkit-text-stroke: 0.7px black;
         position: relative;
         right: -100px;
         top: -50px;
         overflow: hidden;
     }
     .proj {
-        width: 40%;
+        width: 45%;
         font-family: Lato, sans-serif;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        // img {
-        //     box-shadow: 10px 10px 20px darkslategrey;
-        //     border-radius: 5px;
-        //     margin: 10px 0;
-        // }
         iframe {
             width: 100%;
             height: 300px;
@@ -39,8 +32,6 @@ section.webProjects {
             h3 a { 
                 font-size: calc(2.5rem + 1vw);
                 text-transform: uppercase;
-                color: transparent;
-                -webkit-text-stroke: 0.7px black;
                 letter-spacing: 3px;
                 transition: 0.5s all;
                 &:hover,
