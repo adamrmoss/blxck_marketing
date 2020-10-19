@@ -25,7 +25,7 @@
             margin: 100px;
             img {
                 height: 50vh;
-                width: auto; // is this the problem?
+                width: auto; 
             }
             .visualText {
                 display: flex;
@@ -34,6 +34,53 @@
                 align-items: flex-start;    
                 border: 1px solid black;           
             }
+        }
+    }
+}
+
+.arrowVisuals {
+    width: 75%;
+    height: 30px;
+    margin: 20px auto 0;
+    position: relative;
+    .one,
+    .two,
+    .three {
+        .top {
+            background: black;
+            height: 1px;
+            width: 30px;
+            position: absolute;
+            top: 10px;
+            left: 0;
+            transform: rotate(40deg);
+            transition: 0.6s all;
+        }
+        .bottom {
+            background: black;
+            height: 1px;
+            width: 30px;
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            transform: rotate(-40deg);
+            transition: 0.6s all;
+        }
+    }
+    .two {
+        .top {
+            left: 15px;
+        }
+        .bottom {
+            left: 15px;
+        }
+    }
+    .three {
+        .top {
+            left: 30px;
+        }
+        .bottom {
+            left: 30px;
         }
     }
 }

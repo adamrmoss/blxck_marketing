@@ -1,8 +1,4 @@
 gsap.registerPlugin(ScrollTrigger);
-// TODO >> HEADER TOGGLE ON CLICK 
-// TODO safari ?!?!?
-// TODO clean gsap anims 
-
 
 // 
 gsap.from('.shiftLeft', {
@@ -15,13 +11,13 @@ gsap.from('.shiftLeft', {
 });
 
 // PROJECT JUMP
-gsap.from('.peach', {
+gsap.from('.peach, .justLucy', {
     scrollTrigger: {
         trigger: '.peach',
         toggleActions: 'restart pause resume reset',
         scrub: true,
     },
-    duration: 1, x: -90
+    duration: 1, x: -90, stagger: 4
 });
     
 gsap.from('.quickExg', {
@@ -31,15 +27,6 @@ gsap.from('.quickExg', {
         scrub: true,
     },
     duration: 1, x: 90
-});
-        
-gsap.from('.justLucy', {
-    scrollTrigger: {
-        trigger: '.justLucy',
-        toggleActions: 'restart pause resume reset',
-        scrub: true,
-    },
-    duration: 1, x: "-90"
 });
 
 // ABOUT ME TEXT ROLL 
@@ -67,22 +54,7 @@ gsap.from('.aboutP3', {
     },
     duration: 1.8, height: "0", stagger: 1.7
 })
-gsap.from('.aboutP4', {
-    scrollTrigger: {
-        trigger: '.aboutP4',
-        toggleActions: 'restart pause resume reset',
-        scrub: false,
-    },
-    duration: 1.8, height: "0", stagger: 1.7
-})
-gsap.from('.aboutP5', {
-    scrollTrigger: {
-        trigger: '.aboutP5',
-        toggleActions: 'restart pause resume reset',
-        scrub: false,
-    },
-    duration: 1.8, height: "0", stagger: 1.7
-})
+
 
 // ABOUT WHITE LINES
 gsap.from('.whiteLine', {
@@ -103,6 +75,7 @@ gsap.from('.whiteLine2', {
     duration: 12, width: "0%", stagger: 5.6
 });
 
+
 gsap.from('.skillDiv i', {
     scrollTrigger: {
         trigger: '.skillDiv i',
@@ -112,10 +85,20 @@ gsap.from('.skillDiv i', {
     duration: 12, fontSize: '0.2rem', stagger: 5.6
 });
 
+gsap.to('.arrowVisuals .top, .arrowVisuals .bottom', {
+    scrollTrigger: {
+        trigger: '.arrowVisuals',
+        toggleActions: 'restart pause resume reset',
+        scrub: true,
+    },
+    duration: 5, left: '100%'
+})
+
 
 const bMac = {};
 
 bMac.contact = $('.contactClick');
+bMac.arrowContact = $('.arrowContact');
 bMac.cursor = document.querySelector('.cursor');
 
 document.addEventListener('mousemove', e => {
@@ -180,6 +163,9 @@ document.querySelector('.arrow').onclick = () => {
 
 bMac.contactModal = function() {
     bMac.contact.click(function () {
+        $('.modal').toggleClass(`activeView`);
+    })
+    bMac.arrowContact.click(function() {
         $('.modal').toggleClass(`activeView`);
     })
 }

@@ -160,46 +160,48 @@ header {
             opacity: 1;
         }
     }
-    .arrowWrapper {
-        width: 95%;
+}
+
+.arrowWrapper {
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+    
+    .arrow {
+        position: relative;
+        height: 30px;
+        width: 80px;
         display: flex;
-        justify-content: flex-end;
-        .arrow {
-            position: relative;
-            height: 30px;
-            width: 80px;
-            display: flex;
-            .long {
-                background-color: white;
-                height: 1px;
-                width: 40px;
-                position: absolute;
-                top: 45%;
-                right: 0;
-                transition: 0.6s all;
-            }
-            .shortOne {
-                height: 1px;
-                width: 10px;
-                background-color: white;
-                position: absolute;
-                right: 0;
-                top: 31%;
-                transform: rotate(40deg);
-            }
-            .shortTwo {
-                height: 1px;
-                width: 10px;
-                position: absolute;
-                right: 0;
-                bottom: 39%;
-                transform: rotate(-40deg);
-                background-color: white;
-            }
-            &:hover .long,
-            &:focus .long {
-                width: 60px;
-            }
+        .long {
+            background-color: white;
+            height: 1px;
+            width: 40px;
+            position: absolute;
+            top: 45%;
+            right: 0;
+            transition: 0.6s all;
+        }
+        .shortOne {
+            height: 1px;
+            width: 10px;
+            background-color: white;
+            position: absolute;
+            right: 0;
+            top: 31%;
+            transform: rotate(40deg);
+        }
+        .shortTwo {
+            height: 1px;
+            width: 10px;
+            position: absolute;
+            right: 0;
+            bottom: 39%;
+            transform: rotate(-40deg);
+            background-color: white;
+        }
+        &:hover .long,
+        &:focus .long {
+            width: 60px;
         }
     }
 }

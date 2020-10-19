@@ -564,7 +564,7 @@ header nav .dropdownMenu.active {
   opacity: 1;
 }
 
-header .arrowWrapper {
+.arrowWrapper {
   width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -574,7 +574,7 @@ header .arrowWrapper {
           justify-content: flex-end;
 }
 
-header .arrowWrapper .arrow {
+.arrowWrapper .arrow {
   position: relative;
   height: 30px;
   width: 80px;
@@ -583,7 +583,7 @@ header .arrowWrapper .arrow {
   display: flex;
 }
 
-header .arrowWrapper .arrow .long {
+.arrowWrapper .arrow .long {
   background-color: white;
   height: 1px;
   width: 40px;
@@ -594,7 +594,7 @@ header .arrowWrapper .arrow .long {
   transition: 0.6s all;
 }
 
-header .arrowWrapper .arrow .shortOne {
+.arrowWrapper .arrow .shortOne {
   height: 1px;
   width: 10px;
   background-color: white;
@@ -605,7 +605,7 @@ header .arrowWrapper .arrow .shortOne {
           transform: rotate(40deg);
 }
 
-header .arrowWrapper .arrow .shortTwo {
+.arrowWrapper .arrow .shortTwo {
   height: 1px;
   width: 10px;
   position: absolute;
@@ -616,8 +616,8 @@ header .arrowWrapper .arrow .shortTwo {
   background-color: white;
 }
 
-header .arrowWrapper .arrow:hover .long,
-header .arrowWrapper .arrow:focus .long {
+.arrowWrapper .arrow:hover .long,
+.arrowWrapper .arrow:focus .long {
   width: 60px;
 }
 
@@ -798,9 +798,7 @@ section.webProjects .quickExg {
 
 .about .aboutP1,
 .about .aboutP2,
-.about .aboutP3,
-.about .aboutP4,
-.about .aboutP5 {
+.about .aboutP3 {
   letter-spacing: 0.6px;
   font-weight: 100;
   height: 100%;
@@ -853,7 +851,7 @@ section.webProjects .quickExg {
   background: white;
   position: absolute;
   top: -10%;
-  right: 50%;
+  right: 40%;
   -webkit-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
   color: #111517;
@@ -874,7 +872,55 @@ section.webProjects .quickExg {
 
 .about .activeView {
   opacity: 1;
-  top: 10%;
+  top: 11%;
+}
+
+.arrowContact {
+  position: relative;
+  height: 30px;
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+}
+
+.arrowContact .long {
+  background-color: white;
+  height: 1px;
+  width: 40px;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  -webkit-transition: 0.6s all;
+  transition: 0.6s all;
+}
+
+.arrowContact .shortOne {
+  height: 1px;
+  width: 10px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 32%;
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+
+.arrowContact .shortTwo {
+  height: 1px;
+  width: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 40%;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  background-color: white;
+}
+
+.arrowContact:hover .long,
+.arrowContact:focus .long {
+  width: 60px;
 }
 
 .visualArt {
@@ -939,6 +985,59 @@ section.webProjects .quickExg {
       -ms-flex-align: start;
           align-items: flex-start;
   border: 1px solid black;
+}
+
+.arrowVisuals {
+  width: 75%;
+  height: 30px;
+  margin: 20px auto 0;
+  position: relative;
+}
+
+.arrowVisuals .one .top,
+.arrowVisuals .two .top,
+.arrowVisuals .three .top {
+  background: black;
+  height: 1px;
+  width: 30px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  -webkit-transition: 0.6s all;
+  transition: 0.6s all;
+}
+
+.arrowVisuals .one .bottom,
+.arrowVisuals .two .bottom,
+.arrowVisuals .three .bottom {
+  background: black;
+  height: 1px;
+  width: 30px;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+  -webkit-transition: 0.6s all;
+  transition: 0.6s all;
+}
+
+.arrowVisuals .two .top {
+  left: 15px;
+}
+
+.arrowVisuals .two .bottom {
+  left: 15px;
+}
+
+.arrowVisuals .three .top {
+  left: 30px;
+}
+
+.arrowVisuals .three .bottom {
+  left: 30px;
 }
 
 .soundCloud {
@@ -1117,9 +1216,7 @@ section.webProjects .quickExg {
   }
   .about .aboutP1,
   .about .aboutP2,
-  .about .aboutP3,
-  .about .aboutP4,
-  .about .aboutP5 {
-    font-size: 1.3rem;
+  .about .aboutP3 {
+    font-size: 1.5rem;
   }
 }
