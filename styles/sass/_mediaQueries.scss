@@ -102,3 +102,14 @@
     }
 }
 
+
+/* Landscape phones and down */
+@media (max-width: 450px) {
+    .about {
+        .aboutP1,
+        .aboutP2,
+        .aboutP3 {
+            font-weight: 500;
+        }
+    }
+}

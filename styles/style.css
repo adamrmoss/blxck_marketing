@@ -988,7 +988,7 @@ section.webProjects .quickExg {
 }
 
 .arrowVisuals {
-  width: 75%;
+  width: 60%;
   height: 30px;
   margin: 20px auto 0;
   position: relative;
@@ -1218,5 +1218,14 @@ section.webProjects .quickExg {
   .about .aboutP2,
   .about .aboutP3 {
     font-size: 1.5rem;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 450px) {
+  .about .aboutP1,
+  .about .aboutP2,
+  .about .aboutP3 {
+    font-weight: 500;
   }
 }
