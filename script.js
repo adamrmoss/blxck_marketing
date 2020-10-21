@@ -5,7 +5,7 @@ gsap.from('.shiftLeft', {
     scrollTrigger: {
         trigger: '.shiftLeft',
         toggleActions: 'restart pause resume reset',
-        scrub: 3,
+        scrub: 2,
     },
     duration: 7, x: 900
 });
