@@ -6,8 +6,7 @@
     background: black;
     color: white;
     line-height: 130%;
-    font-size: calc(1.3rem + 0.4vw);
-    position: relative;
+    font-size: calc(1.2rem + 0.3vw);
     .aboutContact {
         display: flex;
         width: 100%;
@@ -53,7 +52,8 @@
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
-                font-size: calc(1.3rem + 0.4vw);
+                font-size: calc(1rem + 0.3vw);
+                font-weight: 200;
                 i {
                     padding-bottom: 15px;
                     height: 60px;
@@ -86,42 +86,8 @@
     }
 }
 
-
-.arrowContact {
-    position: relative;
-    height: 30px;
-    width: 80px;
-    display: flex;
-    margin-left: 10px;
-    .long {
-        background-color: white;
-        height: 1px;
-        width: 40px;
-        position: absolute;
-        top: 45%;
-        left: 0;
-        transition: 0.6s all;
-    }
-    .shortOne {
-        height: 1px;
-        width: 10px;
-        background-color: white;
-        position: absolute;
-        left: 0;
-        top: 32%;
-        transform: rotate(-40deg);
-    }
-    .shortTwo {
-        height: 1px;
-        width: 10px;
-        position: absolute;
-        left: 0;
-        bottom: 40%;
-        transform: rotate(40deg);
-        background-color: white;
-    }
-    &:hover .long,
-    &:focus .long {
-        width: 60px;
-    }
+.white {color: $owhite; transition: 0.2s all; 
+    &:hover, 
+    &:focus {color: white}
 }
+

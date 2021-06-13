@@ -21,37 +21,23 @@
 
 <body>
     <div class="cursor"></div>
+
     <header>
-        <nav class="wrapper">
-
-            <div class="linkFavs">
-                <a aria-label="click to go to twitter." target="_blank" href="https://twitter.com/i_am_hill"><i class="fab fa-twitter-square"></i></a>
-                <a aria-label="click to go to github." target="_blank" href="https://github.com/brennaMacQuarrie"><i class="fab fa-github"></i></a>
-                <a aria-label="click to go to instagram." target="_blank" href="https://www.instagram.com/i_am_hill/"><i class="fab fa-instagram"></i></a>
-                <a aria-label="click to go to spotify." target="_blank" href="https://open.spotify.com/artist/3JWEaXJSuLlQ4zR2Hwu2p9?si=n1mep9dMQIScI2C9bNR98Q"><i class="fab fa-spotify"></i></a>
-                <a aria-label="click to email brenna." target="_blank" href="mailto:brennamacquarrie@gmail.com"><i class="fas fa-envelope"></i></a>
-
-            </div>
-            <!-- DROPDOWN HAMBURGER MENU -->
-            <div aria-label="click here for the navigation menu." class="hamburg">
-                <div class="one"></div>
-                <div class="two"></div>
-                <div class="three"></div>
-            </div>
-
-            <div class="dropdownMenu">
-                <ul>
-                    <li><a href="#webProjects">Web Projects</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#visualArt">Visual Art</a></li>
-                    <li><a href="#Music">Music</a></li>
-                </ul>
-            </div>
-        </nav>
 
         <div class="siteTitle wrapper">
-            <h1>Brenna <span class="whiteStroke">MacQuarrie</span></h1>
-            <a target="_blank" href="http://www.iamhill.com/" class="seeMore">View Artist Site</a>
+            <h1>Brenna <a class="invis" href="http://www.iamhill.com/">iamhill</a><span class="whiteStroke">MacQuarrie</span></h1>
+
+            <nav class="flexed linkFavs">
+                <a aria-label="click to go to twitter." target="_blank" href="https://twitter.com/i_am_hill"><i class="fab fa-twitter-square"></i></a>
+                <a aria-label="click to go to github." target="_blank" href="https://github.com/brennaMacQuarrie"><i
+                        class="fab fa-github"></i></a>
+                <a aria-label="click to go to instagram." target="_blank" href="https://www.instagram.com/i_am_hill/"><i
+                        class="fab fa-instagram"></i></a>
+                <a aria-label="click to go to spotify." target="_blank"
+                    href="https://open.spotify.com/artist/3JWEaXJSuLlQ4zR2Hwu2p9?si=n1mep9dMQIScI2C9bNR98Q"><i
+                        class="fab fa-spotify"></i></a>
+                <a aria-label="click to email brenna." target="_blank" href="mailto:brennamacquarrie@gmail.com"><i class="fas fa-envelope"></i></a>
+            </nav>
         </div>
         
     </header>
@@ -71,7 +57,7 @@
 
                 <hr class="whiteLine"></hr>
 
-                <p class="aboutP1">I am a creative ambivert with the tendency to allow my hyper-focus to morph into obsession. I am a writer, a dreamer, and a visual and auditory artist. I grew up writing songs and playing instruments, and as of 2020, I'm channeling my creative flow into the world of tech.</p>
+                <p class="aboutP1">I am a creative ambivert with the tendency to allow my hyper-focus to morph into obsession. I am a writer, a dreamer, and a visual and auditory artist. I grew up writing songs and playing instruments, and have released albums and EPs under the artist moniker <em><a class="white" href="www.iamhill.com">iamhill</a></em>. As of 2020, I began channeling my creative flow into the world of tech. I currently am contracted as a Frontend engineer at <strong><a class="white" href="https://pex.com/">Pex</a></strong>.</p>
                 
                 <hr class="whiteLine"></hr>
 
@@ -140,21 +126,13 @@
 
                 <hr class="whiteLine2"></hr>
 
-                <p class="aboutP2">I lose hours designing web apps that are increasingly user-friendly and interesting to traverse. I live for collaboration and love constructive feedback and groupthink. I like working to understand the minds of those around me and they way they structure their reality (and their code) in unique ways. Worlds created by others are fascinating to me; I started reading at the age of 3 and will inhale novels in the course of a few days.</p>
-
-                <hr class="whiteLine2"></hr>
-
-                <p class="aboutP3">I also write songs, produce albums, and direct music videos for myself and for others. I am published by Ultra Music International and release music under the artist moniker 'iamhill'. I'm proud to be a Juno nominated Canadian artist.</p>
-                
-                <hr class="whiteLine2"></hr>
-
             </div>
         </section>
 
         <section id="Music" class="soundCloud">
             <!-- embed soundcloud -->
             <div class="wrapper">
-                <h2>SOUND<span class="whiteStroke">CLOUD</span></h2>
+                <h2 class="shiftLeft">SOUND<span class="whiteStroke">CLOUD</span></h2>
 
                 <div class="embed">
 
@@ -172,10 +150,10 @@
             </div>
         </section>
 
-        <section id="MusicVideos" class="videos">
+        <section id="Videos" class="videos">
             <!-- embed soundcloud -->
             <div class="wrapper">
-                <h2>MUSIC <span class="whiteStroke">VIDEOS</span></h2>
+                <h2 class="shiftRight">MUSIC <span class="whiteStroke">VIDEOS</span></h2>
         
                 <div class="embedVideos">
         
