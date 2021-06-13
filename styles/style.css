@@ -390,6 +390,8 @@ header nav.flexed {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 1s all;
+  transition: 1s all;
 }
 
 header nav.flexed .fas, header nav.flexed .fab {
@@ -440,23 +442,6 @@ header .siteTitle h1 {
 
 header .siteTitle h1:hover, header .siteTitle h1:focus {
   color: green;
-}
-
-header .siteTitle .invis {
-  display: none;
-  position: absolute;
-  top: 0;
-  font-family: Lato, sans-serif;
-  letter-spacing: 3px;
-  font-weight: 100;
-  font-size: 2rem;
-  color: rgba(255, 255, 255, 0.7);
-  -webkit-transition: 0.9s all;
-  transition: 0.9s all;
-}
-
-header .siteTitle .invis:hover, header .siteTitle .invis:focus {
-  color: white;
 }
 
 .about {
@@ -735,16 +720,17 @@ header .siteTitle .invis:hover, header .siteTitle .invis:focus {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
     position: relative;
-    top: 150px;
+    top: 10px;
     left: -20px;
     font-size: calc(5rem + 3vw);
   }
-  header .siteTitle .seeMore {
-    display: none;
-  }
-  header nav .hamburg {
-    width: 30px;
-    height: 30px;
+  header nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    right: 30px;
   }
   .visualArt h2 {
     top: 300px;

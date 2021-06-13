@@ -53,19 +53,15 @@
             h1 {
                 transform: rotate(-90deg);
                 position: relative;
-                top: 150px;
+                top: 10px;
                 left: -20px;
                 font-size: calc(5rem + 3vw);
             }
-            .seeMore {
-                display: none;
-            }
         }
         nav {
-            .hamburg {
-                width: 30px;
-                height: 30px;
-            }
+            flex-direction: column;
+            position: absolute;
+            right: 30px;
         }
     }
 

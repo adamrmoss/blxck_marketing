@@ -15,6 +15,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        transition: 1s all;
         .fas, .fab {color: white; padding: 15px 0; font-size: 2.5rem; transition: all 0.16s;
         &:hover,
         &:focus { transform:scale(1.2)}
@@ -44,21 +45,6 @@ header {
                 color: green;
                 // .invis {display: inline-block}
             }
-        }
-        .invis {
-            display: none;
-            position: absolute;
-            top: 0;
-            font-family: Lato, sans-serif;
-            letter-spacing: 3px;
-            font-weight: 100;
-            font-size: 2rem;
-            color: $owhite;
-            transition: 0.9s all;
-            &:hover,
-            &:focus {
-                color: white;
-            }       
         }
     }
 }
