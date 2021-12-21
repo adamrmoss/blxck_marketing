@@ -1,33 +1,9 @@
-/* Portrait tablet and small desktops */
-@media (max-width: 940px) {
-    section.webProjects {
-        height: 100%;
-        padding-bottom: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        h2 {
-            font-size: calc(7rem + 6vw);
-        }
-        .proj {
-            width: 70%;
-        }
-        .justLucy {
-            position: static;
-        }
-        .quickExg {
-            position: static;
-        }
-    }
-}
+
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
     header .siteTitle h1 {
-        font-size: calc(5rem + 3vw);
-    }
-    nav div.linkFavs {
-        width: 50%;
+        font-size: calc(10rem + 3vw);
     }
     .skillDiv i {
         font-size: calc(1.8rem + 1vw);

@@ -59,16 +59,38 @@ $owhite : rgba(255, 255, 255, 0.7);
     -webkit-text-stroke: 0.7px black;
 }
 
+
+$blue: #7ebec5;
+
+$gold: #cca95d;
+
 @font-face {
-    font-family: 'Gothic';
-    src: url('/fonts/Gothic\ Outline\ Title\ W01\ D.ttf') format('truetype');
+    font-family: 'Blackout';
+    src: url('/fonts/BlackoutSunrise.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Arial';
-    src: url('/fonts/Arial\ Narrow.ttf') format('truetype');
+    font-family: 'Vogue';
+    src: url('/fonts/Vogue.ttf') format('truetype');
 }
 
+  h2, h4 {
+    font-family: Lato, sans-serif;
+    font-size: calc(4rem + 3vw);
+    font-weight: 700;
+    color: white;
+    text-align: left;
+    letter-spacing: 8px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: calc(1rem + 1vw);
+    color: $gold;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
 
 
 

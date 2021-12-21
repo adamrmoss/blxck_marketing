@@ -287,13 +287,31 @@ a {
 }
 
 @font-face {
-  font-family: 'Gothic';
-  src: url("/fonts/Gothic Outline Title W01 D.ttf") format("truetype");
+  font-family: 'Blackout';
+  src: url("/fonts/BlackoutSunrise.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Arial';
-  src: url("/fonts/Arial Narrow.ttf") format("truetype");
+  font-family: 'Vogue';
+  src: url("/fonts/Vogue.ttf") format("truetype");
+}
+
+h2, h4 {
+  font-family: Lato, sans-serif;
+  font-size: calc(4rem + 3vw);
+  font-weight: 700;
+  color: white;
+  text-align: left;
+  letter-spacing: 8px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: calc(1rem + 1vw);
+  color: #cca95d;
+  letter-spacing: 3px;
+  font-weight: 500;
 }
 
 .cursor {
@@ -312,7 +330,7 @@ a {
 .expand {
   -webkit-animation: cursorClick .5s forwards;
           animation: cursorClick .5s forwards;
-  border: 3px solid #84ff6b;
+  border: 3px solid #90CECC;
   z-index: 998;
 }
 
@@ -348,39 +366,28 @@ a {
   }
 }
 
-@-webkit-keyframes color-change {
-  0% {
-    color: white;
-  }
-  48% {
-    color: black;
-  }
-  100% {
-    color: white;
-  }
-}
-
-@keyframes color-change {
-  0% {
-    color: white;
-  }
-  48% {
-    color: black;
-  }
-  100% {
-    color: white;
-  }
-}
-
 header {
   overflow-x: hidden;
-  height: 85vh;
-  background: black;
+  height: 100vh;
+  background-image: url("../../assets/earth4.png");
+  background-repeat: no-repeat;
   padding-top: 20px;
 }
 
-header nav.flexed {
-  width: 30%;
+header .siteTitle {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+
+header .siteTitle nav.flexed {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,21 +401,37 @@ header nav.flexed {
   transition: 1s all;
 }
 
-header nav.flexed .fas, header nav.flexed .fab {
+header .siteTitle nav.flexed .logo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0px;
   color: white;
-  padding: 15px 0;
-  font-size: 2.5rem;
-  -webkit-transition: all 0.16s;
-  transition: all 0.16s;
 }
 
-header nav.flexed .fas:hover, header nav.flexed .fas:focus, header nav.flexed .fab:hover, header nav.flexed .fab:focus {
+header .siteTitle nav.flexed .logo span {
+  color: grey;
+}
+
+header .siteTitle nav.flexed a {
+  color: white;
+  font-weight: 300;
+}
+
+header .siteTitle nav.flexed .fas {
+  color: white;
+  padding: 15px 8px;
+  font-size: 1.5rem;
+  -webkit-transition: all 0.16s;
+  transition: all 0.16s;
+  z-index: 999;
+}
+
+header .siteTitle nav.flexed .fas:hover, header .siteTitle nav.flexed .fas:focus {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-header .siteTitle {
-  height: 100%;
+header .siteTitle .headers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,151 +439,105 @@ header .siteTitle {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 
 header .siteTitle h1 {
-  -webkit-animation: color-change 18s infinite;
-          animation: color-change 18s infinite;
-  font-family: Lato, sans-serif;
+  font-family: Blackout, sans-serif;
   letter-spacing: 8px;
-  font-weight: 700;
-  font-size: 4.5rem;
+  font-weight: 500;
+  font-size: calc(14rem + 3vw);
   color: rgba(255, 255, 255, 0.7);
   text-transform: uppercase;
   -webkit-transition: 0.9s all;
   transition: 0.9s all;
-  cursor: default;
-  position: relative;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  white-space: nowrap;
 }
 
-header .siteTitle h1:hover, header .siteTitle h1:focus {
-  color: green;
+header .siteTitle h2 {
+  font-family: Lato, serif;
+  font-weight: 700;
+  font-size: calc(3rem + 20px);
+  margin-top: -10px;
+  letter-spacing: 8px;
+  color: white;
+  text-align: left;
 }
 
-.about {
+.about, .what, .services, .contact {
   height: 100%;
-  padding: 50px 0;
+  padding: 30px 0;
   font-family: Lato, sans-serif;
   letter-spacing: 2px;
   background: black;
   color: white;
   line-height: 130%;
   font-size: calc(1.2rem + 0.3vw);
+  position: relative;
 }
 
-.about .aboutContact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding-bottom: 20px;
-}
-
-.about .aboutContact i {
-  font-size: 2rem;
-  padding-left: 20px;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-}
-
-.about .aboutContact i:hover, .about .aboutContact i:focus {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+.about .wrapper, .what .wrapper, .services .wrapper, .contact .wrapper {
+  width: 80%;
 }
 
 .about .whiteLine,
-.about .whiteLine2 {
+.about .whiteLine2, .what .whiteLine,
+.what .whiteLine2, .services .whiteLine,
+.services .whiteLine2, .contact .whiteLine,
+.contact .whiteLine2 {
   width: 90%;
   height: 1px;
   display: inline-block;
   background-color: white;
 }
 
-.about .aboutP1,
-.about .aboutP2,
-.about .aboutP3 {
+.about p, .what p, .services p, .contact p {
   letter-spacing: 0.6px;
-  font-weight: 100;
+  font-weight: 300;
   height: 100%;
   margin: 10px auto;
   color: white;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.about .skillList {
-  width: 100%;
-  padding: 20px;
+.what .what-we-do {
+  height: 30vh;
+}
+
+.what .services {
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.about .skillList .pTag {
-  padding: 20px 0;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
-}
-
-.about .skillList .pTag .skillDiv {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.what .services div {
+  width: 30%;
+  padding: 30px;
   text-align: center;
-  font-size: calc(1rem + 0.3vw);
-  font-weight: 200;
 }
 
-.about .skillList .pTag .skillDiv i {
-  padding-bottom: 15px;
-  height: 60px;
-  font-size: calc(1.8rem + 1vw);
-}
-
-.about .modal {
-  background: white;
-  position: absolute;
-  top: -10%;
-  right: 40%;
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
-  color: #111517;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
-  border-radius: 2px;
-  opacity: 0;
-  background: white;
-  width: 250px;
-  -webkit-transition: 0.8s all;
-  transition: 0.8s all;
-}
-
-.about .modal .modalText {
+.what .services div h4 {
   text-align: center;
-  width: 100%;
 }
 
-.about .activeView {
-  opacity: 1;
-  top: 11%;
+.what .services div i {
+  color: #7ebec5;
+  font-size: 7rem;
+  padding-bottom: 20px;
 }
 
 .white {
@@ -609,39 +586,6 @@ header .siteTitle h1:hover, header .siteTitle h1:focus {
   z-index: 0;
 }
 
-.videos {
-  border-top: 1px white solid;
-  padding: 50px 0;
-  background: black;
-}
-
-.videos h2 {
-  font-family: Lato, sans-serif;
-  font-size: calc(4rem + 3vw);
-  font-weight: 900;
-  color: white;
-  text-align: left;
-  letter-spacing: 8px;
-}
-
-.videos .embedVideos {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.videos .embedVideos iframe {
-  margin: 20px;
-}
-
 .footer {
   background-color: white;
   color: black;
@@ -662,43 +606,10 @@ header .siteTitle h1:hover, header .siteTitle h1:focus {
   color: white;
 }
 
-/* Portrait tablet and small desktops */
-@media (max-width: 940px) {
-  section.webProjects {
-    height: 100%;
-    padding-bottom: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  section.webProjects h2 {
-    font-size: calc(7rem + 6vw);
-  }
-  section.webProjects .proj {
-    width: 70%;
-  }
-  section.webProjects .justLucy {
-    position: static;
-  }
-  section.webProjects .quickExg {
-    position: static;
-  }
-}
-
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   header .siteTitle h1 {
-    font-size: calc(5rem + 3vw);
-  }
-  nav div.linkFavs {
-    width: 50%;
+    font-size: calc(10rem + 3vw);
   }
   .skillDiv i {
     font-size: calc(1.8rem + 1vw);

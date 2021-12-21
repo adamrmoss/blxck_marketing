@@ -1,6 +1,28 @@
 gsap.registerPlugin(ScrollTrigger);
-
 // 
+gsap.to('.grow', {
+    scrollTrigger: {
+        trigger: '.shiftLeft',
+        toggleActions: 'restart pause resume reset',
+    },
+    duration: 3, x: 800
+});
+gsap.to('.urbrand', {
+    scrollTrigger: {
+        trigger: '.shiftLeft',
+        toggleActions: 'restart pause resume reset',
+    },
+    duration: 3, x: -800
+});
+
+gsap.from('.shiftRight', {
+    scrollTrigger: {
+        trigger: '.Img2',
+        toggleActions: 'restart pause resume reset',
+        scrub: 2,
+    },
+    duration: 10, x: -900
+});
 gsap.from('.shiftLeft', {
     scrollTrigger: {
         trigger: '.shiftLeft',
@@ -9,14 +31,31 @@ gsap.from('.shiftLeft', {
     },
     duration: 7, x: 900
 });
-gsap.from('.shiftRight', {
+gsap.from('.shiftDown', {
     scrollTrigger: {
-        trigger: '.shiftRight',
+        trigger: '.shiftDown',
         toggleActions: 'restart pause resume reset',
         scrub: 2,
     },
-    duration: 7, x: -900
+    duration: 7, y: -30, x: -50
 });
+gsap.from('.shiftUp', {
+    scrollTrigger: {
+        trigger: '.shiftUp',
+        toggleActions: 'restart pause resume reset',
+        scrub: 2,
+    },
+    duration: 7, y: 80
+});
+gsap.to('.spread', {
+    scrollTrigger: {
+        trigger: '.about',
+        toggleActions: 'restart pause resume reset',
+        scrub: 2,
+    },
+    duration: 7, opacity: 0
+});
+
 
 // ABOUT ME TEXT ROLL 
 gsap.from('.aboutP1', {
@@ -74,20 +113,9 @@ gsap.from('.skillDiv i', {
     duration: 12, fontSize: '0.2rem', stagger: 5.6
 });
 
-// gsap.to('.arrowVisuals .top, .arrowVisuals .bottom', {
-//     scrollTrigger: {
-//         trigger: '.arrowVisuals',
-//         toggleActions: 'restart pause resume reset',
-//         scrub: true,
-//     },
-//     duration: 5, left: '100%'
-// })
-
 
 const bMac = {};
 
-// bMac.contact = $('.contactClick');
-// bMac.arrowContact = $('.arrowContact');
 bMac.cursor = document.querySelector('.cursor');
 
 document.addEventListener('mousemove', e => {
@@ -150,26 +178,6 @@ document.addEventListener('click', () => {
 // }
 
 
-// bMac.contactModal = function() {
-//     bMac.contact.click(function () {
-//         $('.modal').toggleClass(`activeView`);
-//     })
-//     bMac.arrowContact.click(function() {
-//         $('.modal').toggleClass(`activeView`);
-//     })
-// }
-// // function to make my burger menu appear
-// bMac.hamburger = function () {
-//     $(`.hamburg`).click(function () {
-//         $(this).toggleClass(`active`);
-//         $(`.dropdownMenu`).toggleClass(`active`);
-//     });
-// }
-
-// bMac.init = function() {
-//     bMac.hamburger();
-//     bMac.contactModal();
-// }
 
 // $(document).ready(function () {
 //     bMac.init();
