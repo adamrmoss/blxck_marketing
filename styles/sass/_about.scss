@@ -7,48 +7,25 @@
     color: white;
     line-height: 130%;
     font-size: calc(1.2rem + 0.3vw);
-    position: relative;
     .wrapper {
         width: 80%;
     }
-    .whiteLine,
-    .whiteLine2 {
-        width: 90%;
-        height: 1px;
-        display: inline-block;
-        background-color: rgba(255,255,255,1);
+    .textblock {
+        background: black;
+        height: 100%;
+        position: relative;
+        z-index: 9;
     }
     p {
+        font-size: calc(1.5rem + 1.4vh);
         letter-spacing: 0.6px;
+        line-height: 120%;
         font-weight: 300;
-        height: 100%;
-        margin: 10px auto;
         color: white;
         text-transform: uppercase;
         text-align: center;
+        margin: 10px auto;
     }
-    // .modal {
-    //     background: white;
-    //     position: absolute;
-    //     top: -10%; right: 40%;
-    //     transform: translate(50%,-50%);
-    //     color: $nonBlack;
-    //     font-size: 1.5rem;
-    //     letter-spacing: 1px;
-    //     border-radius: 2px;
-    //     opacity: 0;
-    //     background: white;
-    //     width: 250px;
-    //     transition: 0.8s all;
-    //     .modalText {
-    //         text-align: center;
-    //         width: 100%;
-    //     }
-    // }
-    // .activeView {
-    //     opacity: 1;
-    //     top: 11%;
-    // }
 }
 
 .what {

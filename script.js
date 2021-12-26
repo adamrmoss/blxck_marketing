@@ -5,14 +5,14 @@ gsap.to('.grow', {
         trigger: '.shiftLeft',
         toggleActions: 'restart pause resume reset',
     },
-    duration: 3, x: 800
+    duration: 3, x: -800
 });
 gsap.to('.urbrand', {
     scrollTrigger: {
         trigger: '.shiftLeft',
         toggleActions: 'restart pause resume reset',
     },
-    duration: 3, x: -800
+    duration: 3, x: 800
 });
 
 gsap.from('.shiftRight', {
@@ -31,17 +31,18 @@ gsap.from('.shiftLeft', {
     },
     duration: 7, x: 900
 });
-gsap.from('.shiftDown', {
+
+gsap.from('.shiftUp1', {
     scrollTrigger: {
-        trigger: '.shiftDown',
+        trigger: '.spread',
         toggleActions: 'restart pause resume reset',
         scrub: 2,
     },
-    duration: 7, y: -30, x: -50
+    duration: 7, y: 80
 });
-gsap.from('.shiftUp', {
+gsap.from('.shiftUp2', {
     scrollTrigger: {
-        trigger: '.shiftUp',
+        trigger: '.shiftUp2',
         toggleActions: 'restart pause resume reset',
         scrub: 2,
     },
@@ -58,30 +59,30 @@ gsap.to('.spread', {
 
 
 // ABOUT ME TEXT ROLL 
-gsap.from('.aboutP1', {
-    scrollTrigger: {
-        trigger: '.aboutP1',
-        toggleActions: 'restart pause resume reset',
-        scrub: false,
-    },
-    duration: 1.8, height: "0", stagger: 1.7
-})
-gsap.from('.aboutP2', {
-    scrollTrigger: {
-        trigger: '.aboutP2',
-        toggleActions: 'restart pause resume reset',
-        scrub: false,
-    },
-    duration: 1.8, height: "0", stagger: 1.7
-})
-gsap.from('.aboutP3', {
-    scrollTrigger: {
-        trigger: '.aboutP3',
-        toggleActions: 'restart pause resume reset',
-        scrub: false,
-    },
-    duration: 1.8, height: "0", stagger: 1.7
-})
+// gsap.from('.aboutP1', {
+//     scrollTrigger: {
+//         trigger: '.aboutP1',
+//         toggleActions: 'restart pause resume reset',
+//         scrub: false,
+//     },
+//     duration: 1.8, height: "0", stagger: 1.7
+// })
+// gsap.from('.aboutP2', {
+//     scrollTrigger: {
+//         trigger: '.aboutP2',
+//         toggleActions: 'restart pause resume reset',
+//         scrub: false,
+//     },
+//     duration: 1.8, height: "0", stagger: 1.7
+// })
+// gsap.from('.aboutP3', {
+//     scrollTrigger: {
+//         trigger: '.aboutP3',
+//         toggleActions: 'restart pause resume reset',
+//         scrub: false,
+//     },
+//     duration: 1.8, height: "0", stagger: 1.7
+// })
 
 
 // ABOUT WHITE LINES
@@ -104,14 +105,14 @@ gsap.from('.whiteLine2', {
 });
 
 
-gsap.from('.skillDiv i', {
-    scrollTrigger: {
-        trigger: '.skillDiv i',
-        toggleActions: 'restart pause resume reset',
-        scrub: true,
-    },
-    duration: 12, fontSize: '0.2rem', stagger: 5.6
-});
+// gsap.from('.skillDiv i', {
+//     scrollTrigger: {
+//         trigger: '.skillDiv i',
+//         toggleActions: 'restart pause resume reset',
+//         scrub: true,
+//     },
+//     duration: 12, fontSize: '0.2rem', stagger: 5.6
+// });
 
 
 const bMac = {};

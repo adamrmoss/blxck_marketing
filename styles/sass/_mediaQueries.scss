@@ -1,22 +1,8 @@
-
-
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
     header .siteTitle h1 {
         font-size: calc(10rem + 3vw);
     }
-    .skillDiv i {
-        font-size: calc(1.8rem + 1vw);
-    }
-    .skillDiv li {
-        font-size: 1.2rem;
-    }
-    .about {
-        .modal {
-            right: 25%;
-        }
-    }
-
 }
 
 /* Landscape phones and down */
@@ -38,38 +24,6 @@
             flex-direction: column;
             position: absolute;
             right: 30px;
-        }
-    }
-
-    .visualArt {
-        h2 {
-            top: 300px;
-            left: -180px;
-            font-size: calc(4rem + 3vw);
-        }
-        .visualArtSection {
-            .displayVisual {
-                width: auto;
-                height: 50vh;
-            }
-        }
-    }
-
-    .soundCloud {
-        h2 {
-            font-size: calc(3.2rem + 2.7vw);
-        }
-    }
-     
-    .about {
-        .modal {
-            right: 50%;
-            top: 20%;
-        }
-        .aboutP1,
-        .aboutP2,
-        .aboutP3 {
-            font-size: 1.5rem;
         }
     }
 }

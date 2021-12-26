@@ -1,13 +1,9 @@
-
-
-
-
 header {
     overflow-x: hidden;
     height: 100vh;
+    padding: 20px;
     background-image: url('../../assets/earth4.png');
     background-repeat: no-repeat;
-    padding-top: 20px;
     .siteTitle {
         height: 100%;
         display: flex;
@@ -40,12 +36,12 @@ header {
             font-family: Blackout, sans-serif;
             letter-spacing: 8px;
             font-weight: 500;
-            font-size: calc(14rem + 3vw);
+            font-size: calc(13rem + 4vw);
             color: rgba(255, 255, 255, 0.7);
             text-transform: uppercase;
             transition: 0.9s all;
             align-self: flex-start;
-            white-space: nowrap;
+            // white-space: nowrap;
         }
         h2 {
             font-family: Lato, serif;

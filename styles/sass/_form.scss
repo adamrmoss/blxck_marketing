@@ -1,0 +1,46 @@
+
+#Contact {
+    p {
+        font-size: calc(2rem + 2vh);
+    }
+}
+form {
+    text-align: center;
+    line-height: 60px;
+    margin-top: 50px;
+    width: 100%;
+    input, select, button {
+        color: $gold;
+        font-weight: 300;
+        font-family: Lato, sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        background: none;
+        border: none;
+        border-bottom: 1px solid white;
+        max-width: 400px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    
+    .actions {
+        display: flex;
+        justify-content: center;
+        button {
+            font-size: 2rem;
+            border: 1px solid $blue;
+            border-radius: 5px; 
+            color: $blue;
+            padding: 10px 0;
+            margin: 20px 0;
+            width: 100%;
+            max-width: 100%;
+            z-index: 99;
+            &:hover {
+                color: $gold;
+                border-color: $gold;
+                transition: .5s all;
+            }
+        }
+    }
+}
