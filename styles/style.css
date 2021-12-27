@@ -288,7 +288,7 @@ a {
 
 @font-face {
   font-family: 'Blackout';
-  src: url("../../fonts/BlackoutSunrise.ttf") format("truetype");
+  src: url("../fonts/BlackoutSunrise.ttf") format("truetype");
 }
 
 h2, h4 {
@@ -437,9 +437,9 @@ header .siteTitle .headers {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   height: 100%;
 }
 
