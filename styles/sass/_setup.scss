@@ -66,13 +66,13 @@ $gold: #cca95d;
 
 @font-face {
     font-family: 'Blackout';
-    src: url('/fonts/BlackoutSunrise.ttf') format('truetype');
+    src: url('../../fonts/BlackoutSunrise.ttf') format('truetype');
 }
 
-@font-face {
-    font-family: 'Vogue';
-    src: url('/fonts/Vogue.ttf') format('truetype');
-}
+// @font-face {
+//     font-family: 'Vogue';
+//     src: url('/fonts/Vogue.ttf') format('truetype');
+// }
 
   h2, h4 {
     font-family: Lato, sans-serif;
