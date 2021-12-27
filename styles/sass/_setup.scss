@@ -75,9 +75,8 @@ $gold: #cca95d;
 //     src: url('/fonts/Vogue.ttf') format('truetype');
 // }
 
-  h2, h4 {
+h2, h4 {
     font-family: Lato, sans-serif;
-    font-size: calc(4rem + 3vw);
     font-weight: 700;
     color: white;
     text-align: left;
@@ -85,15 +84,19 @@ $gold: #cca95d;
     text-transform: uppercase;
     padding-bottom: 20px;
 }
-
+h2 {
+    font-size: calc(1.5rem + 4vw);
+}
 h4 {
     font-size: calc(1rem + 1vw);
     color: $gold;
     letter-spacing: 3px;
     font-weight: 500;
 }
-
-
+p {
+    font-size: calc(1rem + 2vw); 
+    font-weight: 300;
+}
 
 
 

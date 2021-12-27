@@ -35,7 +35,7 @@ gsap.from('.shiftUp1', {
 });
 gsap.from('.shiftUp2', {
     scrollTrigger: {
-        trigger: '.shiftUp2',
+        trigger: '.Img1',
         toggleActions: 'restart pause resume reset',
         scrub: 2,
     },

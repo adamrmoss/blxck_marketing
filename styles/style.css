@@ -293,7 +293,6 @@ a {
 
 h2, h4 {
   font-family: Lato, sans-serif;
-  font-size: calc(4rem + 3vw);
   font-weight: 700;
   color: white;
   text-align: left;
@@ -302,11 +301,20 @@ h2, h4 {
   padding-bottom: 20px;
 }
 
+h2 {
+  font-size: calc(1.5rem + 4vw);
+}
+
 h4 {
   font-size: calc(1rem + 1vw);
   color: #cca95d;
   letter-spacing: 3px;
   font-weight: 500;
+}
+
+p {
+  font-size: calc(1rem + 2vw);
+  font-weight: 300;
 }
 
 .cursor {
@@ -371,6 +379,7 @@ header {
 
 header .siteTitle {
   height: 100%;
+  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -459,7 +468,6 @@ header .siteTitle h1 {
 header .siteTitle h2 {
   font-family: Lato, serif;
   font-weight: 700;
-  font-size: calc(3rem + 20px);
   margin-top: -10px;
   letter-spacing: 8px;
   color: white;
@@ -489,18 +497,12 @@ header .siteTitle h2 {
 }
 
 .about p, .what p, .services p, .contact p {
-  font-size: calc(1.5rem + 1.4vh);
   letter-spacing: 0.6px;
   line-height: 120%;
-  font-weight: 300;
   color: white;
   text-transform: uppercase;
   text-align: center;
   margin: 10px auto;
-}
-
-.what .what-we-do {
-  height: 30vh;
 }
 
 .what .services {
@@ -525,8 +527,8 @@ header .siteTitle h2 {
 }
 
 .what .services div i {
+  font-size: calc(1rem + 6vw);
   color: #7ebec5;
-  font-size: 7rem;
   padding-bottom: 20px;
 }
 
@@ -620,6 +622,11 @@ form .actions button:hover {
   header .siteTitle h1 {
     font-size: calc(10rem + 3vw);
   }
+  .what .services div {
+    width: 45%;
+    margin-right: 5px;
+    padding: 5px;
+  }
 }
 
 /* Landscape phones and down */
@@ -627,29 +634,24 @@ form .actions button:hover {
   .cursor {
     display: none;
   }
+  h2 {
+    letter-spacing: 5px;
+  }
   header .siteTitle h1 {
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-    position: relative;
-    top: 10px;
-    left: -20px;
-    font-size: calc(5rem + 3vw);
+    font-size: calc(5rem + 8vw);
   }
   header nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    position: absolute;
-    right: 30px;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
-}
-
-/* Landscape phones and down */
-@media (max-width: 450px) {
-  .about .aboutP1,
-  .about .aboutP2,
-  .about .aboutP3 {
-    font-weight: 500;
+  header nav a {
+    display: none;
+  }
+  #Contact p {
+    font-size: 20px;
+  }
+  footer {
+    font-size: 16px;
   }
 }
