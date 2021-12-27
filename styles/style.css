@@ -288,12 +288,7 @@ a {
 
 @font-face {
   font-family: 'Blackout';
-  src: url("/fonts/BlackoutSunrise.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Vogue';
-  src: url("/fonts/Vogue.ttf") format("truetype");
+  src: url("../../fonts/BlackoutSunrise.ttf") format("truetype");
 }
 
 h2, h4 {
@@ -370,7 +365,7 @@ header {
   overflow-x: hidden;
   height: 100vh;
   padding: 20px;
-  background-image: url("../../assets/earth4.jpg");
+  background-image: url("../assets/earth4.jpg");
   background-repeat: no-repeat;
 }
 
