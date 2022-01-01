@@ -8,13 +8,24 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+@font-face {
+    font-family: 'Blackout';
+    src: url('../fonts/BlackoutSunrise.ttf') format('truetype');
+}
+
+$nonBlack: #111517;
+$ogray : rgba(128, 128, 128, 0.6);
+$owhite : rgba(255, 255, 255, 0.7);
+$blue: #7ebec5;
+$gold: #e7c376;
+
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
 
 html, body {
-  overflow-x:hidden;
+    overflow-x:hidden;
 } 
 
 body {
@@ -28,6 +39,9 @@ img {
     height: auto;
     display: block;
 }
+
+hr {max-width: 150px;}
+
 .wrapper {
     width: 95%;
     max-width: 1400px;
@@ -39,41 +53,12 @@ ul {
     padding: 0;
     list-style-type: none;
 }
+
 h1, h2, h3, h4 {
     margin: 0;
 }
-a {
-    text-decoration: none;
-}
 
-$nonBlack: #111517;
-$ogray : rgba(128, 128, 128, 0.6);
-$owhite : rgba(255, 255, 255, 0.7);
-$blue: #7ebec5;
-$gold: #cca95d;
-
-.whiteStroke {
-    color: transparent;
-    -webkit-text-stroke: 0.7px white;
-}
-.blackStroke {
-    color: transparent;
-    -webkit-text-stroke: 0.7px black;
-}
-
-
-
-
-@font-face {
-    font-family: 'Blackout';
-    src: url('../fonts/BlackoutSunrise.ttf') format('truetype');
-}
-
-
-// @font-face {
-//     font-family: 'Vogue';
-//     src: url('/fonts/Vogue.ttf') format('truetype');
-// }
+a { text-decoration: none; }
 
 h2, h4 {
     font-family: Lato, sans-serif;
@@ -83,35 +68,39 @@ h2, h4 {
     letter-spacing: 8px;
     text-transform: uppercase;
     padding-bottom: 20px;
+    
 }
+
 h2 {
     font-size: calc(1.5rem + 4vw);
 }
+
 h4 {
     font-size: calc(1rem + 1vw);
     color: $gold;
     letter-spacing: 3px;
     font-weight: 500;
 }
-p {
-    font-size: calc(1rem + 2vw); 
+p:not(.logo) {
+    font-size: calc(0.5rem + 2vw); 
     font-weight: 300;
 }
 
-
+.hidden { display: none !important; }
 
 .cursor {
     width: 40px;
     height: 40px;
     background-color: $owhite;
+    mix-blend-mode: difference;
     border: 0.6px $owhite solid;
     border-radius: 50%;
-    // mix-blend-mode: difference;
     position: absolute;
     transition-duration: 80ms;
     transition-timing-function: ease-out;
+    z-index: 9;
+    pointer-events: none;
 }
-
 
 .expand {
     animation: cursorClick .5s forwards;
@@ -130,6 +119,15 @@ p {
        transform: scale(.4); 
        opacity: 0;
     }
+}
+
+.whiteStroke {
+    color: transparent;
+    -webkit-text-stroke: 0.7px white;
+}
+.blackStroke {
+    color: transparent;
+    -webkit-text-stroke: 0.7px black;
 }
 
 

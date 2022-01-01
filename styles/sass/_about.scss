@@ -1,20 +1,17 @@
-.about, .what, .services, .contact {
+.about, .what, .contact {
     height: 100%;
-    padding: 30px 0;
+    padding: 80px 0;
     font-family: Lato, sans-serif;
     letter-spacing: 2px;
     background: black;
     color: white;
     line-height: 130%;
     font-size: calc(1.2rem + 0.3vw);
-    .wrapper {
-        width: 80%;
-    }
     .textblock {
         background: black;
         height: 100%;
         position: relative;
-        z-index: 9;
+        z-index: 8;
     }
     p {
         letter-spacing: 0.6px;
@@ -23,23 +20,53 @@
         text-transform: uppercase;
         text-align: center;
         margin: 10px auto;
+        span {color: $owhite;}
     }
 }
 
-.what {
+#What {
+    padding-top: 10px;
     .services {
         margin-top: 10px;
         display: flex;
         flex-flow: row wrap;
         div {
             width: 30%;
-            padding: 30px;
+            padding: 30px 30px 50px;
+            margin-top: 30px;
             text-align: center;
-            h4 {text-align: center;}
+            h4 {text-align: center; padding-bottom: 0;}
+            p {
+                font-size: 20px;
+                text-transform: none;
+                height: 0%;
+            }
             i {
                 font-size: calc(1rem + 6vw);
                 color: $blue; 
                 padding-bottom: 20px;
+            }
+            button {
+                background: none;
+                font-family: Lato, sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                border: 1px solid $owhite;
+                white-space: nowrap;
+                overflow: hidden;
+                border-radius: 5px;
+                color: $owhite;
+                width: 100%;
+                padding: 5px 0;
+                margin: 10px auto;
+                transition: 0.4s all;
+                z-index: 999;
+                &:hover,
+                &:active {
+                    background: white;
+                    border-color: black;
+                    color: black;
+                }
             }
         }
     }

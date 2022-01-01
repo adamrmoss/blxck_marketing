@@ -1,7 +1,7 @@
 header {
     overflow-x: hidden;
     height: 100vh;
-    padding: 20px;
+    padding: 10px 20px;
     background-image: url("../assets/earth4.jpg");
     background-repeat: no-repeat;
     .siteTitle {
@@ -34,25 +34,30 @@ header {
             justify-content: center;
             align-items: flex-start;
             height: 100%;
+            div { 
+                margin: 20px auto;
+            }
         }
         h1 {
             font-family: Blackout, sans-serif;
             letter-spacing: 8px;
             font-weight: 500;
-            font-size: calc(13rem + 4vw);
+            font-size: calc(8rem + 3vw);
             color: rgba(255, 255, 255, 0.7);
             text-transform: uppercase;
             transition: 0.9s all;
             align-self: flex-start;
-            // white-space: nowrap;
+            white-space: nowrap;
         }
         h2 {
             font-family: Lato, serif;
+            font-size: calc(2rem + 1vw);
             font-weight: 700;
             margin-top: -10px;
             letter-spacing: 8px;
             color: white;
             text-align: left;
         }
+        br {display: none;}
     }
 }

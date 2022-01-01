@@ -15,13 +15,13 @@ gsap.to('.urbrand', {
     duration: 3, x: 800
 });
 
-gsap.from('.shiftRight', {
+gsap.to('.shiftRight', {
     scrollTrigger: {
-        trigger: '.Img2',
+        trigger: '.shiftRight',
         toggleActions: 'restart pause resume reset',
         scrub: 2,
     },
-    duration: 10, x: -900
+    duration: 10, x: -600
 });
 
 
@@ -31,7 +31,7 @@ gsap.from('.shiftUp1', {
         toggleActions: 'restart pause resume reset',
         scrub: 2,
     },
-    duration: 7, y: 80
+    duration: 7, y: 90
 });
 gsap.from('.shiftUp2', {
     scrollTrigger: {
@@ -58,7 +58,7 @@ gsap.from('.whiteLine', {
         toggleActions: 'restart pause resume reset',
         scrub: true,
     },
-    duration: 12, width: "0", stagger: 5.6
+    duration: 8, width: "0", stagger: 1
 });
 
 gsap.from('.whiteLine2', {
@@ -67,20 +67,30 @@ gsap.from('.whiteLine2', {
         toggleActions: 'restart pause resume reset',
         scrub: true,
     },
-    duration: 12, width: "0%", stagger: 5.6
+    duration: 8, width: "0", stagger: 1
 });
 
-const bMac = {};
 
-bMac.cursor = document.querySelector('.cursor');
+const cursor = document.querySelector('.cursor');
 
 document.addEventListener('mousemove', e => {
-    bMac.cursor.setAttribute('style', 'top: '+(e.pageY - 20)+"px; left: "+(e.pageX - 20)+'px;');
+    cursor.setAttribute('style', 'top: '+(e.pageY - 20)+"px; left: "+(e.pageX - 20)+'px;');
 });
 
 document.addEventListener('click', () => {
-    bMac.cursor.classList.add('expand');
+    cursor.classList.add('expand');
     setTimeout(() => {
-        bMac.cursor.classList.remove('expand');
+        cursor.classList.remove('expand');
     }, 500)
 });
+
+function toggleText(el) {
+    const text = el.nextElementSibling;
+    text.classList.toggle('hidden');
+
+    if (el.innerText === "SHOW MORE") {
+        el.innerText = "SHOW LESS";
+      } else {
+        el.innerText = "SHOW MORE";
+      }
+}

@@ -1,42 +1,47 @@
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-    header .siteTitle h1 {
-        font-size: calc(10rem + 3vw);
+    header .siteTitle {
+        h1 {font-size: calc(6rem + 2vw)}
+        h2 { letter-spacing: 5px; }
     }
-    .what .services div {
-        width: 45%;
-        margin-right: 5px;
+   
+    #What .services div {
+        width: 50%;
+        margin-right: 0px;
         padding: 5px;
+        p { font-size: 16px;}
     }
 }
 
 /* Landscape phones and down */
 @media (max-width: 530px) {
-    .cursor {
-        display: none;
-    }
-    h2 {
-        letter-spacing: 5px;
-    }    
+    .cursor { display: none; }
     header {
         .siteTitle {
-            h1 {
-                font-size: calc(5rem + 8vw);
+            nav {
+                justify-content: center !important;
+                a {display: none;}
             }
+            // .headers {
+            //     div { 
+            //         margin: 20px auto;
+            //     }
+            // }
+            h1 { font-size: calc(4rem + 2vw); }
+            h2 { font-size: 20px; padding-top: 20px;}
+            br { display:initial; }
         }
-        nav {
-            justify-content: center !important;
-            a {display: none;}
-        }
-    }
+    }    
+    p { font-size: 16px; }
     #Contact {
-        p {
-            font-size: 20px;
+        h2 {right: -625px !important}
+        form {
+            p {font-size: 16px;}
+            input, select {max-width: 250px;}
+            button { font-size: 16px; padding: 5px; width: 50%; }
         }
     }
-    footer {
-        font-size: 16px;
-    }
+    footer { font-size: 16px;}
 }
 
 

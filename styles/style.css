@@ -235,6 +235,11 @@ html {
   overflow: hidden;
 }
 
+@font-face {
+  font-family: 'Blackout';
+  src: url("../fonts/BlackoutSunrise.ttf") format("truetype");
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -254,6 +259,10 @@ img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+hr {
+  max-width: 150px;
 }
 
 .wrapper {
@@ -276,21 +285,6 @@ a {
   text-decoration: none;
 }
 
-.whiteStroke {
-  color: transparent;
-  -webkit-text-stroke: 0.7px white;
-}
-
-.blackStroke {
-  color: transparent;
-  -webkit-text-stroke: 0.7px black;
-}
-
-@font-face {
-  font-family: 'Blackout';
-  src: url("../fonts/BlackoutSunrise.ttf") format("truetype");
-}
-
 h2, h4 {
   font-family: Lato, sans-serif;
   font-weight: 700;
@@ -307,20 +301,25 @@ h2 {
 
 h4 {
   font-size: calc(1rem + 1vw);
-  color: #cca95d;
+  color: #e7c376;
   letter-spacing: 3px;
   font-weight: 500;
 }
 
-p {
-  font-size: calc(1rem + 2vw);
+p:not(.logo) {
+  font-size: calc(0.5rem + 2vw);
   font-weight: 300;
+}
+
+.hidden {
+  display: none !important;
 }
 
 .cursor {
   width: 40px;
   height: 40px;
   background-color: rgba(255, 255, 255, 0.7);
+  mix-blend-mode: difference;
   border: 0.6px rgba(255, 255, 255, 0.7) solid;
   border-radius: 50%;
   position: absolute;
@@ -328,6 +327,8 @@ p {
           transition-duration: 80ms;
   -webkit-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
+  z-index: 9;
+  pointer-events: none;
 }
 
 .expand {
@@ -369,10 +370,20 @@ p {
   }
 }
 
+.whiteStroke {
+  color: transparent;
+  -webkit-text-stroke: 0.7px white;
+}
+
+.blackStroke {
+  color: transparent;
+  -webkit-text-stroke: 0.7px black;
+}
+
 header {
   overflow-x: hidden;
   height: 100vh;
-  padding: 20px;
+  padding: 10px 20px;
   background-image: url("../assets/earth4.jpg");
   background-repeat: no-repeat;
 }
@@ -452,21 +463,27 @@ header .siteTitle .headers {
   height: 100%;
 }
 
+header .siteTitle .headers div {
+  margin: 20px auto;
+}
+
 header .siteTitle h1 {
   font-family: Blackout, sans-serif;
   letter-spacing: 8px;
   font-weight: 500;
-  font-size: calc(13rem + 4vw);
+  font-size: calc(8rem + 3vw);
   color: rgba(255, 255, 255, 0.7);
   text-transform: uppercase;
   -webkit-transition: 0.9s all;
   transition: 0.9s all;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  white-space: nowrap;
 }
 
 header .siteTitle h2 {
   font-family: Lato, serif;
+  font-size: calc(2rem + 1vw);
   font-weight: 700;
   margin-top: -10px;
   letter-spacing: 8px;
@@ -474,9 +491,13 @@ header .siteTitle h2 {
   text-align: left;
 }
 
-.about, .what, .services, .contact {
+header .siteTitle br {
+  display: none;
+}
+
+.about, .what, .contact {
   height: 100%;
-  padding: 30px 0;
+  padding: 80px 0;
   font-family: Lato, sans-serif;
   letter-spacing: 2px;
   background: black;
@@ -485,18 +506,14 @@ header .siteTitle h2 {
   font-size: calc(1.2rem + 0.3vw);
 }
 
-.about .wrapper, .what .wrapper, .services .wrapper, .contact .wrapper {
-  width: 80%;
-}
-
-.about .textblock, .what .textblock, .services .textblock, .contact .textblock {
+.about .textblock, .what .textblock, .contact .textblock {
   background: black;
   height: 100%;
   position: relative;
-  z-index: 9;
+  z-index: 8;
 }
 
-.about p, .what p, .services p, .contact p {
+.about p, .what p, .contact p {
   letter-spacing: 0.6px;
   line-height: 120%;
   color: white;
@@ -505,7 +522,15 @@ header .siteTitle h2 {
   margin: 10px auto;
 }
 
-.what .services {
+.about p span, .what p span, .contact p span {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#What {
+  padding-top: 10px;
+}
+
+#What .services {
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -516,20 +541,52 @@ header .siteTitle h2 {
           flex-flow: row wrap;
 }
 
-.what .services div {
+#What .services div {
   width: 30%;
-  padding: 30px;
+  padding: 30px 30px 50px;
+  margin-top: 30px;
   text-align: center;
 }
 
-.what .services div h4 {
+#What .services div h4 {
   text-align: center;
+  padding-bottom: 0;
 }
 
-.what .services div i {
+#What .services div p {
+  font-size: 20px;
+  text-transform: none;
+  height: 0%;
+}
+
+#What .services div i {
   font-size: calc(1rem + 6vw);
   color: #7ebec5;
   padding-bottom: 20px;
+}
+
+#What .services div button {
+  background: none;
+  font-family: Lato, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  padding: 5px 0;
+  margin: 10px auto;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+  z-index: 999;
+}
+
+#What .services div button:hover, #What .services div button:active {
+  background: white;
+  border-color: black;
+  color: black;
 }
 
 .white {
@@ -540,6 +597,11 @@ header .siteTitle h2 {
 
 .white:hover, .white:focus {
   color: white;
+}
+
+#Contact h2 {
+  position: relative;
+  right: -650px;
 }
 
 #Contact p {
@@ -554,7 +616,7 @@ form {
 }
 
 form input, form select, form button {
-  color: #cca95d;
+  color: #e7c376;
   font-weight: 300;
   font-family: Lato, sans-serif;
   text-transform: uppercase;
@@ -588,8 +650,8 @@ form .actions button {
 }
 
 form .actions button:hover {
-  color: #cca95d;
-  border-color: #cca95d;
+  color: #e7c376;
+  border-color: #e7c376;
   -webkit-transition: .5s all;
   transition: .5s all;
 }
@@ -613,19 +675,25 @@ form .actions button:hover {
 }
 
 .footer a:hover, .footer a:focus {
-  color: #cca95d;
+  color: #e7c376;
   cursor: pointer;
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   header .siteTitle h1 {
-    font-size: calc(10rem + 3vw);
+    font-size: calc(6rem + 2vw);
   }
-  .what .services div {
-    width: 45%;
-    margin-right: 5px;
+  header .siteTitle h2 {
+    letter-spacing: 5px;
+  }
+  #What .services div {
+    width: 50%;
+    margin-right: 0px;
     padding: 5px;
+  }
+  #What .services div p {
+    font-size: 16px;
   }
 }
 
@@ -634,22 +702,40 @@ form .actions button:hover {
   .cursor {
     display: none;
   }
-  h2 {
-    letter-spacing: 5px;
-  }
-  header .siteTitle h1 {
-    font-size: calc(5rem + 8vw);
-  }
-  header nav {
+  header .siteTitle nav {
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
   }
-  header nav a {
+  header .siteTitle nav a {
     display: none;
   }
-  #Contact p {
+  header .siteTitle h1 {
+    font-size: calc(4rem + 2vw);
+  }
+  header .siteTitle h2 {
     font-size: 20px;
+    padding-top: 20px;
+  }
+  header .siteTitle br {
+    display: initial;
+  }
+  p {
+    font-size: 16px;
+  }
+  #Contact h2 {
+    right: -625px !important;
+  }
+  #Contact form p {
+    font-size: 16px;
+  }
+  #Contact form input, #Contact form select {
+    max-width: 250px;
+  }
+  #Contact form button {
+    font-size: 16px;
+    padding: 5px;
+    width: 50%;
   }
   footer {
     font-size: 16px;
