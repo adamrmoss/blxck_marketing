@@ -134,18 +134,25 @@ p:not(.logo) {
 }
 
 button {
-    background: none;
+    background: $blue;
+    border: 1px solid $blue;
     font-family: Lato, sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 3px;
     white-space: nowrap;
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 3px;
     min-width: 160px;
     padding: 8px 0 7px;
     margin: 25px auto;
     transition: 0.4s all;
     z-index: 999;
     cursor: pointer;
+    &:hover, &:active {
+        color: $gold;
+        border-color: $gold;
+        background: none;
+        transition: .5s all;
+    }
 }

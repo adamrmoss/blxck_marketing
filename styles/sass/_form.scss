@@ -8,7 +8,7 @@
         margin-top: 50px;
         width: 100%;
         p { font-size: calc(2rem + 1vh); line-height: 60px;}
-        input, select, button {
+        input, select {
             color: $gold;
             font-weight: 300;
             font-family: Lato, sans-serif;
@@ -24,18 +24,6 @@
         .actions {
             display: flex;
             justify-content: center;
-            button {
-                font-size: 2rem;
-                border: 1px solid transparent;
-                color: black;
-                background: $blue;
-                &:hover {
-                    color: $gold;
-                    border-color: $gold;
-                    background: none;
-                    transition: .5s all;
-                }
-            }
         }
     }
 }

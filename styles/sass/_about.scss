@@ -50,17 +50,6 @@
             color: $blue; 
             padding-bottom: 20px;
         }
-        button {
-            border: 1px solid transparent;
-            background-color: white;
-            color: black;
-            &:hover,
-            &:active {
-                background: none;
-                border-color: white;
-                color: white;
-            }
-        }
     }
 }
 

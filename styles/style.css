@@ -376,14 +376,15 @@ p:not(.logo) {
 }
 
 button {
-  background: none;
+  background: #7ebec5;
+  border: 1px solid #7ebec5;
   font-family: Lato, sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 3px;
   white-space: nowrap;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 3px;
   min-width: 160px;
   padding: 8px 0 7px;
   margin: 25px auto;
@@ -391,6 +392,14 @@ button {
   transition: 0.4s all;
   z-index: 999;
   cursor: pointer;
+}
+
+button:hover, button:active {
+  color: #e7c376;
+  border-color: #e7c376;
+  background: none;
+  -webkit-transition: .5s all;
+  transition: .5s all;
 }
 
 nav.flexed {
@@ -586,18 +595,6 @@ header .siteTitle br {
   padding-bottom: 20px;
 }
 
-#What .services div button {
-  border: 1px solid transparent;
-  background-color: white;
-  color: black;
-}
-
-#What .services div button:hover, #What .services div button:active {
-  background: none;
-  border-color: white;
-  color: white;
-}
-
 .white {
   color: rgba(255, 255, 255, 0.7);
   -webkit-transition: 0.2s all;
@@ -630,7 +627,7 @@ header .siteTitle br {
   line-height: 60px;
 }
 
-#Contact form input, #Contact form select, #Contact form button {
+#Contact form input, #Contact form select {
   color: #e7c376;
   font-weight: 300;
   font-family: Lato, sans-serif;
@@ -651,21 +648,6 @@ header .siteTitle br {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-#Contact form .actions button {
-  font-size: 2rem;
-  border: 1px solid transparent;
-  color: black;
-  background: #7ebec5;
-}
-
-#Contact form .actions button:hover {
-  color: #e7c376;
-  border-color: #e7c376;
-  background: none;
-  -webkit-transition: .5s all;
-  transition: .5s all;
 }
 
 .shiftLeft1, .shiftLeft2 {
@@ -796,11 +778,6 @@ header .siteTitle br {
   }
   #Contact form input, #Contact form select {
     max-width: 250px;
-  }
-  #Contact form button {
-    font-size: 16px;
-    padding: 5px;
-    width: 50%;
   }
   footer {
     font-size: 16px;
