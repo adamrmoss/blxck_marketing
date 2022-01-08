@@ -51,23 +51,6 @@ gsap.to('.shiftLeft2', {
     duration: 10, x: -600
 });
 
-
-// gsap.from('.shiftUp1', {
-//     scrollTrigger: {
-//         trigger: '.spread',
-//         toggleActions,
-//         scrub: 2,
-//     },
-//     duration: 7, y: 90
-// });
-// gsap.from('.shiftUp2', {
-//     scrollTrigger: {
-//         trigger: '.Img1',
-//         toggleActions,
-//         scrub: 2,
-//     },
-//     duration: 7, y: 80
-// });
 gsap.to('.fade', {
     scrollTrigger: {
         trigger: '.about',
