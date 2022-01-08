@@ -31,7 +31,7 @@ html, body {
 body {
     font-size: 1.6rem;
     font-family: 'Lato', sans-serif;
-    cursor: auto;
+    cursor: url("../../assets/UFO-50-2.png"), default;
 }
 
 img {
@@ -65,20 +65,19 @@ h2, h4 {
     font-weight: 700;
     color: white;
     text-align: left;
-    letter-spacing: 8px;
+    letter-spacing: 4px;
     text-transform: uppercase;
-    padding-bottom: 20px;
-    
+    padding-bottom: 20px;   
 }
 
 h2 {
     font-size: calc(1.5rem + 4vw);
+    font-family: Lato, sans-serif;
 }
 
 h4 {
     font-size: calc(1rem + 1vw);
     color: $gold;
-    letter-spacing: 3px;
     font-weight: 500;
 }
 p:not(.logo) {
@@ -88,19 +87,16 @@ p:not(.logo) {
 
 .hidden { display: none !important; }
 
-.cursor {
-    width: 40px;
-    height: 40px;
-    background-color: $owhite;
-    mix-blend-mode: difference;
-    border: 0.6px $owhite solid;
-    border-radius: 50%;
-    position: absolute;
-    transition-duration: 80ms;
-    transition-timing-function: ease-out;
-    z-index: 9;
-    pointer-events: none;
-}
+// .cursor {
+//     width: 40px;
+//     height: 40px;
+//     background-color: $owhite;
+//     mix-blend-mode: difference;
+//     transition-duration: 80ms;
+//     transition-timing-function: ease-out;
+//     z-index: 9;
+//     pointer-events: none;
+// }
 
 .expand {
     animation: cursorClick .5s forwards;
@@ -110,13 +106,13 @@ p:not(.logo) {
 
 @keyframes cursorClick {
     0% {
-        transform: scale(1);
+        transform: rotate(90deg);
     }
     50% {
-        transform: scale(2);
+        transform: rotate(180deg);
     }
     100% {
-       transform: scale(.4); 
+       transform: rotate(360deg); 
        opacity: 0;
     }
 }
@@ -130,4 +126,26 @@ p:not(.logo) {
     -webkit-text-stroke: 0.7px black;
 }
 
+.logo {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: 500; letter-spacing: 0px; 
+    color: white;
+    span.grey {color: grey}
+}
 
+button {
+    background: none;
+    font-family: Lato, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-radius: 5px;
+    min-width: 160px;
+    padding: 8px 0 7px;
+    margin: 25px auto;
+    transition: 0.4s all;
+    z-index: 999;
+    cursor: pointer;
+}

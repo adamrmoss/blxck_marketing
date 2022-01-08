@@ -1,8 +1,29 @@
+nav.flexed {
+    width: 100%;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    transition: 1s all;
+    
+    a {color: $owhite; font-weight: 300;}
+    .fas {color: white; padding: 15px 8px; font-size: 1.3rem; transition: all 0.16s; z-index: 999;
+    &:hover,
+    &:focus { transform:scale(1.2)}
+    }
+}
+#header {
+    height: 100vh;
+}
 header {
     overflow-x: hidden;
-    height: 100vh;
-    padding: 10px 20px;
     background-image: url("../assets/earth4.jpg");
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     .siteTitle {
         height: 100%;
@@ -10,24 +31,6 @@ header {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-        nav.flexed {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: 1s all;
-            .logo {
-                font-family: Arial, Helvetica, sans-serif; 
-                font-weight: 500; letter-spacing: 0px; 
-                color: white;
-                span {color: grey}
-            }
-            a {color: white; font-weight: 300;}
-            .fas {color: white; padding: 15px 8px; font-size: 1.5rem; transition: all 0.16s; z-index: 999;
-            &:hover,
-            &:focus { transform:scale(1.2)}
-            }
-        }
         .headers {
             display: flex;
             flex-direction: column;
@@ -40,8 +43,7 @@ header {
         }
         h1 {
             font-family: Blackout, sans-serif;
-            letter-spacing: 8px;
-            font-weight: 500;
+            font-weight: 700;
             font-size: calc(8rem + 3vw);
             color: rgba(255, 255, 255, 0.7);
             text-transform: uppercase;
@@ -57,6 +59,7 @@ header {
             letter-spacing: 8px;
             color: white;
             text-align: left;
+            white-space: nowrap;
         }
         br {display: none;}
     }

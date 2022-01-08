@@ -1,76 +1,69 @@
-.about, .what, .contact {
-    height: 100%;
-    padding: 80px 0;
-    font-family: Lato, sans-serif;
-    letter-spacing: 2px;
+.about, .what, .why, .address, .contact {
     background: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0px;
     color: white;
     line-height: 130%;
     font-size: calc(1.2rem + 0.3vw);
     .textblock {
-        background: black;
         height: 100%;
+        margin: 0 auto;
         position: relative;
         z-index: 8;
+        background: black;
     }
     p {
         letter-spacing: 0.6px;
         line-height: 120%;
+        width: 70%;
+        margin: 0 auto;
         color: white;
         text-transform: uppercase;
         text-align: center;
-        margin: 10px auto;
         span {color: $owhite;}
     }
 }
 
-#What {
-    padding-top: 10px;
-    .services {
-        margin-top: 10px;
-        display: flex;
-        flex-flow: row wrap;
-        div {
-            width: 30%;
-            padding: 30px 30px 50px;
-            margin-top: 30px;
-            text-align: center;
-            h4 {text-align: center; padding-bottom: 0;}
-            p {
-                font-size: 20px;
-                text-transform: none;
-                height: 0%;
-            }
-            i {
-                font-size: calc(1rem + 6vw);
-                color: $blue; 
-                padding-bottom: 20px;
-            }
-            button {
+#What .services {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    div {
+        width: 30%;
+        padding: 30px 0px 50px;
+        margin-top: 30px;
+        text-align: center;
+        h4 {text-align: center; padding-bottom: 0;}
+        p {
+            font-size: 20px;
+            text-transform: none;
+            font-weight: 300;
+            color: $owhite;
+        }
+        i {
+            font-size: calc(1rem + 6vw);
+            color: $blue; 
+            padding-bottom: 20px;
+        }
+        button {
+            border: 1px solid transparent;
+            background-color: white;
+            color: black;
+            &:hover,
+            &:active {
                 background: none;
-                font-family: Lato, sans-serif;
-                text-transform: uppercase;
-                letter-spacing: 3px;
-                border: 1px solid $owhite;
-                white-space: nowrap;
-                overflow: hidden;
-                border-radius: 5px;
-                color: $owhite;
-                width: 100%;
-                padding: 5px 0;
-                margin: 10px auto;
-                transition: 0.4s all;
-                z-index: 999;
-                &:hover,
-                &:active {
-                    background: white;
-                    border-color: black;
-                    color: black;
-                }
+                border-color: white;
+                color: white;
             }
         }
     }
 }
+
 
 .white {color: $owhite; transition: 0.2s all; 
     &:hover, 

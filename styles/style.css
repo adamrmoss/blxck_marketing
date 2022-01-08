@@ -252,7 +252,7 @@ html, body {
 body {
   font-size: 1.6rem;
   font-family: 'Lato', sans-serif;
-  cursor: auto;
+  cursor: url("../../assets/UFO-50-2.png"), default;
 }
 
 img {
@@ -290,19 +290,19 @@ h2, h4 {
   font-weight: 700;
   color: white;
   text-align: left;
-  letter-spacing: 8px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   padding-bottom: 20px;
 }
 
 h2 {
   font-size: calc(1.5rem + 4vw);
+  font-family: Lato, sans-serif;
 }
 
 h4 {
   font-size: calc(1rem + 1vw);
   color: #e7c376;
-  letter-spacing: 3px;
   font-weight: 500;
 }
 
@@ -315,22 +315,6 @@ p:not(.logo) {
   display: none !important;
 }
 
-.cursor {
-  width: 40px;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.7);
-  mix-blend-mode: difference;
-  border: 0.6px rgba(255, 255, 255, 0.7) solid;
-  border-radius: 50%;
-  position: absolute;
-  -webkit-transition-duration: 80ms;
-          transition-duration: 80ms;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  z-index: 9;
-  pointer-events: none;
-}
-
 .expand {
   -webkit-animation: cursorClick .5s forwards;
           animation: cursorClick .5s forwards;
@@ -340,32 +324,32 @@ p:not(.logo) {
 
 @-webkit-keyframes cursorClick {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
   50% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   100% {
-    -webkit-transform: scale(0.4);
-            transform: scale(0.4);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
     opacity: 0;
   }
 }
 
 @keyframes cursorClick {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
   50% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   100% {
-    -webkit-transform: scale(0.4);
-            transform: scale(0.4);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
     opacity: 0;
   }
 }
@@ -380,11 +364,83 @@ p:not(.logo) {
   -webkit-text-stroke: 0.7px black;
 }
 
+.logo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0px;
+  color: white;
+}
+
+.logo span.grey {
+  color: grey;
+}
+
+button {
+  background: none;
+  font-family: Lato, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: 5px;
+  min-width: 160px;
+  padding: 8px 0 7px;
+  margin: 25px auto;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+  z-index: 999;
+  cursor: pointer;
+}
+
+nav.flexed {
+  width: 100%;
+  padding: 5px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+nav.flexed a {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
+}
+
+nav.flexed .fas {
+  color: white;
+  padding: 15px 8px;
+  font-size: 1.3rem;
+  -webkit-transition: all 0.16s;
+  transition: all 0.16s;
+  z-index: 999;
+}
+
+nav.flexed .fas:hover, nav.flexed .fas:focus {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#header {
+  height: 100vh;
+}
+
 header {
   overflow-x: hidden;
-  height: 100vh;
-  padding: 10px 20px;
   background-image: url("../assets/earth4.jpg");
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -399,51 +455,6 @@ header .siteTitle {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 auto;
-}
-
-header .siteTitle nav.flexed {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: 1s all;
-  transition: 1s all;
-}
-
-header .siteTitle nav.flexed .logo {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  letter-spacing: 0px;
-  color: white;
-}
-
-header .siteTitle nav.flexed .logo span {
-  color: grey;
-}
-
-header .siteTitle nav.flexed a {
-  color: white;
-  font-weight: 300;
-}
-
-header .siteTitle nav.flexed .fas {
-  color: white;
-  padding: 15px 8px;
-  font-size: 1.5rem;
-  -webkit-transition: all 0.16s;
-  transition: all 0.16s;
-  z-index: 999;
-}
-
-header .siteTitle nav.flexed .fas:hover, header .siteTitle nav.flexed .fas:focus {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 header .siteTitle .headers {
@@ -469,8 +480,7 @@ header .siteTitle .headers div {
 
 header .siteTitle h1 {
   font-family: Blackout, sans-serif;
-  letter-spacing: 8px;
-  font-weight: 500;
+  font-weight: 700;
   font-size: calc(8rem + 3vw);
   color: rgba(255, 255, 255, 0.7);
   text-transform: uppercase;
@@ -489,49 +499,56 @@ header .siteTitle h2 {
   letter-spacing: 8px;
   color: white;
   text-align: left;
+  white-space: nowrap;
 }
 
 header .siteTitle br {
   display: none;
 }
 
-.about, .what, .contact {
-  height: 100%;
-  padding: 80px 0;
-  font-family: Lato, sans-serif;
-  letter-spacing: 2px;
+.about, .what, .why, .address, .contact {
   background: black;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0px;
   color: white;
   line-height: 130%;
   font-size: calc(1.2rem + 0.3vw);
 }
 
-.about .textblock, .what .textblock, .contact .textblock {
-  background: black;
+.about .textblock, .what .textblock, .why .textblock, .address .textblock, .contact .textblock {
   height: 100%;
+  margin: 0 auto;
   position: relative;
   z-index: 8;
+  background: black;
 }
 
-.about p, .what p, .contact p {
+.about p, .what p, .why p, .address p, .contact p {
   letter-spacing: 0.6px;
   line-height: 120%;
+  width: 70%;
+  margin: 0 auto;
   color: white;
   text-transform: uppercase;
   text-align: center;
-  margin: 10px auto;
 }
 
-.about p span, .what p span, .contact p span {
+.about p span, .what p span, .why p span, .address p span, .contact p span {
   color: rgba(255, 255, 255, 0.7);
 }
 
-#What {
-  padding-top: 10px;
-}
-
 #What .services {
-  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -539,11 +556,14 @@ header .siteTitle br {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #What .services div {
   width: 30%;
-  padding: 30px 30px 50px;
+  padding: 30px 0px 50px;
   margin-top: 30px;
   text-align: center;
 }
@@ -556,7 +576,8 @@ header .siteTitle br {
 #What .services div p {
   font-size: 20px;
   text-transform: none;
-  height: 0%;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 #What .services div i {
@@ -566,27 +587,15 @@ header .siteTitle br {
 }
 
 #What .services div button {
-  background: none;
-  font-family: Lato, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  white-space: nowrap;
-  overflow: hidden;
-  border-radius: 5px;
-  color: rgba(255, 255, 255, 0.7);
-  width: 100%;
-  padding: 5px 0;
-  margin: 10px auto;
-  -webkit-transition: 0.4s all;
-  transition: 0.4s all;
-  z-index: 999;
+  border: 1px solid transparent;
+  background-color: white;
+  color: black;
 }
 
 #What .services div button:hover, #What .services div button:active {
-  background: white;
-  border-color: black;
-  color: black;
+  background: none;
+  border-color: white;
+  color: white;
 }
 
 .white {
@@ -599,23 +608,29 @@ header .siteTitle br {
   color: white;
 }
 
-#Contact h2 {
-  position: relative;
-  right: -650px;
+#Contact {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-#Contact p {
-  font-size: calc(2rem + 2vh);
-}
-
-form {
+#Contact form {
   text-align: center;
-  line-height: 60px;
   margin-top: 50px;
   width: 100%;
 }
 
-form input, form select, form button {
+#Contact form p {
+  font-size: calc(2rem + 1vh);
+  line-height: 60px;
+}
+
+#Contact form input, #Contact form select, #Contact form button {
   color: #e7c376;
   font-weight: 300;
   font-family: Lato, sans-serif;
@@ -629,7 +644,7 @@ form input, form select, form button {
   text-overflow: ellipsis;
 }
 
-form .actions {
+#Contact form .actions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -638,27 +653,67 @@ form .actions {
           justify-content: center;
 }
 
-form .actions button {
+#Contact form .actions button {
   font-size: 2rem;
-  border: 1px solid #7ebec5;
-  border-radius: 5px;
-  color: #7ebec5;
-  padding: 10px 0;
-  margin: 20px 0;
-  width: 100%;
-  z-index: 99;
+  border: 1px solid transparent;
+  color: black;
+  background: #7ebec5;
 }
 
-form .actions button:hover {
+#Contact form .actions button:hover {
   color: #e7c376;
   border-color: #e7c376;
+  background: none;
   -webkit-transition: .5s all;
   transition: .5s all;
 }
 
+.shiftLeft1, .shiftLeft2 {
+  position: relative;
+  right: -650px;
+}
+
+.shiftRight1, .shiftRight2 {
+  position: relative;
+  right: 300px;
+}
+
+.address {
+  background-image: url("../assets/thing3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.address div.textblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.address div.textblock span, .address div.textblock a {
+  font-weight: 300;
+  font-family: Lato, sans-serif;
+  color: white;
+}
+
+.address div.textblock a:hover, .address div.textblock a:focus {
+  color: #e7c376;
+}
+
 .footer {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.7);
   font-family: Lato, sans-serif;
   text-align: center;
   font-size: calc(1rem + 0.3vw);
@@ -668,7 +723,7 @@ form .actions button:hover {
 }
 
 .footer a {
-  color: #111517;
+  color: white;
   font-weight: 400;
   position: relative;
   z-index: 99;
@@ -685,7 +740,8 @@ form .actions button:hover {
     font-size: calc(6rem + 2vw);
   }
   header .siteTitle h2 {
-    letter-spacing: 5px;
+    font-size: 20px;
+    letter-spacing: unset;
   }
   #What .services div {
     width: 50%;
@@ -714,11 +770,20 @@ form .actions button:hover {
     font-size: calc(4rem + 2vw);
   }
   header .siteTitle h2 {
-    font-size: 20px;
+    font-size: 16px;
     padding-top: 20px;
   }
   header .siteTitle br {
     display: initial;
+  }
+  .Img1, .Img2 {
+    height: 100vh;
+  }
+  .Img1 img, .Img2 img {
+    width: auto;
+    height: 100%;
+    position: relative;
+    left: -320px;
   }
   p {
     font-size: 16px;

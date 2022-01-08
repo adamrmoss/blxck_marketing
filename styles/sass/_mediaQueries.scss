@@ -2,7 +2,7 @@
 @media (max-width: 768px) {
     header .siteTitle {
         h1 {font-size: calc(6rem + 2vw)}
-        h2 { letter-spacing: 5px; }
+        h2 {font-size: 20px; letter-spacing: unset; }
     }
    
     #What .services div {
@@ -22,16 +22,20 @@
                 justify-content: center !important;
                 a {display: none;}
             }
-            // .headers {
-            //     div { 
-            //         margin: 20px auto;
-            //     }
-            // }
             h1 { font-size: calc(4rem + 2vw); }
-            h2 { font-size: 20px; padding-top: 20px;}
-            br { display:initial; }
+            h2 { font-size: 16px; padding-top: 20px;}
+            br { display: initial; }
         }
     }    
+    .Img1, .Img2 {
+        height: 100vh;
+        img {
+            width: auto;
+            height: 100%;
+            position: relative;
+            left: -320px;
+        }
+    }
     p { font-size: 16px; }
     #Contact {
         h2 {right: -625px !important}
