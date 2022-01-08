@@ -252,7 +252,7 @@ html, body {
 body {
   font-size: 1.6rem;
   font-family: 'Lato', sans-serif;
-  cursor: url("../../assets/UFO-50-2.png"), default;
+  cursor: url("../assets/UFO-50-2.png"), default;
 }
 
 img {
