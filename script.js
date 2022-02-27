@@ -79,9 +79,24 @@ gsap.from('.whiteLine2', {
     duration: 8, width: "0", stagger: 1
 });
 
-const cursor = document.querySelector('.cursor');
 
+const nav = document.getElementById('nav')
 
+const showHideHeader = gsap.from(nav, {
+    yPercent: -100,
+    duration: 0.1,
+    ease: "sine.out"
+})
+
+ScrollTrigger.create({
+    start: "top top",
+    onUpdate: (self) => {
+        if (self.direction === -1) showHideHeader.play();
+        else showHideHeader.reverse();
+    }
+})
+
+const cursor = document.querySelector('.cursor')
 function toggleText(el) {
     const text = el.nextElementSibling;
     text.classList.toggle('hidden');

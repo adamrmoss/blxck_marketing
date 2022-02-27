@@ -13,6 +13,16 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     src: url('../fonts/BlackoutSunrise.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'SpaceAge';
+    src: url('../fonts/space-age.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Russo';
+    src: url('../fonts/RussoOne-Regular.ttf') format('truetype');
+}
+
 $nonBlack: #111517;
 $ogray : rgba(128, 128, 128, 0.6);
 $owhite : rgba(255, 255, 255, 0.7);
@@ -30,7 +40,6 @@ html, body {
 
 body {
     font-size: 1.6rem;
-    font-family: 'Lato', sans-serif;
     cursor: url("../assets/UFO-50-2.png") 25 25, auto;
 }
 
@@ -61,7 +70,6 @@ h1, h2, h3, h4 {
 a { text-decoration: none; }
 
 h2, h4 {
-    font-family: Lato, sans-serif;
     font-weight: 700;
     color: white;
     text-align: left;
@@ -71,14 +79,15 @@ h2, h4 {
 }
 
 h2 {
+    font-family: SpaceAge, sans-serif;
     font-size: calc(1.5rem + 4vw);
-    font-family: Lato, sans-serif;
 }
 
 h4 {
     font-size: calc(1rem + 1vw);
     color: $gold;
     font-weight: 500;
+    font-family: Russo, sans-serif;
 }
 p:not(.logo) {
     font-size: calc(0.5rem + 2vw); 
@@ -86,17 +95,6 @@ p:not(.logo) {
 }
 
 .hidden { display: none !important; }
-
-// .cursor {
-//     width: 40px;
-//     height: 40px;
-//     background-color: $owhite;
-//     mix-blend-mode: difference;
-//     transition-duration: 80ms;
-//     transition-timing-function: ease-out;
-//     z-index: 9;
-//     pointer-events: none;
-// }
 
 .expand {
     animation: cursorClick .5s forwards;
@@ -136,9 +134,9 @@ p:not(.logo) {
 
 button {
     background: none;
-    border: 1px solid $gold;
-    color: $gold;
-    font-family: Lato, sans-serif;
+    border: 1px solid grey;
+    color: grey;
+    font-family: Russo, sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -152,9 +150,9 @@ button {
     transition: 0.2s all;
     cursor: pointer;
     &:hover, &:active {
-        color: #7c673a;
-        border-color: #7c673a;
-        background: none;
+        color: black;
+        border-color: $owhite;
+        background: white;
         transition: .5s all;
     }
 }

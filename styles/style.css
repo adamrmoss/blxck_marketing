@@ -240,6 +240,16 @@ html {
   src: url("../fonts/BlackoutSunrise.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: 'SpaceAge';
+  src: url("../fonts/space-age.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Russo';
+  src: url("../fonts/RussoOne-Regular.ttf") format("truetype");
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -251,7 +261,6 @@ html, body {
 
 body {
   font-size: 1.6rem;
-  font-family: 'Lato', sans-serif;
   cursor: url("../assets/UFO-50-2.png") 25 25, auto;
 }
 
@@ -286,7 +295,6 @@ a {
 }
 
 h2, h4 {
-  font-family: Lato, sans-serif;
   font-weight: 700;
   color: white;
   text-align: left;
@@ -296,14 +304,15 @@ h2, h4 {
 }
 
 h2 {
+  font-family: SpaceAge, sans-serif;
   font-size: calc(1.5rem + 4vw);
-  font-family: Lato, sans-serif;
 }
 
 h4 {
   font-size: calc(1rem + 1vw);
   color: #e7c376;
   font-weight: 500;
+  font-family: Russo, sans-serif;
 }
 
 p:not(.logo) {
@@ -379,9 +388,9 @@ p:not(.logo) {
 
 button {
   background: none;
-  border: 1px solid #e7c376;
-  color: #e7c376;
-  font-family: Lato, sans-serif;
+  border: 1px solid grey;
+  color: grey;
+  font-family: Russo, sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -398,9 +407,9 @@ button {
 }
 
 button:hover, button:active {
-  color: #7c673a;
-  border-color: #7c673a;
-  background: none;
+  color: black;
+  border-color: rgba(255, 255, 255, 0.7);
+  background: white;
   -webkit-transition: .5s all;
   transition: .5s all;
 }
@@ -417,11 +426,8 @@ select {
 }
 
 nav.flexed {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  width: 100%;
-  padding: 5px 20px;
+  z-index: 999;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -431,6 +437,9 @@ nav.flexed {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 15px 20px;
+  color: white;
+  width: 100%;
   background: rgba(0, 0, 0, 0.6);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
@@ -440,22 +449,16 @@ nav.flexed {
 }
 
 nav.flexed a {
-  color: rgba(255, 255, 255, 0.7);
-  font-weight: 300;
-}
-
-nav.flexed .fas {
   color: white;
-  padding: 15px 8px;
-  font-size: 1.3rem;
-  -webkit-transition: all 0.16s;
-  transition: all 0.16s;
-  z-index: 999;
+  text-decoration: none;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  -webkit-transition: 0.5s letter-spacing;
+  transition: 0.5s letter-spacing;
 }
 
-nav.flexed .fas:hover, nav.flexed .fas:focus {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+nav.flexed a:hover, nav.flexed a:focus {
+  letter-spacing: 3px;
 }
 
 #header {
@@ -518,7 +521,7 @@ header .siteTitle h1 {
 }
 
 header .siteTitle h2 {
-  font-family: Lato, serif;
+  font-family: Russo, sans-serif;
   font-size: calc(2rem + 1vw);
   font-weight: 700;
   margin-top: -10px;
@@ -554,6 +557,7 @@ header .siteTitle br {
 }
 
 .about .textblock, .what .textblock, .why .textblock, .address .textblock, .contact .textblock {
+  font-family: Russo, sans-serif;
   height: 100%;
   margin: 0 auto;
   padding: 20px 0;
@@ -565,7 +569,6 @@ header .siteTitle br {
 .about p, .what p, .why p, .address p, .contact p {
   letter-spacing: 0.6px;
   line-height: 120%;
-  width: 70%;
   margin: 0 auto;
   color: white;
   text-transform: uppercase;
@@ -639,6 +642,7 @@ header .siteTitle br {
   text-align: center;
   margin-top: 50px;
   width: 100%;
+  font-family: Russo, sans-serif;
 }
 
 #Contact form p {
@@ -647,9 +651,8 @@ header .siteTitle br {
 }
 
 #Contact form input, #Contact form select {
+  font-family: Russo, sans-serif;
   color: #e7c376;
-  font-weight: 300;
-  font-family: Lato, sans-serif;
   text-transform: uppercase;
   text-align: center;
   background: none;
@@ -759,14 +762,6 @@ header .siteTitle br {
   .cursor {
     display: none;
   }
-  header .siteTitle nav {
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
-  }
-  header .siteTitle nav a {
-    display: none;
-  }
   header .siteTitle h1 {
     font-size: calc(4rem + 2vw);
   }
@@ -777,14 +772,14 @@ header .siteTitle br {
   header .siteTitle br {
     display: initial;
   }
-  .Img1, .Img2 {
+  .Img1 {
     height: 100vh;
   }
-  .Img1 img, .Img2 img {
+  .Img1 img {
     width: auto;
     height: 100%;
     position: relative;
-    left: -320px;
+    left: -420px;
   }
   p {
     font-size: 16px;

@@ -18,22 +18,18 @@
     .cursor { display: none; }
     header {
         .siteTitle {
-            nav {
-                justify-content: center !important;
-                a {display: none;}
-            }
             h1 { font-size: calc(4rem + 2vw); }
             h2 { font-size: 16px; padding-top: 20px;}
             br { display: initial; }
         }
     }    
-    .Img1, .Img2 {
+    .Img1 {
         height: 100vh;
         img {
             width: auto;
             height: 100%;
             position: relative;
-            left: -320px;
+            left: -420px;
         }
     }
     p { font-size: 16px; }
