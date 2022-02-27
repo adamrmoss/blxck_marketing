@@ -40,7 +40,7 @@ gsap.to('.shiftRight2', {
         toggleActions,
         scrub: 2,
     },
-    duration: 10, x: 600
+    duration: 10, x: 800
 });
 gsap.to('.shiftLeft2', {
     scrollTrigger: {
@@ -79,34 +79,8 @@ gsap.from('.whiteLine2', {
     duration: 8, width: "0", stagger: 1
 });
 
-
-// $(function() {
-//     var canvas = document.createElement("canvas");
-//     canvas.width = 24;
-//     canvas.height = 24;
-//     //document.body.appendChild(canvas);
-//     var ctx = canvas.getContext("2d");
-//     ctx.fillStyle = "#000000";
-//     ctx.font = "24px FontAwesome";
-//     ctx.textAlign = "center";
-//     ctx.textBaseline = "middle";
-//     ctx.fillText("\uf002", 12, 12);
-//     var dataURL = canvas.toDataURL('image/png')
-//     $('body').css('cursor', 'url('+dataURL+'), auto');
-// });
-
 const cursor = document.querySelector('.cursor');
 
-// document.addEventListener('mousemove', e => {
-//     cursor.setAttribute('style', 'top: '+(e.pageY - 20)+"px; left: "+(e.pageX - 20)+'px;');
-// });
-
-// document.addEventListener('click', () => {
-//     cursor.classList.add('expand');
-//     setTimeout(() => {
-//         cursor.classList.remove('expand');
-//     }, 500)
-// });
 
 function toggleText(el) {
     const text = el.nextElementSibling;
