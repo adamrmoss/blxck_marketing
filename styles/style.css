@@ -787,7 +787,7 @@ header .siteTitle br {
   }
   header .siteTitle h2 {
     font-size: 20px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
   }
   #our-services .textblock div {
     width: 50%;
@@ -807,8 +807,14 @@ header .siteTitle br {
   .cursor {
     display: none;
   }
+  nav {
+    padding: 10px 20px !important;
+  }
+  nav a {
+    font-size: 12px;
+  }
   header .siteTitle h1 {
-    font-size: calc(5rem + 4vw);
+    font-size: calc(5rem + 2vw);
   }
   header .siteTitle h2 {
     font-size: 16px;
@@ -817,9 +823,18 @@ header .siteTitle br {
   header .siteTitle br {
     display: initial;
   }
-  #about .textblock p, #what .textblock p, #address .textblock p, #contact .textblock p {
+  .Img1 {
+    height: 100vh;
+  }
+  .Img1 img {
+    width: auto;
+    height: 100%;
+    position: relative;
+    left: -390px;
+  }
+  #about-us .textblock p, #what-we-do .textblock p, #address .textblock p, #contact .textblock p {
     line-height: 130%;
-    font-size: 18px;
+    font-size: 16px;
   }
   #our-services .textblock {
     padding: 20px;
@@ -846,16 +861,31 @@ header .siteTitle br {
   #our-services .textblock div p {
     padding: 0px 15px;
   }
-  .shiftLeft1, .shiftLeft2 {
-    right: -500px;
+  .shiftLeft1 {
+    right: -430px;
+  }
+  .shiftLeft2 {
+    right: -650px;
   }
   .shiftRight1, .shiftRight2 {
-    right: 400px;
+    right: 450px;
   }
-  #Contact form p {
+  #contact {
+    padding-top: 80px;
+  }
+  #contact form {
+    padding: 0 20px;
+  }
+  #contact form p {
     font-size: 16px;
   }
-  #Contact form input, #Contact form select {
+  #contact form input, #contact form select {
     max-width: 250px;
+  }
+  #address {
+    font-size: 16px;
+  }
+  #address h4 {
+    font-size: 20px;
   }
 }

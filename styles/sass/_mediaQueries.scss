@@ -2,7 +2,7 @@
 @media (max-width: 768px) {
     header .siteTitle {
         h1 {font-size: calc(6rem + 2vw)}
-        h2 {font-size: 20px; letter-spacing: 3px; }
+        h2 {font-size: 20px; letter-spacing: 2px; }
     }
     #our-services .textblock div {
         width: 50%;
@@ -16,24 +16,28 @@
 /* Landscape phones and down */
 @media (max-width: 530px) {
     .cursor { display: none; }
+    nav { 
+        padding: 10px 20px !important;
+        a {font-size: 12px;}
+    }
     header {
         .siteTitle {
-            h1 { font-size: calc(5rem + 4vw); }
-            h2 { font-size: 16px; padding-top: 20px;}
+            h1 { font-size: calc(5rem + 2vw); }
+            h2 { font-size: 16px; padding-top: 20px; }
             br { display: initial; }
         }
     }    
-    // .Img1, .Img2 {
-    //     height: 100vh;
-    //     img {
-    //         width: auto;
-    //         height: 100%;
-    //         position: relative;
-    //         left: -350px;
-    //     }
-    // }
-    #about, #what, #address, #contact {.textblock {
-        p { line-height: 130%; font-size: 18px; }
+    .Img1 {
+        height: 100vh;
+        img {
+            width: auto;
+            height: 100%;
+            position: relative;
+            left: -390px;
+        }
+    }
+    #about-us, #what-we-do, #address, #contact {.textblock {
+        p { line-height: 130%; font-size: 16px; }
     }}
     #our-services .textblock {
         padding: 20px;
@@ -46,13 +50,20 @@
             p { padding: 0px 15px; }
         }      
     }
-    .shiftLeft1, .shiftLeft2  { right: -500px; }
-    .shiftRight1, .shiftRight2 { right: 400px; }
-    #Contact {
+    .shiftLeft1 { right: -430px; }
+    .shiftLeft2  {right: -650px; }
+    .shiftRight1, .shiftRight2 { right: 450px; }
+    #contact {
+        padding-top: 80px;
         form {
+            padding: 0 20px;
             p {font-size: 16px;}
             input, select {max-width: 250px;}
         }
+    }
+    #address { 
+        h4 {font-size: 20px;}
+        font-size: 16px; 
     }
 }
 
