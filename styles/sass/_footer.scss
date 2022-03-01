@@ -1,14 +1,19 @@
-.address {
+#address {
     background-image: url("../assets/thing3.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     div.textblock {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        span, a {font-weight: 300; font-family: Lato, sans-serif; color: white;}
+        span, a {
+            font-weight: 300; 
+            font-family: Lato, sans-serif; 
+            color: white;
+            line-height: 130%;
+        }
         a:hover, a:focus {color: $gold}
     }
 }

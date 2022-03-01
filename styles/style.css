@@ -518,7 +518,7 @@ nav.flexed a:hover, nav.flexed a:focus {
 
 header {
   overflow-x: hidden;
-  background-image: url("../assets/earth4.jpg");
+  background-image: url("../assets/earth4.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -583,7 +583,7 @@ header .siteTitle br {
   display: none;
 }
 
-.about, .what, .why, .address, .contact {
+#about-us, #what-we-do, #our-services, #address, #contact {
   background: black;
   min-height: 100vh;
   padding: 20px 0;
@@ -600,11 +600,10 @@ header .siteTitle br {
   font-weight: 500;
   letter-spacing: 0px;
   color: white;
-  line-height: 130%;
   font-size: calc(1.2rem + 0.3vw);
 }
 
-.about .textblock, .what .textblock, .why .textblock, .address .textblock, .contact .textblock {
+#about-us .textblock, #what-we-do .textblock, #our-services .textblock, #address .textblock, #contact .textblock {
   font-family: Russo, sans-serif;
   height: 100%;
   margin: 0 auto;
@@ -614,24 +613,24 @@ header .siteTitle br {
   background: black;
 }
 
-.about p, .what p, .why p, .address p, .contact p {
+#about-us p, #what-we-do p, #our-services p, #address p, #contact p {
   letter-spacing: 0.6px;
-  line-height: 120%;
+  line-height: 150%;
   margin: 0 auto;
   color: white;
   text-transform: uppercase;
   text-align: center;
 }
 
-.about p span, .what p span, .why p span, .address p span, .contact p span {
+#about-us p span, #what-we-do p span, #our-services p span, #address p span, #contact p span {
   color: rgba(255, 255, 255, 0.7);
 }
 
-#What {
-  padding: 50px 0;
+#our-services {
+  padding: 80px 0 20px;
 }
 
-#What .services {
+#our-services .textblock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -644,33 +643,33 @@ header .siteTitle br {
           justify-content: space-between;
 }
 
-#What .services div {
+#our-services .textblock div {
   width: 30%;
   padding: 30px 0px 50px;
   margin-top: 30px;
   text-align: center;
 }
 
-#What .services div h4 {
+#our-services .textblock div h4 {
   text-align: center;
   padding-bottom: 0;
 }
 
-#What .services div p {
+#our-services .textblock div p {
   font-size: 20px;
   text-transform: none;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.7);
 }
 
-#What .services div i {
+#our-services .textblock div i {
   font-size: calc(1rem + 6vw);
   color: #7ebec5;
   padding-bottom: 20px;
 }
 
-#Contact {
-  height: 100%;
+#contact {
+  min-height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -680,19 +679,19 @@ header .siteTitle br {
           flex-direction: column;
 }
 
-#Contact form {
+#contact form {
   text-align: center;
   margin-top: 50px;
   width: 100%;
   font-family: Russo, sans-serif;
 }
 
-#Contact form p {
+#contact form p {
   font-size: calc(2rem + 1vh);
   line-height: 60px;
 }
 
-#Contact form input, #Contact form select {
+#contact form input, #contact form select {
   font-family: Russo, sans-serif;
   color: #e7c376;
   text-transform: uppercase;
@@ -705,7 +704,7 @@ header .siteTitle br {
   text-overflow: ellipsis;
 }
 
-#Contact form .actions {
+#contact form .actions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -724,14 +723,14 @@ header .siteTitle br {
   right: 300px;
 }
 
-.address {
+#address {
   background-image: url("../assets/thing3.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
 }
 
-.address div.textblock {
+#address div.textblock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -747,13 +746,14 @@ header .siteTitle br {
           align-items: center;
 }
 
-.address div.textblock span, .address div.textblock a {
+#address div.textblock span, #address div.textblock a {
   font-weight: 300;
   font-family: Lato, sans-serif;
   color: white;
+  line-height: 130%;
 }
 
-.address div.textblock a:hover, .address div.textblock a:focus {
+#address div.textblock a:hover, #address div.textblock a:focus {
   color: #e7c376;
 }
 
@@ -787,15 +787,18 @@ header .siteTitle br {
   }
   header .siteTitle h2 {
     font-size: 20px;
-    letter-spacing: unset;
+    letter-spacing: 3px;
   }
-  #What .services div {
+  #our-services .textblock div {
     width: 50%;
     margin-right: 0px;
     padding: 5px;
   }
-  #What .services div p {
+  #our-services .textblock div p {
     font-size: 16px;
+  }
+  #contact form p {
+    font-size: 20px;
   }
 }
 
@@ -805,7 +808,7 @@ header .siteTitle br {
     display: none;
   }
   header .siteTitle h1 {
-    font-size: calc(5rem + 2vw);
+    font-size: calc(5rem + 4vw);
   }
   header .siteTitle h2 {
     font-size: 16px;
@@ -814,20 +817,18 @@ header .siteTitle br {
   header .siteTitle br {
     display: initial;
   }
-  .Img1, .Img2 {
-    height: 100vh;
-  }
-  .Img1 img, .Img2 img {
-    width: auto;
-    height: 100%;
-    position: relative;
-    left: -350px;
-  }
-  .about .textblock p, .why .textblock p, .address .textblock p, .contact .textblock p {
+  #about .textblock p, #what .textblock p, #address .textblock p, #contact .textblock p {
     line-height: 130%;
     font-size: 18px;
   }
-  #What .services div {
+  #our-services .textblock {
+    padding: 20px;
+  }
+  #our-services .textblock button {
+    min-width: 130px;
+    width: 130px;
+  }
+  #our-services .textblock div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -842,7 +843,7 @@ header .siteTitle br {
         -ms-flex-align: center;
             align-items: center;
   }
-  #What .services div p {
+  #our-services .textblock div p {
     padding: 0px 15px;
   }
   .shiftLeft1, .shiftLeft2 {
@@ -852,12 +853,9 @@ header .siteTitle br {
     right: 400px;
   }
   #Contact form p {
-    font-size: 14px;
+    font-size: 16px;
   }
   #Contact form input, #Contact form select {
     max-width: 250px;
-  }
-  footer {
-    font-size: 14px;
   }
 }
