@@ -102,36 +102,50 @@ function toggleText(el) {
 
     if (el.innerText === "SHOW MORE") {
         el.innerText = "SHOW LESS";
-    } else {
+      } else {
         el.innerText = "SHOW MORE";
-    }
+      }
 }
 
-const cursor = document.getElementById("cursor");
-const planet = document.querySelector(".cursor-color");
+const cursor = document.querySelector('.cursor');
 
-let posS = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
-let posB = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
-let mouse = { x: posS.x, y: posS.y };
-const speed = 0.1;
-let fpms = 60 / 1000;
-
-window.addEventListener("mousemove", (e) => {
-  mouse.x = e.x;
-  mouse.y = e.y;
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute('style', 'top: '+(e.pageY - 20)+"px; left: "+(e.pageX - 20)+'px;');
 });
 
-const xSetPlanet = gsap.quickSetter(planet, "x", "px");
-const ySetPlanet = gsap.quickSetter(planet, "y", "px");
-
-gsap.ticker.add((deltaTime) => {
-  let delta = deltaTime * fpms;
-  let dt = 1.0 - Math.pow(1.0 - speed, delta);
-
-  posS.x += mouse.x - posS.x;
-  posS.y += mouse.y - posS.y;
-  posB.x += (mouse.x - posB.x) * dt;
-  posB.y += (mouse.y - posB.y) * dt;
-  xSetPlanet(posB.x);
-  ySetPlanet(posB.y);
+document.addEventListener('click', () => {
+    cursor.classList.add('expand');
+    setTimeout(() => {
+        cursor.classList.remove('expand');
+    }, 500)
 });
+
+// const cursor = document.getElementById("cursor");
+// // const cursorBallBig = document.querySelector(".circle-big");
+// const planet = document.querySelector(".cursor-color");
+
+// let posS = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+// let posB = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+// let mouse = { x: posS.x, y: posS.y };
+// const speed = 0.1;
+// let fpms = 60 / 1000;
+
+// window.addEventListener("mousemove", (e) => {
+//   mouse.x = e.x;
+//   mouse.y = e.y;
+// });
+
+// const xSetPlanet = gsap.quickSetter(planet, "x", "px");
+// const ySetPlanet = gsap.quickSetter(planet, "y", "px");
+
+// gsap.ticker.add((deltaTime) => {
+//   let delta = deltaTime * fpms;
+//   let dt = 1.0 - Math.pow(1.0 - speed, delta);
+
+//   posS.x += mouse.x - posS.x;
+//   posS.y += mouse.y - posS.y;
+//   posB.x += (mouse.x - posB.x) * dt;
+//   posB.y += (mouse.y - posB.y) * dt;
+//   xSetPlanet(posB.x);
+//   ySetPlanet(posB.y);
+// });

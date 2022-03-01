@@ -509,7 +509,7 @@ nav.flexed a {
 }
 
 nav.flexed a:hover, nav.flexed a:focus {
-  letter-spacing: 3px;
+  color: grey;
 }
 
 #header {
@@ -627,6 +627,10 @@ header .siteTitle br {
   color: rgba(255, 255, 255, 0.7);
 }
 
+#What {
+  padding: 50px 0;
+}
+
 #What .services {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -641,19 +645,8 @@ header .siteTitle br {
 }
 
 #What .services div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 30%;
+  padding: 30px 0px 50px;
   margin-top: 30px;
   text-align: center;
 }
@@ -808,6 +801,9 @@ header .siteTitle br {
 
 /* Landscape phones and down */
 @media (max-width: 530px) {
+  .cursor {
+    display: none;
+  }
   header .siteTitle h1 {
     font-size: calc(5rem + 2vw);
   }
@@ -830,6 +826,21 @@ header .siteTitle br {
   .about .textblock p, .why .textblock p, .address .textblock p, .contact .textblock p {
     line-height: 130%;
     font-size: 18px;
+  }
+  #What .services div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #What .services div p {
     padding: 0px 15px;

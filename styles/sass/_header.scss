@@ -19,7 +19,7 @@ nav.flexed {
         letter-spacing: 0.5px;
         transition: 0.5s letter-spacing;
         &:hover, &:focus {
-            letter-spacing: 3px;
+            color: grey
         }
     }
 }

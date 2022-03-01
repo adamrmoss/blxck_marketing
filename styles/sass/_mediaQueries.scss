@@ -15,7 +15,7 @@
 
 /* Landscape phones and down */
 @media (max-width: 530px) {
-    // .cursor { display: none; }
+    .cursor { display: none; }
     header {
         .siteTitle {
             h1 { font-size: calc(5rem + 2vw); }
@@ -35,8 +35,12 @@
     .about, .why, .address, .contact {.textblock {
         p { line-height: 130%; font-size: 18px; }
     }}
-    #What .services div p {
-       padding: 0px 15px;
+    #What .services div {
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        p { padding: 0px 15px; }
     }
     .shiftLeft1, .shiftLeft2  { right: -500px; }
     .shiftRight1, .shiftRight2 { right: 400px; }
