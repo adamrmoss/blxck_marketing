@@ -40,7 +40,6 @@ html, body {
 
 body {
     font-size: 1.6rem;
-    cursor: url("../assets/UFO-50-2.png") 25 25, auto;
 }
 
 img {
@@ -89,6 +88,7 @@ h4 {
     font-weight: 500;
     font-family: Russo, sans-serif;
 }
+
 p:not(.logo) {
     font-size: calc(0.5rem + 2vw); 
     font-weight: 300;
@@ -149,7 +149,7 @@ button {
     z-index: 999;
     transition: 0.2s all;
     cursor: pointer;
-    &:hover, &:active {
+    &:hover, &:focus {
         color: black;
         border-color: $owhite;
         background: white;

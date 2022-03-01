@@ -15,32 +15,39 @@
 
 /* Landscape phones and down */
 @media (max-width: 530px) {
-    .cursor { display: none; }
+    // .cursor { display: none; }
     header {
         .siteTitle {
-            h1 { font-size: calc(4rem + 2vw); }
+            h1 { font-size: calc(5rem + 2vw); }
             h2 { font-size: 16px; padding-top: 20px;}
             br { display: initial; }
         }
     }    
-    .Img1 {
+    .Img1, .Img2 {
         height: 100vh;
         img {
             width: auto;
             height: 100%;
             position: relative;
-            left: -420px;
+            left: -350px;
         }
     }
-    p { font-size: 16px; }
+    .about, .why, .address, .contact {.textblock {
+        padding: 20px 70px;
+        p { line-height: 130%; font-size: 18px; }
+    }}
+    #What .services div {
+       padding: 0px 15px;
+    }
+    .shiftLeft1, .shiftLeft2  { right: -500px; }
+    .shiftRight1, .shiftRight2 { right: 400px; }
     #Contact {
-        h2 {right: -625px !important}
         form {
-            p {font-size: 16px;}
+            p {font-size: 14px;}
             input, select {max-width: 250px;}
         }
     }
-    footer { font-size: 16px;}
+    footer { font-size: 14px;}
 }
 
 

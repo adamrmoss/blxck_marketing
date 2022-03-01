@@ -1,0 +1,96 @@
+
+.cursor {
+    filter: invert(100%) sepia(0%) saturate(7490%) hue-rotate(17deg) brightness(101%) contrast(106%);
+}
+
+#cursor {
+    img {
+        width: 50px;
+        height: 50px;
+        mix-blend-mode: difference;
+        color: white;
+    }
+    position: absolute;
+    border-radius: 50%;
+    transition-duration: 80ms;
+    transition-timing-function: ease-out;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.expand {
+    animation: cursorClick .7s forwards;
+    border: 3px solid #90CECC;
+    z-index: 998;
+}
+
+@keyframes cursorClick {
+    0% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+       transform: rotate(360deg); 
+       opacity: 0;
+    }
+}
+
+
+// .planet {
+//     transition-duration: 80ms;
+//     transition-timing-function: ease-out;
+//     z-index: 999;
+//     height: 40px;
+//     width: 40px;
+//     border-radius: 50%;
+//     background-color: white;
+//     opacity: 0.8;
+//     position: relative;
+//     transform: rotate(50deg);
+//     .ring1, .ring2 {
+//         height: 4px;
+//         width: 4px;
+//         border-radius: 50%;
+//         background-color: black;
+//         // mix-blend-mode: difference;
+//         position: absolute;
+//         top: -3px;
+//         left: -6px; 
+//         z-index: 0;
+//         animation: orbit 3s infinite forwards;
+//     }
+//     .ring2 {
+//         background-color: black;
+//         animation-delay: 0.2s;
+//     }
+//     .ring3 {
+//         background-color: rgb(6, 26, 94);
+//         mix-blend-mode: difference;
+//         animation-delay: 0.3s;
+//     }
+//     .ring4 {
+//         background-color:rgb(183, 0, 255);
+//         mix-blend-mode: difference;
+//         animation-delay: 0.4s;
+//     }
+// }
+
+// @keyframes orbit {
+//     0% {}
+//     50% {
+//         top: 42px;
+//         left: 40px;
+//     }
+//     57% {background-color: $gold;}
+//     58% {
+//         background-color: white;
+//     }
+    
+//     78% {background-color: white;}
+//     79% {
+//         background-color: $gold;
+//     }
+//     100% {}
+// }

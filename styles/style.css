@@ -261,7 +261,6 @@ html, body {
 
 body {
   font-size: 1.6rem;
-  cursor: url("../assets/UFO-50-2.png") 25 25, auto;
 }
 
 img {
@@ -406,7 +405,7 @@ button {
   cursor: pointer;
 }
 
-button:hover, button:active {
+button:hover, button:focus {
   color: black;
   border-color: rgba(255, 255, 255, 0.7);
   background: white;
@@ -423,6 +422,52 @@ option {
 select {
   margin: 0 !important;
   padding: 0 !important;
+}
+
+.cursor {
+  -webkit-filter: invert(100%) sepia(0%) saturate(7490%) hue-rotate(17deg) brightness(101%) contrast(106%);
+          filter: invert(100%) sepia(0%) saturate(7490%) hue-rotate(17deg) brightness(101%) contrast(106%);
+}
+
+#cursor {
+  position: absolute;
+  border-radius: 50%;
+  -webkit-transition-duration: 80ms;
+          transition-duration: 80ms;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  z-index: 999;
+  pointer-events: none;
+}
+
+#cursor img {
+  width: 50px;
+  height: 50px;
+  mix-blend-mode: difference;
+  color: white;
+}
+
+.expand {
+  -webkit-animation: cursorClick .7s forwards;
+          animation: cursorClick .7s forwards;
+  border: 3px solid #90CECC;
+  z-index: 998;
+}
+
+@keyframes cursorClick {
+  0% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+  }
 }
 
 nav.flexed {
@@ -497,9 +542,6 @@ header .siteTitle .headers {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   height: 100%;
 }
 
@@ -615,16 +657,6 @@ header .siteTitle br {
   font-size: calc(1rem + 6vw);
   color: #7ebec5;
   padding-bottom: 20px;
-}
-
-.white {
-  color: rgba(255, 255, 255, 0.7);
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
-}
-
-.white:hover, .white:focus {
-  color: white;
 }
 
 #Contact {
@@ -759,11 +791,8 @@ header .siteTitle br {
 
 /* Landscape phones and down */
 @media (max-width: 530px) {
-  .cursor {
-    display: none;
-  }
   header .siteTitle h1 {
-    font-size: calc(4rem + 2vw);
+    font-size: calc(5rem + 2vw);
   }
   header .siteTitle h2 {
     font-size: 16px;
@@ -772,28 +801,38 @@ header .siteTitle br {
   header .siteTitle br {
     display: initial;
   }
-  .Img1 {
+  .Img1, .Img2 {
     height: 100vh;
   }
-  .Img1 img {
+  .Img1 img, .Img2 img {
     width: auto;
     height: 100%;
     position: relative;
-    left: -420px;
+    left: -350px;
   }
-  p {
-    font-size: 16px;
+  .about .textblock, .why .textblock, .address .textblock, .contact .textblock {
+    padding: 20px 70px;
   }
-  #Contact h2 {
-    right: -625px !important;
+  .about .textblock p, .why .textblock p, .address .textblock p, .contact .textblock p {
+    line-height: 130%;
+    font-size: 18px;
+  }
+  #What .services div {
+    padding: 0px 15px;
+  }
+  .shiftLeft1, .shiftLeft2 {
+    right: -500px;
+  }
+  .shiftRight1, .shiftRight2 {
+    right: 400px;
   }
   #Contact form p {
-    font-size: 16px;
+    font-size: 14px;
   }
   #Contact form input, #Contact form select {
     max-width: 250px;
   }
   footer {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
