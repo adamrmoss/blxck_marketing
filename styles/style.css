@@ -300,6 +300,12 @@ h2, h4 {
   letter-spacing: 4px;
   text-transform: uppercase;
   padding-bottom: 20px;
+  white-space: nowrap;
+}
+
+h2 span, h4 span {
+  color: transparent;
+  -webkit-text-stroke: 0.7px #e7c376;
 }
 
 h2 {
@@ -602,7 +608,7 @@ header .siteTitle br {
   font-family: Russo, sans-serif;
   height: 100%;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 20px 60px;
   position: relative;
   z-index: 8;
   background: black;
@@ -635,8 +641,19 @@ header .siteTitle br {
 }
 
 #What .services div {
-  width: 30%;
-  padding: 30px 0px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 30px;
   text-align: center;
 }
@@ -810,14 +827,11 @@ header .siteTitle br {
     position: relative;
     left: -350px;
   }
-  .about .textblock, .why .textblock, .address .textblock, .contact .textblock {
-    padding: 20px 70px;
-  }
   .about .textblock p, .why .textblock p, .address .textblock p, .contact .textblock p {
     line-height: 130%;
     font-size: 18px;
   }
-  #What .services div {
+  #What .services div p {
     padding: 0px 15px;
   }
   .shiftLeft1, .shiftLeft2 {

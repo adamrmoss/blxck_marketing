@@ -74,7 +74,12 @@ h2, h4 {
     text-align: left;
     letter-spacing: 4px;
     text-transform: uppercase;
-    padding-bottom: 20px;   
+    padding-bottom: 20px;  
+    white-space: nowrap; 
+    span {
+        color: transparent;
+        -webkit-text-stroke: 0.7px $gold;
+    }
 }
 
 h2 {

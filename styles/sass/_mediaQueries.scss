@@ -33,10 +33,9 @@
         }
     }
     .about, .why, .address, .contact {.textblock {
-        padding: 20px 70px;
         p { line-height: 130%; font-size: 18px; }
     }}
-    #What .services div {
+    #What .services div p {
        padding: 0px 15px;
     }
     .shiftLeft1, .shiftLeft2  { right: -500px; }

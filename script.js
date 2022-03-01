@@ -102,9 +102,9 @@ function toggleText(el) {
 
     if (el.innerText === "SHOW MORE") {
         el.innerText = "SHOW LESS";
-      } else {
+    } else {
         el.innerText = "SHOW MORE";
-      }
+    }
 }
 
 const cursor = document.getElementById("cursor");
