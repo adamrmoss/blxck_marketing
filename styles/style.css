@@ -528,7 +528,8 @@ nav.flexed a:hover, nav.flexed a:focus {
 
 header {
   overflow-x: hidden;
-  background-image: url("../assets/earth4.png");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(3, 3, 3, 0.6)), to(rgba(0, 0, 0, 0.05))), url("../assets/earth4.png");
+  background: linear-gradient(0deg, rgba(3, 3, 3, 0.6), rgba(0, 0, 0, 0.05)), url("../assets/earth4.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -636,6 +637,24 @@ header .siteTitle br {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.Img1 {
+  background: url("../assets/greg-rakozy-oMpAz-DN-9I-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: auto;
+}
+
+.Img2 {
+  background: url("../assets/epic-earth-rotate-sunlight-glow-starry-galaxy-2021-08-29-03-57-26-utc.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: auto;
+}
+
 #our-services {
   padding: 80px 0 20px;
 }
@@ -651,6 +670,7 @@ header .siteTitle br {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 20px 150px;
 }
 
 #our-services .textblock div {
@@ -668,6 +688,7 @@ header .siteTitle br {
 
 #our-services .textblock div button {
   border: none;
+  padding-top: 0;
 }
 
 #our-services .textblock div button:focus, #our-services .textblock div button:hover {
@@ -837,16 +858,7 @@ header .siteTitle br {
   header .siteTitle br {
     display: initial;
   }
-  .Img1 {
-    height: 100vh;
-  }
-  .Img1 img {
-    width: auto;
-    height: 100%;
-    position: relative;
-    left: -390px;
-  }
-  #about-us .textblock p, #what-we-do .textblock p, #address .textblock p, #contact .textblock p {
+  #about-us .textblock p, #what-we-do .textblock p, #address .textblock p, #contact #our-services .textblock p {
     line-height: 130%;
     font-size: 16px;
   }
@@ -858,6 +870,7 @@ header .siteTitle br {
     width: 130px;
   }
   #our-services .textblock div {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -874,15 +887,19 @@ header .siteTitle br {
   }
   #our-services .textblock div p {
     padding: 0px 15px;
+    font-size: 16px;
   }
   .shiftLeft1 {
     right: -430px;
   }
   .shiftLeft2 {
-    right: -650px;
+    right: -400px;
   }
-  .shiftRight1, .shiftRight2 {
-    right: 450px;
+  .shiftRight1 {
+    right: 370px;
+  }
+  .shiftRight2 {
+    right: -300px;
   }
   #contact {
     padding-top: 80px;

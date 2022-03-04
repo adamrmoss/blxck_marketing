@@ -21,38 +21,32 @@
         a {font-size: 12px;}
     }
     header {
+        // background-color: rgba(0, 0, 0, 0.8);
         .siteTitle {
             h1 { font-size: calc(5rem + 2vw); }
             h2 { font-size: 16px; padding-top: 20px; }
             br { display: initial; }
         }
     }    
-    .Img1 {
-        height: 100vh;
-        img {
-            width: auto;
-            height: 100%;
-            position: relative;
-            left: -390px;
-        }
-    }
-    #about-us, #what-we-do, #address, #contact {.textblock {
+    #about-us, #what-we-do, #address, #contact #our-services {.textblock {
         p { line-height: 130%; font-size: 16px; }
     }}
     #our-services .textblock {
         padding: 20px;
         button { min-width: 130px; width: 130px; }
         div {
+            width: 100%;
             display:flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
-            p { padding: 0px 15px; }
+            p { padding: 0px 15px; font-size: 16px; }
         }      
     }
     .shiftLeft1 { right: -430px; }
-    .shiftLeft2  {right: -650px; }
-    .shiftRight1, .shiftRight2 { right: 450px; }
+    .shiftLeft2  { right: -400px; }
+    .shiftRight1 { right: 370px; }
+    .shiftRight2 { right: -300px; }
     #contact {
         padding-top: 80px;
         form {
