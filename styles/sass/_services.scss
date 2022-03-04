@@ -6,20 +6,30 @@
         justify-content: space-between;
         div {
             width: 30%;
-            padding: 30px 0px 50px;
-            margin-top: 30px;
+            margin: 30px 0px;
+            padding: 0;
             text-align: center;
-            h4 {text-align: center; padding-bottom: 0;}
-            p {
-                font-size: 20px;
-                text-transform: none;
-                font-weight: 300;
-                color: $owhite;
+            h4 {text-align: center; padding-bottom: 0;color: $blue}
+            button {
+                border: none;
+                &:focus, &:hover {
+                    border: none;
+                    color: white;
+                    background: none;
+                }
             }
-            i {
-                font-size: calc(1rem + 6vw);
-                color: $blue; 
-                padding-bottom: 20px;
+            div.service {
+                width: 90%;
+                margin: 0 auto;
+                height: 0px;
+                opacity: 0;
+                overflow: hidden;
+                p {
+                    font-size: 20px;
+                    text-transform: none;
+                    font-weight: 300;
+                    color: $owhite;
+                }
             }
         }
     }

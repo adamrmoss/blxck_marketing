@@ -98,13 +98,18 @@ ScrollTrigger.create({
 
 function toggleText(el) {
     const text = el.nextElementSibling;
-    text.classList.toggle('hidden');
-
+    
     if (el.innerText === "SHOW MORE") {
+        gsap.to(text, {
+            duration: 2, height: "100%", opacity: 1
+        });
         el.innerText = "SHOW LESS";
-      } else {
+    } else {
+        gsap.to(text, {
+            duration: 0.5, height: "0px"
+        });
         el.innerText = "SHOW MORE";
-      }
+    }
 }
 
 const cursor = document.querySelector('.cursor');

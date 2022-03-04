@@ -129,6 +129,9 @@ p:not(.logo) {
     -webkit-text-stroke: 0.7px black;
 }
 
+.shiftLeft1, .shiftLeft2  { position: relative; right: -650px; }
+.shiftRight1, .shiftRight2 { position: relative; right: 300px; }
+
 .logo {
     font-family: Arial, Helvetica, sans-serif; 
     font-weight: 500; letter-spacing: 0px; 
@@ -139,8 +142,8 @@ p:not(.logo) {
 
 button {
     background: none;
-    border: 1px solid grey;
-    color: grey;
+    border: 1px solid $gold;
+    color: $gold;
     font-family: Russo, sans-serif;
     font-weight: 500;
     text-transform: uppercase;
