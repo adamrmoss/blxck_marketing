@@ -33,20 +33,22 @@
     }}
     #our-services .textblock {
         padding: 20px;
+        h4 {font-size: 16px;}
         button { min-width: 130px; width: 130px; }
         div {
             width: 100%;
+            margin-bottom: 0;
             display:flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
-            p { padding: 0px 15px; font-size: 16px; }
+            div.service p { padding: 0px 15px; font-size: 16px !important; }
         }      
     }
     .shiftLeft1 { right: -430px; }
     .shiftLeft2  { right: -400px; }
     .shiftRight1 { right: 370px; }
-    .shiftRight2 { right: -300px; }
+    .shiftRight2 { right: 270px; }
     #contact {
         padding-top: 80px;
         form {

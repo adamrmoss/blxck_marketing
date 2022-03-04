@@ -865,12 +865,16 @@ header .siteTitle br {
   #our-services .textblock {
     padding: 20px;
   }
+  #our-services .textblock h4 {
+    font-size: 16px;
+  }
   #our-services .textblock button {
     min-width: 130px;
     width: 130px;
   }
   #our-services .textblock div {
     width: 100%;
+    margin-bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -885,9 +889,9 @@ header .siteTitle br {
         -ms-flex-align: center;
             align-items: center;
   }
-  #our-services .textblock div p {
+  #our-services .textblock div div.service p {
     padding: 0px 15px;
-    font-size: 16px;
+    font-size: 16px !important;
   }
   .shiftLeft1 {
     right: -430px;
@@ -899,7 +903,7 @@ header .siteTitle br {
     right: 370px;
   }
   .shiftRight2 {
-    right: -300px;
+    right: 270px;
   }
   #contact {
     padding-top: 80px;
