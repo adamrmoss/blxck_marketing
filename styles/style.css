@@ -533,6 +533,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 header .siteTitle {
@@ -596,7 +597,7 @@ header .siteTitle br {
 
 #about-us, #what-we-do, #our-services, #address, #contact {
   background: black;
-  min-height: 100vh;
+  min-height: 75vh;
   padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -621,7 +622,6 @@ header .siteTitle br {
   padding: 20px 60px;
   position: relative;
   z-index: 8;
-  background: black;
 }
 
 #about-us p, #what-we-do p, #our-services p, #address p, #contact p {
@@ -639,19 +639,23 @@ header .siteTitle br {
 
 .Img1 {
   background: url("../assets/greg-rakozy-oMpAz-DN-9I-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: auto;
 }
 
 .Img2 {
   background: url("../assets/epic-earth-rotate-sunlight-glow-starry-galaxy-2021-08-29-03-57-26-utc.jpg");
-  background-size: cover;
+}
+
+.Img3 {
+  background: url("../assets/mathew-schwartz-7YiZKj9A3DM-unsplash.jpg");
+}
+
+.Img1, .Img2, .Img3 {
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  background-size: cover;
+  min-height: 500px;
+  height: 70vh;
   width: auto;
 }
 
@@ -762,6 +766,8 @@ header .siteTitle br {
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
 }
 
 #address div.textblock {
@@ -779,6 +785,7 @@ header .siteTitle br {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 40vh;
+  background-color: transparent;
 }
 
 #address div.textblock span, #address div.textblock a {
@@ -793,7 +800,7 @@ header .siteTitle br {
 }
 
 .footer {
-  background-color: black;
+  background-color: #000000;
   color: rgba(255, 255, 255, 0.7);
   font-family: Lato, sans-serif;
   text-align: center;

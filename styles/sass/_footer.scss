@@ -3,12 +3,15 @@
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
     div.textblock {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-bottom: 40vh;
+        background-color: transparent;
         span, a {
             font-weight: 300; 
             font-family: Lato, sans-serif; 
@@ -20,7 +23,7 @@
 }
 
 .footer {
-    background-color: black;
+    background-color: #000000;
     color: $owhite;
     font-family: Lato, sans-serif;
     text-align: center;

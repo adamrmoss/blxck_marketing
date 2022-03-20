@@ -32,7 +32,7 @@ gsap.to('.shiftRight1', {
         toggleActions,
         scrub: 2,
     },
-    duration: 10, x: 500
+    duration: 10, x: 600
 });
 gsap.to('.shiftLeft2', {
     scrollTrigger: {
@@ -48,7 +48,7 @@ gsap.to('.shiftRight2', {
         toggleActions,
         scrub: 2,
     },
-    duration: 10, x: 500
+    duration: 10, x: 800
 });
 
 gsap.to('.fade', {
@@ -78,6 +78,8 @@ gsap.from('.whiteLine2', {
     },
     duration: 8, width: "0", stagger: 1
 });
+
+
 
 const nav = document.getElementById('nav')
 
