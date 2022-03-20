@@ -865,6 +865,9 @@ header .siteTitle br {
   header .siteTitle br {
     display: initial;
   }
+  .Img1, .Img2, .Img3 {
+    background-attachment: unset;
+  }
   #about-us .textblock p, #what-we-do .textblock p, #address .textblock p, #contact #our-services .textblock p {
     line-height: 130%;
     font-size: 16px;

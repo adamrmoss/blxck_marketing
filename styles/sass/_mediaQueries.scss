@@ -28,9 +28,14 @@
             br { display: initial; }
         }
     }    
-    #about-us, #what-we-do, #address, #contact #our-services {.textblock {
-        p { line-height: 130%; font-size: 16px; }
-    }}
+    .Img1, .Img2, .Img3 {
+        background-attachment: unset;
+    }
+    #about-us, #what-we-do, #address, #contact #our-services {
+        .textblock {
+            p { line-height: 130%; font-size: 16px; }
+        }
+    }
     #our-services .textblock {
         padding: 20px;
         h4 {font-size: 16px;}
