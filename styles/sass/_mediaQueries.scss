@@ -1,5 +1,7 @@
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+    .cursor { display: none; }
+
     header .siteTitle {
         h1 {font-size: calc(6rem + 2vw)}
         h2 {font-size: 20px; letter-spacing: 2px; }
@@ -15,7 +17,6 @@
 
 /* Landscape phones and down */
 @media (max-width: 530px) {
-    .cursor { display: none; }
     nav { 
         padding: 10px 20px !important;
         a {font-size: 12px;}
@@ -28,6 +29,7 @@
             br { display: initial; }
         }
     }    
+    // parallax off
     .Img1, .Img2, .Img3, header, #address {
         background-attachment: scroll;
     }
@@ -53,7 +55,7 @@
     .shiftLeft1 { right: -430px; }
     .shiftLeft2  { right: -400px; }
     .shiftRight1 { right: 370px; }
-    .shiftRight2 { right: 270px; }
+    .shiftRight2 { right: 370px; }
     #contact {
         padding-top: 80px;
         form {
