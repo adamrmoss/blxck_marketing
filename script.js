@@ -67,7 +67,7 @@ gsap.from('.whiteLine', {
         toggleActions,
         scrub: true,
     },
-    duration: 8, width: "0", stagger: 1
+    duration: 5, width: "0", stagger: 1
 });
 
 gsap.from('.whiteLine2', {
@@ -97,20 +97,21 @@ ScrollTrigger.create({
     }
 })
 
-
 function toggleText(el) {
     const text = el.nextElementSibling;
     
-    if (el.innerText === "SHOW MORE") {
-        gsap.to(text, {
-            duration: 2, height: "100%", opacity: 1
-        });
-        el.innerText = "SHOW LESS";
-    } else {
+    if (el.classList.contains('open')) {
+        el.innerText = "SHOW MORE"
+        el.classList.remove('open')
         gsap.to(text, {
             duration: 0.5, height: "0px"
         });
-        el.innerText = "SHOW MORE";
+    } else {
+        el.innerText = "SHOW LESS"
+        el.classList.add('open')
+        gsap.to(text, {
+            duration: 0.5, height: "100%", opacity: 1
+        });
     }
 }
 

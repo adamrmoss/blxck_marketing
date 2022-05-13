@@ -673,7 +673,7 @@ header .siteTitle br {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px 150px;
+  padding: 20px 50px;
 }
 
 #our-services .textblock div {
@@ -684,8 +684,10 @@ header .siteTitle br {
 }
 
 #our-services .textblock div h4 {
+  font-family: SpaceAge;
   text-align: center;
   padding-bottom: 0;
+  font-size: 24px;
   color: #7ebec5;
 }
 
