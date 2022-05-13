@@ -687,7 +687,7 @@ header .siteTitle br {
   font-family: SpaceAge;
   text-align: center;
   padding-bottom: 0;
-  font-size: 24px;
+  font-size: 28px;
   color: #7ebec5;
 }
 
@@ -703,7 +703,7 @@ header .siteTitle br {
 }
 
 #our-services .textblock div div.service {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   height: 0px;
   opacity: 0;
@@ -877,7 +877,7 @@ header .siteTitle br {
     padding: 20px;
   }
   #our-services .textblock h4 {
-    font-size: 16px;
+    font-size: 18px;
   }
   #our-services .textblock button {
     min-width: 130px;
