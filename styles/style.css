@@ -298,7 +298,6 @@ h2, h4 {
   color: white;
   text-align: left;
   letter-spacing: 4px;
-  text-transform: uppercase;
   padding-bottom: 20px;
   white-space: nowrap;
 }
@@ -824,6 +823,9 @@ header .siteTitle br {
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+  .cursor {
+    display: none;
+  }
   header .siteTitle h1 {
     font-size: calc(6rem + 2vw);
   }
@@ -846,9 +848,6 @@ header .siteTitle br {
 
 /* Landscape phones and down */
 @media (max-width: 530px) {
-  .cursor {
-    display: none;
-  }
   nav {
     padding: 10px 20px !important;
   }
@@ -913,7 +912,7 @@ header .siteTitle br {
     right: 370px;
   }
   .shiftRight2 {
-    right: 270px;
+    right: 370px;
   }
   #contact {
     padding-top: 80px;
