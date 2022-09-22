@@ -146,6 +146,7 @@ button {
     font-family: Russo, sans-serif;
     font-weight: 500;
     text-transform: uppercase;
+    text-decoration-color: transparent;
     letter-spacing: 3px;
     white-space: nowrap;
     overflow: hidden;
@@ -157,10 +158,14 @@ button {
     transition: 0.2s all;
     cursor: pointer;
     &:hover, &:focus {
-        color: black;
-        border-color: $owhite;
-        background: white;
-        transition: .5s all;
+        // color: black;
+        // border-color: $owhite;
+        // background: white;
+        transform: translateY(-1px);
+        text-decoration: underline;
+        text-decoration-color: $gold;
+        transition: transform .25s,
+                    text-decoration-color 2s;
     }
 }
 

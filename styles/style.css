@@ -14,7 +14,7 @@ article, aside, footer, header, nav, section {
 
 h1 {
   font-size: 2em;
-  margin: .67em 0;
+  margin: 0.67em 0;
 }
 
 figcaption, figure, main {
@@ -33,7 +33,7 @@ hr {
 }
 
 pre {
-  font-family: monospace,monospace;
+  font-family: monospace, monospace;
   font-size: 1em;
 }
 
@@ -58,7 +58,7 @@ b, strong {
 }
 
 code, kbd, samp {
-  font-family: monospace,monospace;
+  font-family: monospace, monospace;
   font-size: 1em;
 }
 
@@ -83,11 +83,11 @@ sub, sup {
 }
 
 sub {
-  bottom: -.25em;
+  bottom: -0.25em;
 }
 
 sup {
-  top: -.5em;
+  top: -0.5em;
 }
 
 audio, video {
@@ -136,7 +136,7 @@ button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring
 }
 
 fieldset {
-  padding: .35em .75em .625em;
+  padding: 0.35em 0.75em 0.625em;
 }
 
 legend {
@@ -206,7 +206,7 @@ template {
   visibility: hidden;
   display: block;
   font-size: 0;
-  content: '';
+  content: "";
   clear: both;
   height: 0;
 }
@@ -236,20 +236,17 @@ html {
 }
 
 @font-face {
-  font-family: 'Blackout';
+  font-family: "Blackout";
   src: url("../fonts/BlackoutSunrise.ttf") format("truetype");
 }
-
 @font-face {
-  font-family: 'SpaceAge';
+  font-family: "SpaceAge";
   src: url("../fonts/space-age.ttf") format("truetype");
 }
-
 @font-face {
-  font-family: 'Russo';
+  font-family: "Russo";
   src: url("../fonts/RussoOne-Regular.ttf") format("truetype");
 }
-
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -301,7 +298,6 @@ h2, h4 {
   padding-bottom: 20px;
   white-space: nowrap;
 }
-
 h2 span, h4 span {
   color: transparent;
   -webkit-text-stroke: 0.7px #e7c376;
@@ -329,8 +325,8 @@ p:not(.logo) {
 }
 
 .expand {
-  -webkit-animation: cursorClick .5s forwards;
-          animation: cursorClick .5s forwards;
+  -webkit-animation: cursorClick 0.5s forwards;
+          animation: cursorClick 0.5s forwards;
   border: 3px solid #90CECC;
   z-index: 998;
 }
@@ -366,7 +362,6 @@ p:not(.logo) {
     opacity: 0;
   }
 }
-
 .whiteStroke {
   color: transparent;
   -webkit-text-stroke: 0.7px white;
@@ -392,10 +387,8 @@ p:not(.logo) {
   font-weight: 500;
   letter-spacing: 0px;
   color: white;
-  position: -webkit-sticky;
   position: sticky;
 }
-
 .logo span.grey {
   color: grey;
 }
@@ -407,6 +400,8 @@ button {
   font-family: Russo, sans-serif;
   font-weight: 500;
   text-transform: uppercase;
+  -webkit-text-decoration-color: transparent;
+          text-decoration-color: transparent;
   letter-spacing: 3px;
   white-space: nowrap;
   overflow: hidden;
@@ -419,13 +414,16 @@ button {
   transition: 0.2s all;
   cursor: pointer;
 }
-
 button:hover, button:focus {
-  color: black;
-  border-color: rgba(255, 255, 255, 0.7);
-  background: white;
-  -webkit-transition: .5s all;
-  transition: .5s all;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  text-decoration: underline;
+  -webkit-text-decoration-color: #e7c376;
+          text-decoration-color: #e7c376;
+  -webkit-transition: -webkit-transform 0.25s, -webkit-text-decoration-color 2s;
+  transition: -webkit-transform 0.25s, -webkit-text-decoration-color 2s;
+  transition: transform 0.25s, text-decoration-color 2s;
+  transition: transform 0.25s, text-decoration-color 2s, -webkit-transform 0.25s, -webkit-text-decoration-color 2s;
 }
 
 option {
@@ -454,7 +452,6 @@ select {
   z-index: 999;
   pointer-events: none;
 }
-
 #cursor img {
   width: 50px;
   height: 50px;
@@ -463,8 +460,8 @@ select {
 }
 
 .expand {
-  -webkit-animation: cursorClick .7s forwards;
-          animation: cursorClick .7s forwards;
+  -webkit-animation: cursorClick 0.7s forwards;
+          animation: cursorClick 0.7s forwards;
   border: 3px solid #90CECC;
   z-index: 998;
 }
@@ -484,7 +481,6 @@ select {
     opacity: 0;
   }
 }
-
 nav.flexed {
   z-index: 999;
   position: fixed;
@@ -507,7 +503,6 @@ nav.flexed {
   -webkit-transition: 1s all;
   transition: 1s all;
 }
-
 nav.flexed a {
   color: white;
   text-decoration: none;
@@ -516,7 +511,6 @@ nav.flexed a {
   -webkit-transition: 0.5s letter-spacing;
   transition: 0.5s letter-spacing;
 }
-
 nav.flexed a:hover, nav.flexed a:focus {
   color: grey;
 }
@@ -534,7 +528,6 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
 header .siteTitle {
   height: 100%;
   min-height: 100%;
@@ -547,7 +540,6 @@ header .siteTitle {
           flex-direction: column;
   margin: 0 auto;
 }
-
 header .siteTitle .headers {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -561,11 +553,9 @@ header .siteTitle .headers {
           justify-content: center;
   height: 100%;
 }
-
 header .siteTitle .headers div {
   margin: 20px auto;
 }
-
 header .siteTitle h1 {
   font-family: Blackout, sans-serif;
   font-weight: 100;
@@ -578,7 +568,6 @@ header .siteTitle h1 {
       align-self: flex-start;
   white-space: nowrap;
 }
-
 header .siteTitle h2 {
   font-family: Russo, sans-serif;
   font-size: calc(2rem + 1vw);
@@ -589,13 +578,12 @@ header .siteTitle h2 {
   text-align: left;
   white-space: nowrap;
 }
-
 header .siteTitle br {
   display: none;
 }
 
 #about-us, #what-we-do, #our-services, #address, #contact {
-  background: black;
+  background: rgb(0, 0, 0);
   min-height: 75vh;
   padding: 20px 0;
   display: -webkit-box;
@@ -613,7 +601,6 @@ header .siteTitle br {
   color: white;
   font-size: calc(1.2rem + 0.3vw);
 }
-
 #about-us .textblock, #what-we-do .textblock, #our-services .textblock, #address .textblock, #contact .textblock {
   font-family: Russo, sans-serif;
   height: 100%;
@@ -622,7 +609,6 @@ header .siteTitle br {
   position: relative;
   z-index: 8;
 }
-
 #about-us p, #what-we-do p, #our-services p, #address p, #contact p {
   letter-spacing: 0.6px;
   line-height: 150%;
@@ -631,7 +617,6 @@ header .siteTitle br {
   text-transform: uppercase;
   text-align: center;
 }
-
 #about-us p span, #what-we-do p span, #our-services p span, #address p span, #contact p span {
   color: rgba(255, 255, 255, 0.7);
 }
@@ -661,7 +646,6 @@ header .siteTitle br {
 #our-services {
   padding: 80px 0 20px;
 }
-
 #our-services .textblock {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -675,14 +659,12 @@ header .siteTitle br {
           justify-content: space-between;
   padding: 20px 50px;
 }
-
 #our-services .textblock div {
   width: 30%;
   margin: 30px 0px;
   padding: 0;
   text-align: center;
 }
-
 #our-services .textblock div h4 {
   font-family: SpaceAge;
   text-align: center;
@@ -690,18 +672,15 @@ header .siteTitle br {
   font-size: 28px;
   color: #7ebec5;
 }
-
 #our-services .textblock div button {
   border: none;
   padding-top: 0;
 }
-
 #our-services .textblock div button:focus, #our-services .textblock div button:hover {
   border: none;
   color: white;
   background: none;
 }
-
 #our-services .textblock div div.service {
   width: 95%;
   margin: 0 auto;
@@ -709,7 +688,6 @@ header .siteTitle br {
   opacity: 0;
   overflow: hidden;
 }
-
 #our-services .textblock div div.service p {
   font-size: 20px;
   text-transform: none;
@@ -727,19 +705,16 @@ header .siteTitle br {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 #contact form {
   text-align: center;
   margin-top: 50px;
   width: 100%;
   font-family: Russo, sans-serif;
 }
-
 #contact form p {
   font-size: calc(2rem + 1vh);
   line-height: 60px;
 }
-
 #contact form input, #contact form select {
   font-family: Russo, sans-serif;
   color: #e7c376;
@@ -752,7 +727,6 @@ header .siteTitle br {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-
 #contact form .actions {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -770,7 +744,6 @@ header .siteTitle br {
   background-attachment: fixed;
   height: 100%;
 }
-
 #address div.textblock {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -788,14 +761,12 @@ header .siteTitle br {
   margin-bottom: 40vh;
   background-color: transparent;
 }
-
 #address div.textblock span, #address div.textblock a {
   font-weight: 300;
   font-family: Lato, sans-serif;
   color: white;
   line-height: 130%;
 }
-
 #address div.textblock a:hover, #address div.textblock a:focus {
   color: #e7c376;
 }
@@ -810,14 +781,12 @@ header .siteTitle br {
   letter-spacing: 8px;
   padding: 5px 0;
 }
-
 .footer a {
   color: white;
   font-weight: 400;
   position: relative;
   z-index: 99;
 }
-
 .footer a:hover, .footer a:focus {
   color: #e7c376;
   cursor: pointer;
@@ -847,7 +816,6 @@ header .siteTitle br {
     font-size: 20px;
   }
 }
-
 /* Landscape phones and down */
 @media (max-width: 530px) {
   nav {

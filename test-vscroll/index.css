@@ -1,0 +1,20 @@
+main
+{
+    height: 4000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+
+#some-content
+{
+    font-size: 128px;
+    margin: 0;
+    padding: 0;
+}
+
+#some-content:hover
+{
+    transform: scale(1.1);
+    transition: all 1s;
+}

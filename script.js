@@ -116,10 +116,36 @@ function toggleText(el) {
 }
 
 const cursor = document.querySelector('.cursor');
+const startTime = Date.now();
+
+let pageX;
+let pageY;
+let xDisplacement;
+let yDisplacement
+
 
 document.addEventListener('mousemove', e => {
-    cursor.setAttribute('style', 'top: '+(e.pageY - 20)+"px; left: "+(e.pageX - 20)+'px;');
+    pageX = e.pageX;
+    pageY = e.pageY;
 });
+
+function onAnimationFrame(timestamp) {
+    const period = 2000;
+
+    const totalTimeElapsed = timestamp - startTime;
+    const phase = (totalTimeElapsed % period) / period;
+    const angle = phase * 2 * Math.PI;
+    const radius = 80;
+    const xDisplacement = Math.cos(angle) * radius;
+    const yDisplacement = Math.sin(angle) * radius;
+
+    cursor.setAttribute('style', 'top: '+(pageY + yDisplacement - 20)+"px; left: "+(pageX + xDisplacement - 20)+'px;');
+    //cursor.setAttribute()
+
+    window.requestAnimationFrame(onAnimationFrame);
+};
+
+window.requestAnimationFrame(onAnimationFrame);
 
 document.addEventListener('click', () => {
     cursor.classList.add('expand');
